@@ -1,6 +1,9 @@
 # Projet-Baobab
 Creation of a website for an ASBL called "Sur un Baobab"
 
+## Avertissement
+SI vous voulez voir le design.pdf il vaut mieux le télécharger. Il y à quelque bug en le visionnant sur github directement qui sont inconvenient de ma volonté. Cela dépend du chargement de la connexion.
+
 ## Objectif
 
 Avant toute chose, l’objectif principal du collectif est de favoriser l’apprentissage du développement artistique des enfants grâce à la réalisation de courts métrages. Les valeurs du site : Défendre des causes qui lui sont chères, comme le développement local, le respect de l'environnement, ou encore le partage libre des connaissances.
