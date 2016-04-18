@@ -2,7 +2,7 @@
 Creation of a website for an ASBL called "Sur un Baobab"
 
 ## Avertissement
-SI vous voulez voir le design.pdf il vaut mieux le télécharger. Il y à quelque bug en le visionnant sur github directement qui sont inconvenient de ma volonté. Cela dépend du chargement de la connexion.
+SI vous voulez voir le design.pdf il vaut mieux le télécharger. Il y a quelques bug en le visionnant sur github directement qui sont inconvenient de ma volonté. Cela dépend du chargement de la connexion.
 
 ## Objectif
 
