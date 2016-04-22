@@ -1,1 +1,70 @@
-
+/* BAOBAB Project
+ *
+ * /sass/components/header.scss - non design of header stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 22/04/2016
+ */
+.mainmenu{
+  background-color: rgba(173,104,63,0.47);
+  &__logo{
+    padding: 1.1em 0;
+    background: url("../img/logo.svg") no-repeat center;
+    background-size: contain;
+  }
+  &__element{
+    display:inline-block;
+  }
+  &__link{
+    color:black;
+    font:1.8em/1.7em $quicksandStack;
+    display: block;
+    text-align: center;
+    padding: 0.833em;
+    transition: .1s linear;
+    &:hover{
+      border-bottom: 1px solid black;
+      transform:scale(1.1);
+    }
+    &--home{
+    margin-left: 1.5em;
+    &::before{
+      content:"";
+      display: block;
+      font:1.6em $glyphsStack;
+    }
+  }
+    &--video::before{
+      content:"";
+      display: block;
+      font:1.6em $glyphsStack;
+    }
+    &--anime::before{
+      content:"";
+      display: block;
+      font:1.6em $glyphsStack;
+    }
+    &--project::before{
+      content:"";
+      display: block;
+      font:1.6em $glyphsStack;
+    }
+    &--contact::before{
+      content:"";
+      display: block;
+      font:1.6em $glyphsStack;
+    }
+    &--donate{
+      background-color: #E28139;
+      color:white;
+      font-size: 2em;
+      font-weight:bold;
+      text-transform: uppercase;
+      transform: skewY(-5deg);
+      &:hover{
+        background-color: #D36210;
+        border:none;
+      }
+    }
+  }
+}

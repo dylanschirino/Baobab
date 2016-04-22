@@ -11,7 +11,7 @@
   src: url("../fonts/quicksand/Quicksand-Bold.eot");
   src: url("../fonts/quicksand/Quicksand-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand/Quicksand-Bold.woff") format("woff"), url("../fonts/quicksand/Quicksand-Bold.ttf") format("truetype"), url("../fonts/quicksand/Quicksand-Bold.svg#Quicksand-Bold") format("svg");
   font-weight: bold;
-  font-style: normal; }
+  font-style: bold; }
 
 @font-face {
   font-family: 'Quicksand';
@@ -42,6 +42,14 @@ h1, label {
 
 .mainmenu__title {
   display: none; }
+
+/* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
+.visuallyhidden {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -88,14 +96,16 @@ table {
 
 /*Fin du reset de meyer*/
 html {
-  font: 62.5% "Quicksand", Arial, sans-serif;
-  opacity: .8; }
+  font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
-  background: url("../img/grille.png") center center; }
+  opacity: .8; }
 
 h1, h2, h3 {
   font-family: "Amatic", sans-serif; }
+
+a {
+  text-decoration: none; }
 
 /* BAOBAB Project
  *
@@ -120,17 +130,51 @@ h1, h2, h3 {
   .subheader__link {
     margin-right: 1em; }
   .subheader__search {
-    width: 16.3636em;
+    width: 16.3em;
     height: 23px;
     position: relative;
     top: -3px;
-    margin-right: 2em; }
+    margin-right: 3.6em; }
   .subheader__submit {
-    width: 2.5em;
     height: 1.6em;
     position: absolute;
-    right: 3.8em; }
+    right: 4em;
+    top: 1.4em;
+    width: 2.5em; }
 
+/* BAOBAB Project
+ *
+ * /sass/object/header.scss - non design of header stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 22/04/2016
+ */
+.mainmenu {
+  height: 15.4em; }
+  .mainmenu__logo {
+    width: 13.2em;
+    height: 13.2em;
+    margin-left: 4em;
+    margin-right: 2.8em;
+    float: left; }
+  .mainmenu__element {
+    margin-top: 3.8em; }
+  .mainmenu__link {
+    margin-right: 1.944em;
+    /* 35/1.8em*/ }
+    .mainmenu__link--donate {
+      margin: 1em 0em 0em 0.2em;
+      /*40/1.8*/
+      position: relative;
+      top: -10px; }
+
+/* BAOBAB Project
+ *
+ * /sass/object/mainimage.scss - Design of mainimage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 21/04/2016
+ */
 /* BAOBAB Project
  *
  * /sass/components/subheader.scss - Design of subheader stylesheet
@@ -175,12 +219,70 @@ h1, h2, h3 {
       cursor: pointer;
       transform: skewX(0deg); }
 
-/* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
-.visuallyhidden {
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute; }
+/* BAOBAB Project
+ *
+ * /sass/components/header.scss - non design of header stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 22/04/2016
+ */
+.mainmenu {
+  background-color: rgba(173, 104, 63, 0.47); }
+  .mainmenu__logo {
+    padding: 1.1em 0;
+    background: url("../img/logo.svg") no-repeat center;
+    background-size: contain; }
+  .mainmenu__element {
+    display: inline-block; }
+  .mainmenu__link {
+    color: black;
+    font: 1.8em/1.7em "Quicksand", Arial, sans-serif;
+    display: block;
+    text-align: center;
+    padding: 0.833em;
+    transition: .1s linear; }
+    .mainmenu__link:hover {
+      border-bottom: 1px solid black;
+      transform: scale(1.1); }
+    .mainmenu__link--home {
+      margin-left: 1.5em; }
+      .mainmenu__link--home::before {
+        content: "";
+        display: block;
+        font: 1.6em "glyphs"; }
+    .mainmenu__link--video::before {
+      content: "";
+      display: block;
+      font: 1.6em "glyphs"; }
+    .mainmenu__link--anime::before {
+      content: "";
+      display: block;
+      font: 1.6em "glyphs"; }
+    .mainmenu__link--project::before {
+      content: "";
+      display: block;
+      font: 1.6em "glyphs"; }
+    .mainmenu__link--contact::before {
+      content: "";
+      display: block;
+      font: 1.6em "glyphs"; }
+    .mainmenu__link--donate {
+      background-color: #E28139;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      transform: skewY(-5deg); }
+      .mainmenu__link--donate:hover {
+        background-color: #D36210;
+        border: none; }
+
+/* BAOBAB Project
+ *
+ * /sass/components/mainimage.scss - Design of mainimage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 21/04/2016
+ */
 
 /*# sourceMappingURL=styles.css.map */

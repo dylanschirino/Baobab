@@ -1,0 +1,28 @@
+/* BAOBAB Project
+ *
+ * /sass/object/header.scss - non design of header stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 22/04/2016
+ */
+.mainmenu{
+  height: 15.4em;
+  &__logo{
+    width:13.2em;
+    height:13.2em;
+    margin-left: 4em;
+    margin-right: 2.8em;
+    float: left;
+  }
+  &__element{
+    margin-top: 3.8em;
+  }
+  &__link{
+    margin-right: 1.944em; /* 35/1.8em*/
+    &--donate{
+        margin:1em 0em 0em 0.2em;/*40/1.8*/
+        position: relative;
+        top:-10px;
+    }
+  }
+}

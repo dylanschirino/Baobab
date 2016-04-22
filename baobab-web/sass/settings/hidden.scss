@@ -9,3 +9,12 @@ h1,label{
 .mainmenu{
   &__title{display: none;}
 }
+
+/* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
+.visuallyhidden {
+   border: 0;
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   position: absolute;
+}
