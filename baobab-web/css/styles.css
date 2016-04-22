@@ -151,6 +151,10 @@ a {
  */
 .mainmenu {
   height: 15.4em; }
+  .mainmenu::after {
+    content: "";
+    display: block;
+    clear: both; }
   .mainmenu__logo {
     width: 13.2em;
     height: 13.2em;
@@ -175,6 +179,26 @@ a {
  * coded by Dylan Schirino
  * started at 21/04/2016
  */
+.mainimage {
+  height: 40em; }
+  .mainimage__title {
+    text-align: center;
+    position: relative; }
+  .mainimage__subtitle {
+    margin-right: 7.14289em;
+    text-align: right;
+    display: block;
+    margin-bottom: 3em; }
+  .mainimage__button {
+    display: block;
+    height: 76px;
+    width: 12.412916667em;
+    /*292+5/2.4*/
+    vertical-align: middle;
+    position: relative;
+    left: -5px;
+    margin: auto; }
+
 /* BAOBAB Project
  *
  * /sass/components/subheader.scss - Design of subheader stylesheet
@@ -275,7 +299,8 @@ a {
       transform: skewY(-5deg); }
       .mainmenu__link--donate:hover {
         background-color: #D36210;
-        border: none; }
+        border: none;
+        transform: scale(1); }
 
 /* BAOBAB Project
  *
@@ -284,5 +309,21 @@ a {
  * coded by Dylan Schirino
  * started at 21/04/2016
  */
+.mainimage {
+  background: url("../img/mainimage.jpg") no-repeat center fixed;
+  background-size: cover; }
+  .mainimage__title {
+    font-size: 5.2em;
+    padding-top: 0.6667em; }
+  .mainimage__subtitle {
+    font-size: 4.2em;
+    padding-top: 0.714em; }
+  .mainimage__button {
+    font: bold 2.4em/3em "Quicksand", Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background-color: #0098FF; }
 
 /*# sourceMappingURL=styles.css.map */

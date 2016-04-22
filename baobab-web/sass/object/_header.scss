@@ -7,6 +7,11 @@
  */
 .mainmenu{
   height: 15.4em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
   &__logo{
     width:13.2em;
     height:13.2em;

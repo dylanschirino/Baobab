@@ -5,3 +5,23 @@
  * coded by Dylan Schirino
  * started at 21/04/2016
  */
+.mainimage{
+  background: url("../img/mainimage.jpg") no-repeat center fixed;
+  background-size:cover;
+  &__title{
+    font-size: 5.2em;
+    padding-top: 0.6667em;
+  }
+  &__subtitle{
+    font-size:4.2em;
+    padding-top:0.714em;
+  }
+  &__button{
+    font:bold 2.4em/3em $quicksandStack;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    background-color: #0098FF;
+  }
+}
