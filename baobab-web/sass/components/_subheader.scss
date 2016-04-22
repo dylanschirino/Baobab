@@ -1,0 +1,68 @@
+/* BAOBAB Project
+ *
+ * /sass/components/subheader.scss - Design of subheader stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 21/04/2016
+ */
+
+ .subheader{
+  background-color: #F89F1F;
+  box-shadow: 0px 1px 1px #D16925;
+  font-size: 1.6em;
+  padding-top:1em;
+  &__element{
+    &--right{
+      font-size: 0.875em;
+    }
+  }
+  &__link{
+    padding-top:1em;
+    text-decoration: none;
+    color:black;
+    transition: .2s linear;
+    &:hover{
+      font-size: 1.3em;
+    }
+    &--youtube{
+      &::before{
+        color:white;
+        content:"";
+        font:1.2em $glyphsStack;
+      }
+    }
+    &--facebook{
+      &::before{
+        color:white;
+        content:"";
+        font:1.2em $glyphsStack;
+      }
+    }
+  }
+  &__search{
+    border: none;
+     -webkit-appearance: none;
+    font-family: $quicksandStack;
+    padding-left:1em;
+  }
+  &__submit{
+    font-family: $quicksandStack;
+    border: none;
+    background-color: #E38039;
+    transform: skewX(-15deg);
+    transition: .2s linear;
+    &:hover{
+      cursor: pointer;
+      transform: skewX(0deg);
+    }
+  }
+ }
+
+ /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
+ .visuallyhidden {
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+}

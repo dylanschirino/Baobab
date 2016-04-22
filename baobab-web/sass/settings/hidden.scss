@@ -1,0 +1,11 @@
+h1,label{
+  display: none;
+}
+.subheader{
+  &__title{
+    display: none;
+  }
+}
+.mainmenu{
+  &__title{display: none;}
+}

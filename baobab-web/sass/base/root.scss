@@ -1,10 +1,13 @@
 
 
-body{
-font-size: 62.5%;
+
+html{
+font: 62.5% $quicksandStack;
+opacity: .8;
 }
-
-
-h1{
-  font:normal 5.6em/1.6 "Amatic";
+body{
+  background: url("../img/grille.png") center center;
+}
+h1,h2,h3{
+  font-family:$amaticStack;
 }
