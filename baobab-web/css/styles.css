@@ -264,7 +264,42 @@ a {
 .decoration {
   height: 50em; }
   .decoration__text {
-    width: 11em; }
+    width: 11em;
+    margin-left: 3.1em; }
+  .decoration__image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+
+/* BAOBAB Project
+*
+* /sass/object/actualite.scss - Non design of actualite stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+.lastactu {
+  width: 90em;
+  margin: auto; }
+  .lastactu__title {
+    margin: 4.309em 0em 1.69em 0.2em; }
+
+.actu {
+  width: 29.7em;
+  margin-left: 1.2em;
+  display: inline-block; }
+  .actu:last-child {
+    float: right;
+    margin-right: 3.1em; }
+  .actu__info {
+    margin-top: -2px; }
+  .actu__text {
+    padding-bottom: 2.4em; }
+  .actu__button {
+    display: block;
+    width: 10em;
+    height: 2.85em;
+    margin: -1.5em auto; }
 
 /* BAOBAB Project
  *
@@ -427,6 +462,49 @@ a {
 
 /* BAOBAB Project
 *
+* /sass/components/actualite.scss - design of actualite stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+.lastactu {
+  padding-bottom: 2em; }
+  .lastactu__title {
+    font: 4.8em "Amatic", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+
+.actu__info {
+  border: 1px solid black;
+  padding: 2em; }
+
+.actu__title {
+  font-size: 1.5em;
+  padding: 1.8em 0 1.2em 0;
+  font-weight: bold; }
+
+.actu__element {
+  display: inline-block;
+  font-weight: bold;
+  padding-bottom: 9px;
+  text-transform: uppercase; }
+  .actu__element--green {
+    color: #2F8635; }
+
+.actu__text {
+  line-height: 1.3em; }
+
+.actu__button {
+  font-size: 1.4em;
+  background-color: #CC5454;
+  text-align: center;
+  color: white;
+  line-height: 2.4em;
+  border-radius: 5px;
+  border: 1px solid black; }
+
+/* BAOBAB Project
+*
 * /sass/components/doityourself.scss - design of doityourself stylesheet
 *
 * coded by Dylan Schirino
@@ -470,16 +548,12 @@ a {
   background-color: #34A037; }
   .decoration__text {
     padding-top: 1.277em;
-    font: 3.6em "Amatic", sans-serif;
-    margin-left: 3.1em; }
+    font: 3.6em "Amatic", sans-serif; }
     .decoration__text--strong {
       font-size: 1.33em; }
     .decoration__text--small {
       font-size: 0.66em; }
   .decoration__image {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
     animation: movement 1.5s ease-in-out; }
 
 @keyframes movement {

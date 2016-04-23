@@ -1,0 +1,49 @@
+/* BAOBAB Project
+*
+* /sass/components/actualite.scss - design of actualite stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+
+.lastactu{
+  padding-bottom: 2em;
+  &__title{
+    font:4.8em $amaticStack;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.actu{
+  &__info{
+      border:1px solid black;
+      padding:2em;
+  }
+  &__title{
+    font-size:1.5em;
+    padding:1.8em 0 1.2em 0;
+    font-weight: bold;
+  }
+  &__element{
+    display: inline-block;
+    font-weight: bold;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    &--green{
+      color:#2F8635;
+    }
+  }
+  &__text{
+    line-height: 1.3em;
+  }
+  &__button{
+    font-size: 1.4em;
+    background-color: #CC5454;
+    text-align: center;
+    color:white;
+    line-height: 2.4em;
+    border-radius: 5px;
+    border:1px solid black;
+  }
+}
