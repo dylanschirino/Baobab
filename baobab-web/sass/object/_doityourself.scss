@@ -1,0 +1,21 @@
+/* BAOBAB Project
+ *
+ * /sass/object/doityourself.scss - non design of doityourself stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 22/04/2016
+ */
+
+.doityourself{
+  height:70em;
+  &__container{
+    text-align: center;
+  }
+  &__link{
+      margin-left:2em;
+  }
+  &__image{
+    margin-top:3.7em;
+    margin-bottom:1.5em;
+  }
+}

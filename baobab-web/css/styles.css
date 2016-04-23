@@ -99,7 +99,6 @@ html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
-  background: url("../img/grille.png") center center;
   opacity: .8; }
 
 h1, h2, h3 {
@@ -234,6 +233,23 @@ a {
   /*140px*/
   height: 2.8571em;
   /*40px*/ }
+
+/* BAOBAB Project
+ *
+ * /sass/object/doityourself.scss - non design of doityourself stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 22/04/2016
+ */
+.doityourself {
+  height: 70em; }
+  .doityourself__container {
+    text-align: center; }
+  .doityourself__link {
+    margin-left: 2em; }
+  .doityourself__image {
+    margin-top: 3.7em;
+    margin-bottom: 1.5em; }
 
 /* BAOBAB Project
  *
@@ -393,6 +409,40 @@ a {
   border-radius: 5px; }
   .container__link--red {
     background-color: #D75151; }
+
+/* BAOBAB Project
+*
+* /sass/components/doityourself.scss - design of doityourself stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+.doityourself {
+  background: #d9a200;
+  background: -moz-linear-gradient(top, #d9a200 0%, #b26900 100%);
+  background: -webkit-linear-gradient(top, #d9a200 0%, #b26900 100%);
+  background: linear-gradient(to bottom, #d9a200 0%, #b26900 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a200', endColorstr='#b26900',GradientType=0 ); }
+  .doityourself__title {
+    padding-top: 0.625em;
+    /*45px/7.2em*/
+    text-align: center;
+    font-size: 7.2em; }
+  .doityourself__link {
+    display: inline-block;
+    text-align: center;
+    font: bold 2em "Quicksand", Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    transition: .2s linear;
+    letter-spacing: 3px; }
+    .doityourself__link:hover {
+      opacity: 0.8;
+      transform: scale(1.1); }
+  .doityourself__image {
+    display: block;
+    text-align: center;
+    border-radius: 50%; }
 
 /* BAOBAB Project
 *
