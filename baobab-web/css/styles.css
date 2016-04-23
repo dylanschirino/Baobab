@@ -180,7 +180,7 @@ a {
  * started at 21/04/2016
  */
 .mainimage {
-  height: 40em; }
+  min-height: 65.9vh; }
   .mainimage__title {
     text-align: center;
     position: relative; }
@@ -196,7 +196,7 @@ a {
     /*292+5/2.4*/
     vertical-align: middle;
     position: relative;
-    left: -5px;
+    left: -50px;
     margin: auto; }
 
 /* BAOBAB Project
@@ -237,11 +237,13 @@ a {
     font-family: "Quicksand", Arial, sans-serif;
     border: none;
     background-color: #E38039;
-    transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
     transition: .2s linear; }
     .subheader__submit:hover {
       cursor: pointer;
-      transform: skewX(0deg); }
+      -webkit-transform: skewX(0deg);
+              transform: skewX(0deg); }
 
 /* BAOBAB Project
  *
@@ -267,7 +269,8 @@ a {
     transition: .1s linear; }
     .mainmenu__link:hover {
       border-bottom: 1px solid black;
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     .mainmenu__link--home {
       margin-left: 1.5em; }
       .mainmenu__link--home::before {
@@ -296,19 +299,21 @@ a {
       font-size: 2em;
       font-weight: bold;
       text-transform: uppercase;
-      transform: skewY(-5deg); }
+      -webkit-transform: skewY(-5deg);
+              transform: skewY(-5deg); }
       .mainmenu__link--donate:hover {
         background-color: #D36210;
         border: none;
-        transform: scale(1); }
+        -webkit-transform: scale(1);
+                transform: scale(1); }
 
 /* BAOBAB Project
- *
- * /sass/components/mainimage.scss - Design of mainimage stylesheet
- *
- * coded by Dylan Schirino
- * started at 21/04/2016
- */
+*
+* /sass/components/mainimage.scss - Design of mainimage stylesheet
+*
+* coded by Dylan Schirino
+* started at 21/04/2016
+*/
 .mainimage {
   background: url("../img/mainimage.jpg") no-repeat center fixed;
   background-size: cover; }
@@ -325,5 +330,35 @@ a {
     text-align: center;
     color: white;
     background-color: #0098FF; }
+    .mainimage__button::before {
+      content: "";
+      display: inline-block;
+      font-family: "glyphs";
+      padding-right: 15px; }
 
+.mainimage__button:hover:before, .mainimage__button:focus:before {
+  -webkit-animation-name: iconanim;
+  animation-name: iconanim;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes iconanim {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+
+@keyframes iconanim {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
 /*# sourceMappingURL=styles.css.map */
