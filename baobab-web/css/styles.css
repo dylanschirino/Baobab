@@ -99,6 +99,7 @@ html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
+  background: url("../img/grille.png") center center;
   opacity: .8; }
 
 h1, h2, h3 {
@@ -201,6 +202,41 @@ a {
 
 /* BAOBAB Project
  *
+ * /sass/object/whosbaobab.scss - non design of whosbaobab stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 23/04/2016
+ */
+.whosbaobab {
+  height: 60em; }
+  .whosbaobab__maincontainer {
+    width: 90em;
+    padding-top: 8em;
+    margin: auto; }
+    .whosbaobab__maincontainer::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .whosbaobab__container {
+    width: 30em;
+    display: block;
+    height: 40.8em;
+    margin-left: 8.9em;
+    float: left; }
+    .whosbaobab__container--right {
+      float: right;
+      margin-right: 3em; }
+
+.container__link {
+  display: block;
+  margin: 0.5em auto;
+  width: 10em;
+  /*140px*/
+  height: 2.8571em;
+  /*40px*/ }
+
+/* BAOBAB Project
+ *
  * /sass/components/subheader.scss - Design of subheader stylesheet
  *
  * coded by Dylan Schirino
@@ -237,17 +273,15 @@ a {
     font-family: "Quicksand", Arial, sans-serif;
     border: none;
     background-color: #E38039;
-    -webkit-transform: skewX(-15deg);
-            transform: skewX(-15deg);
+    transform: skewX(-15deg);
     transition: .2s linear; }
     .subheader__submit:hover {
       cursor: pointer;
-      -webkit-transform: skewX(0deg);
-              transform: skewX(0deg); }
+      transform: skewX(0deg); }
 
 /* BAOBAB Project
  *
- * /sass/components/header.scss - non design of header stylesheet
+ * /sass/components/header.scss - design of header stylesheet
  *
  * coded by Dylan Schirino
  * started at 22/04/2016
@@ -269,8 +303,7 @@ a {
     transition: .1s linear; }
     .mainmenu__link:hover {
       border-bottom: 1px solid black;
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      transform: scale(1.1); }
     .mainmenu__link--home {
       margin-left: 1.5em; }
       .mainmenu__link--home::before {
@@ -296,16 +329,70 @@ a {
     .mainmenu__link--donate {
       background-color: #E28139;
       color: white;
-      font-size: 2em;
+      font-size: 1.8em;
       font-weight: bold;
       text-transform: uppercase;
-      -webkit-transform: skewY(-5deg);
-              transform: skewY(-5deg); }
+      transform: skewY(-5deg); }
       .mainmenu__link--donate:hover {
         background-color: #D36210;
         border: none;
-        -webkit-transform: scale(1);
-                transform: scale(1); }
+        transform: scale(1); }
+
+/* BAOBAB Project
+ *
+ * /sass/components/whosbaobab.scss - design of whosbaobab stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 23/04/2016
+ */
+.whosbaobab {
+  background: url("../img/quisommesnous.jpg") center fixed;
+  color: black; }
+  .whosbaobab__container {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: .2s ease-in-out; }
+    .whosbaobab__container:hover .container__link {
+      background-color: #193E56; }
+    .whosbaobab__container--right:hover .container__link {
+      background-color: #AD4343; }
+
+.container__title {
+  font-size: 3.2em;
+  padding-top: 0.78125em;
+  /*25/3.2*/
+  color: #006BB2; }
+  .container__title::after {
+    content: "";
+    display: block;
+    font: 3em "glyphs";
+    padding: 26px 0;
+    margin: 0 60px;
+    border-bottom: 1px solid #006BB2; }
+  .container__title--red {
+    color: #D75151; }
+    .container__title--red::after {
+      content: "\e906";
+      display: block;
+      font: 3em "glyphs";
+      padding: 26px 0;
+      margin: 0 60px;
+      border-bottom: 1px solid #D75151; }
+
+.container__text {
+  font-size: 1.2em;
+  padding: 2em 2.5em;
+  text-align: left; }
+
+.container__link {
+  font-size: 1.4em;
+  line-height: 2.4em;
+  background-color: #006BB2;
+  color: white;
+  border-radius: 5px; }
+  .container__link--red {
+    background-color: #D75151; }
 
 /* BAOBAB Project
 *
@@ -321,7 +408,7 @@ a {
     font-size: 5.2em;
     padding-top: 0.6667em; }
   .mainimage__subtitle {
-    font-size: 4.2em;
+    font: 4.2em "Amatic", sans-serif;
     padding-top: 0.714em; }
   .mainimage__button {
     font: bold 2.4em/3em "Quicksand", Arial, sans-serif;
@@ -361,4 +448,5 @@ a {
   75% {
     -webkit-transform: scale(0.8);
     transform: scale(0.8); } }
+
 /*# sourceMappingURL=styles.css.map */
