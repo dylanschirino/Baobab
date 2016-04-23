@@ -1,0 +1,40 @@
+/* BAOBAB Project
+*
+* /sass/components/decoration.scss - design of decoration stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+
+.decoration{
+  background-color: #34A037;
+  &__text{
+    padding-top:1.277em;
+    font:3.6em $amaticStack;
+    margin-left: 3.1em;
+    &--strong{
+      font-size:1.33em;
+    }
+    &--small{
+      font-size: 0.66em;
+    }
+  }
+  &__image{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    animation: movement 1.5s ease-in-out;
+  }
+}
+
+@keyframes movement {
+  0% {
+    transform:translateX(100%);
+  }
+  50%{
+    transform: rotateZ(15deg);
+  }
+  100% {
+      transform:translateX(0%);
+  }
+}

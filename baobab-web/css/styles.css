@@ -43,6 +43,9 @@ h1, label {
 .mainmenu__title {
   display: none; }
 
+.decoration__title {
+  display: none; }
+
 /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
 .visuallyhidden {
   border: 0;
@@ -252,6 +255,18 @@ a {
     margin-bottom: 1.5em; }
 
 /* BAOBAB Project
+*
+* /sass/object/decoration.scss - Non design of decoration stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+.decoration {
+  height: 50em; }
+  .decoration__text {
+    width: 11em; }
+
+/* BAOBAB Project
  *
  * /sass/components/subheader.scss - Design of subheader stylesheet
  *
@@ -443,6 +458,37 @@ a {
     display: block;
     text-align: center;
     border-radius: 50%; }
+
+/* BAOBAB Project
+*
+* /sass/components/decoration.scss - design of decoration stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+.decoration {
+  background-color: #34A037; }
+  .decoration__text {
+    padding-top: 1.277em;
+    font: 3.6em "Amatic", sans-serif;
+    margin-left: 3.1em; }
+    .decoration__text--strong {
+      font-size: 1.33em; }
+    .decoration__text--small {
+      font-size: 0.66em; }
+  .decoration__image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    animation: movement 1.5s ease-in-out; }
+
+@keyframes movement {
+  0% {
+    transform: translateX(100%); }
+  50% {
+    transform: rotateZ(15deg); }
+  100% {
+    transform: translateX(0%); } }
 
 /* BAOBAB Project
 *
