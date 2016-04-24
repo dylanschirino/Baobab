@@ -102,6 +102,7 @@ html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
+  background: url("../img/grille.png") center center;
   opacity: .8; }
 
 h1, h2, h3 {
@@ -300,6 +301,32 @@ a {
     width: 10em;
     height: 2.85em;
     margin: -1.5em auto; }
+
+/* BAOBAB Project
+ *
+ * /sass/object/footer.scss - non design of footer stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 24/04/2016
+ */
+.footer {
+  height: 18.6em;
+  margin-top: 10em; }
+  .footer__container {
+    width: 100em;
+    margin: auto; }
+    .footer__container::after {
+      content: "";
+      clear: both;
+      display: block; }
+
+.follow {
+  display: inline-block; }
+
+.contact {
+  display: inline-block;
+  float: right;
+  margin-right: 8em; }
 
 /* BAOBAB Project
  *
@@ -618,5 +645,68 @@ a {
   75% {
     -webkit-transform: scale(0.8);
     transform: scale(0.8); } }
+
+/* BAOBAB Project
+ *
+ * /sass/components/footer.scss - design of footer stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 24/04/2016
+ */
+.footer {
+  background-color: #4E727B; }
+
+.follow__title {
+  font: 1.8em "Quicksand", Arial, sans-serif;
+  color: white;
+  padding: 1.166em 0 1.66em 0;
+  text-align: center; }
+
+.follow__element {
+  font-size: 1.2em;
+  display: inline-block;
+  padding-left: 2em; }
+
+.follow__link {
+  color: white;
+  text-align: center;
+  transition: .2s linear; }
+  .follow__link:hover {
+    color: black; }
+  .follow__link--facebook::before {
+    padding-bottom: 6px;
+    content: "";
+    display: block;
+    font: 3em "glyphs"; }
+  .follow__link--vimeo::before {
+    padding-bottom: 6px;
+    content: "";
+    display: block;
+    font: 3em "glyphs"; }
+  .follow__link--youtube::before {
+    padding-bottom: 6px;
+    content: "";
+    display: block;
+    font: 3em "glyphs"; }
+  .follow__link--rss::before {
+    padding-bottom: 6px;
+    content: "";
+    display: block;
+    font: 3em "glyphs"; }
+
+.contact__title {
+  font: 1.8em "Quicksand", Arial, sans-serif;
+  color: white;
+  padding: 1.166em 0 1.66em 0;
+  text-align: center; }
+
+.contact__element {
+  font: 1.8em "Quicksand", Arial, sans-serif;
+  color: white; }
+
+.contact__link {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=styles.css.map */

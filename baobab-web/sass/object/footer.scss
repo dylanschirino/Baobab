@@ -1,0 +1,29 @@
+/* BAOBAB Project
+ *
+ * /sass/object/footer.scss - non design of footer stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 24/04/2016
+ */
+.footer{
+  height:18.6em;
+  margin-top:10em;
+  &__container{
+    width:100em;
+    margin: auto;
+    &::after{
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+}
+
+.follow{
+    display: inline-block;
+}
+.contact{
+    display: inline-block;
+    float: right;
+    margin-right:8em;
+}
