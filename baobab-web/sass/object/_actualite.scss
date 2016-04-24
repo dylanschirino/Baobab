@@ -8,17 +8,25 @@
 .lastactu{
   width:90em;
   margin: auto;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
   &__title{
     margin:4.309em 0em 1.69em 0.2em;
   }
 }
 .actu{
   width: 29.7em;
+  height:30em;
   margin-left: 1.2em;
   display: inline-block;
+  &:first-child{
+  float:left;
+  }
   &:last-child{
-    float: right;
-    margin-right: 3.1em;
+    margin-left:25.9em;
   }
   &__info{
     margin-top:-2px;

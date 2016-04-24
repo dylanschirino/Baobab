@@ -102,7 +102,6 @@ html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
-  background: url("../img/grille.png") center center;
   opacity: .8; }
 
 h1, h2, h3 {
@@ -112,12 +111,12 @@ a {
   text-decoration: none; }
 
 /* BAOBAB Project
- *
- * /sass/object/subheader.scss - non design of subheader stylesheet
- *
- * coded by Dylan Schirino
- * started at 21/04/2016
- */
+*
+* /sass/object/subheader.scss - non design of subheader stylesheet
+*
+* coded by Dylan Schirino
+* started at 21/04/2016
+*/
 .subheader {
   width: 100%;
   height: 2.222em; }
@@ -223,7 +222,7 @@ a {
   .whosbaobab__container {
     width: 30em;
     display: block;
-    height: 40.8em;
+    max-height: 40.8em;
     margin-left: 8.9em;
     float: left; }
     .whosbaobab__container--right {
@@ -232,11 +231,13 @@ a {
 
 .container__link {
   display: block;
-  margin: 0.5em auto;
+  margin: auto;
   width: 10em;
   /*140px*/
   height: 2.8571em;
-  /*40px*/ }
+  /*40px*/
+  position: relative;
+  top: 20px; }
 
 /* BAOBAB Project
  *
@@ -282,16 +283,22 @@ a {
 .lastactu {
   width: 90em;
   margin: auto; }
+  .lastactu::after {
+    content: "";
+    display: block;
+    clear: both; }
   .lastactu__title {
     margin: 4.309em 0em 1.69em 0.2em; }
 
 .actu {
   width: 29.7em;
+  height: 30em;
   margin-left: 1.2em;
   display: inline-block; }
+  .actu:first-child {
+    float: left; }
   .actu:last-child {
-    float: right;
-    margin-right: 3.1em; }
+    margin-left: 25.9em; }
   .actu__info {
     margin-top: -2px; }
   .actu__text {
@@ -317,8 +324,8 @@ a {
     margin: auto; }
     .footer__container::after {
       content: "";
-      clear: both;
-      display: block; }
+      display: block;
+      clear: both; }
 
 .follow {
   display: inline-block; }
@@ -475,7 +482,7 @@ a {
 
 .container__text {
   font-size: 1.2em;
-  padding: 2em 2.5em;
+  padding: 3em 2.5em 0 2.5em;
   text-align: left; }
 
 .container__link {
