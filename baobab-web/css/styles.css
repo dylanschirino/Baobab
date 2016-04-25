@@ -43,9 +43,6 @@ h1, label {
 .mainmenu__title {
   display: none; }
 
-.decoration__title {
-  display: none; }
-
 /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
 .visuallyhidden {
   border: 0;
@@ -295,12 +292,12 @@ a {
       margin-bottom: 5em; } }
 
 /* BAOBAB Project
- *
- * /sass/object/doityourself.scss - non design of doityourself stylesheet
- *
- * coded by Dylan Schirino
- * started at 22/04/2016
- */
+*
+* /sass/object/doityourself.scss - non design of doityourself stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
 .doityourself {
   height: 70em; }
   .doityourself__container {
@@ -311,6 +308,26 @@ a {
     margin-top: 3.7em;
     margin-bottom: 1.5em; }
 
+@media screen and (max-width: 793px) {
+  .doityourself__image {
+    width: 300px;
+    height: 300px; } }
+
+@media screen and (max-width: 700px) {
+  .doityourself {
+    height: auto;
+    padding-bottom: 3em; }
+    .doityourself__link {
+      margin-left: 0; } }
+
+@media screen and (max-width: 357px) {
+  .doityourself__image {
+    width: 200px;
+    height: 200px;
+    margin: 2em auto; }
+  .doityourself__link {
+    margin-left: 0; } }
+
 /* BAOBAB Project
 *
 * /sass/object/decoration.scss - Non design of decoration stylesheet
@@ -320,13 +337,29 @@ a {
 */
 .decoration {
   height: 50em; }
-  .decoration__text {
+  .decoration__title {
     width: 11em;
     margin-left: 3.1em; }
   .decoration__image {
     display: block;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    width: 46.24505929%;
+    max-height: 430px; }
+
+@media screen and (max-width: 700px) {
+  .decoration__image {
+    width: 80%; } }
+
+@media screen and (max-width: 577px) {
+  .decoration__image {
+    width: 80%; } }
+
+@media screen and (max-width: 516px) {
+  .decoration__title {
+    width: 8em;
+    margin-left: 0;
+    margin: auto; } }
 
 /* BAOBAB Project
 *
@@ -681,7 +714,7 @@ a {
     color: white;
     transition: .2s linear;
     letter-spacing: 3px; }
-    .doityourself__link:hover {
+    .doityourself__link:hover, .doityourself__link:focus {
       opacity: 0.8;
       transform: scale(1.1); }
   .doityourself__image {
@@ -698,12 +731,12 @@ a {
 */
 .decoration {
   background-color: #34A037; }
-  .decoration__text {
+  .decoration__title {
     padding-top: 1.277em;
     font: 3.6em "Amatic", sans-serif; }
-    .decoration__text--strong {
+    .decoration__title--strong {
       font-size: 1.33em; }
-    .decoration__text--small {
+    .decoration__title--small {
       font-size: 0.66em; }
   .decoration__image {
     animation: movement 1.5s ease-in-out; }

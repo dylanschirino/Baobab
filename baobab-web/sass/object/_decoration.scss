@@ -7,7 +7,7 @@
 */
 .decoration{
   height:50em;
-  &__text{
+  &__title{
     width:11em;
     margin-left: 3.1em;
   }
@@ -15,5 +15,30 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width:46.24505929%;
+    max-height:430px;
+  }
+}
+@media screen and (max-width:700px) {
+  .decoration{
+    &__image{
+      width:80%;
+    }
+  }
+}
+@media screen and (max-width:577px) {
+  .decoration{
+    &__image{
+      width:80%;
+    }
+  }
+}
+@media screen and (max-width:516px) {
+  .decoration{
+    &__title{
+        width:8em;
+        margin-left: 0;
+        margin:auto;
+    }
   }
 }
