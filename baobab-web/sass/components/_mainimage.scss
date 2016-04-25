@@ -7,7 +7,7 @@
 */
 
 .mainimage{
-  background: url("../img/mainimage.jpg") no-repeat center fixed;
+  background: url("../img/mainimage.jpg") no-repeat center center;
   background-size:cover;
   &__title{
     font-size: 5.2em;

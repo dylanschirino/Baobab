@@ -49,7 +49,7 @@
     }
     &__element{
       &:first-child{
-        margin: 0;
+        margin-left:1em;
       }
     }
   }
@@ -58,7 +58,7 @@
   .subheader{
     &__element{
       &:first-child{
-        margin: 0;
+        margin-left:1em;
       }
     }
     &__link{

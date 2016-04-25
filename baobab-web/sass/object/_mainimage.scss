@@ -27,3 +27,17 @@
     margin:auto;
    }
  }
+ @media screen and (max-width:545px) {
+   .mainimage{
+     &__subtitle{
+       margin-right:1.5em;
+     }
+   }
+ }
+ @media screen and (max-width:413px) {
+   .mainimage{
+     &__button{
+       position:static;
+     }
+   }
+ }

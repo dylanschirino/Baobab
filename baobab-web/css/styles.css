@@ -102,6 +102,7 @@ html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
+  background: url("../img/grille.png") center center;
   opacity: .8; }
 
 h1, h2, h3 {
@@ -149,11 +150,11 @@ a {
   .subheader__menu {
     font-size: 0.8em; }
   .subheader__element:first-child {
-    margin: 0; } }
+    margin-left: 1em; } }
 
 @media screen and (max-width: 542px) {
   .subheader__element:first-child {
-    margin: 0; }
+    margin-left: 1em; }
   .subheader__link {
     padding: 0;
     margin: 0; }
@@ -220,6 +221,14 @@ a {
     position: relative;
     left: -50px;
     margin: auto; }
+
+@media screen and (max-width: 545px) {
+  .mainimage__subtitle {
+    margin-right: 1.5em; } }
+
+@media screen and (max-width: 413px) {
+  .mainimage__button {
+    position: static; } }
 
 /* BAOBAB Project
  *
@@ -406,7 +415,8 @@ a {
  * started at 22/04/2016
  */
 .mainmenu {
-  background-color: rgba(173, 104, 63, 0.47); }
+  background-color: #E0C7B7;
+  opacity: 0.5; }
   .mainmenu__shower {
     display: none; }
   .mainmenu__logo {
@@ -687,7 +697,7 @@ a {
 * started at 21/04/2016
 */
 .mainimage {
-  background: url("../img/mainimage.jpg") no-repeat center fixed;
+  background: url("../img/mainimage.jpg") no-repeat center center;
   background-size: cover; }
   .mainimage__title {
     font-size: 5.2em;
