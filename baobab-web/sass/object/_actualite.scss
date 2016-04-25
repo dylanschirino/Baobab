@@ -41,3 +41,27 @@
     margin:-1.5em auto;
   }
 }
+@media screen and (max-width:882px) {
+  .actu{
+    &:last-child{
+      margin-left: 1em;
+    }
+  }
+}
+@media screen and (max-width:636px) {
+  .lastactu{
+    width:30em;
+    margin: auto;
+  }
+  .actu{
+    &:last-child{
+      display:none;
+    }
+  }
+}
+@media screen and (max-width:335px) {
+  .lastactu{
+    width:100%;
+    margin: auto;
+  }
+}
