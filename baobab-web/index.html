@@ -93,7 +93,7 @@
       </section>
 
       <section class="whosbaobab">
-        <div class="whosbaobab__maincontainer">
+        <div class="whosbaobab__maincontainer" id="apparition">
           <div class="whosbaobab__container">
             <h3 aria-level="3" class="container__title">Qui sommes nous</h3>
             <p class="container__text">
@@ -115,7 +115,7 @@
       </section>
 
       <section class="doityourself">
-        <h3 aria-level="3" class="doityourself__title">
+        <h3 aria-level="3" class="doityourself__title" id="apparition">
           ce que tu peux faire toi même
         </h3>
         <div class="doityourself__container">
@@ -128,11 +128,11 @@
       </section>
 
       <section class="decoration">
-        <h3 aria-level="3" class="decoration__title">Une creation collective
+        <h3 aria-level="3" class="decoration__title" id="apparition">Une creation collective
         <small class="decoration__title--small">avec</small> <strong class="decoration__title--strong"> 9 enfants</strong> <small class="decoration__title--small">et</small> <strong class="decoration__title--strong">adolescents</strong>
         de tuléar, <strong class="decoration__title--strong">Madagascar</strong>
       </h3>
-      <img class="decoration__image" src="img/motard.png" width="585" height="430" alt="image d'un homme sur une moto en carton">
+      <img class="decoration__image" id="deplacement" src="img/motard.png" width="585" height="430" alt="image d'un homme sur une moto en carton">
       </section>
 
       <section class="lastactu">
@@ -218,5 +218,11 @@
       </div>
         </footer>
     </main>
+    <script src="assets/scrollreveal.min.js"></script>
+    <script>
+    window.sr = ScrollReveal();
+    sr.reveal('#apparition', {delay:300,opacity:0,mobile:true});
+    sr.reveal('#deplacement', { delay: 300,scale:1.2,mobile:false});
+    </script>
   </body>
   </html>

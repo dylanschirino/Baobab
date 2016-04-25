@@ -39,6 +39,13 @@
     top:20px;
   }
 }
+@media screen and (max-width:1212px){
+  .whosbaobab{
+    &__maincontainer{
+      width:100%;
+    }
+  }
+}
 @media screen and (max-width:885px) {
   .whosbaobab{
     &__container{
@@ -76,4 +83,15 @@
       margin-bottom:5em;
     }
   }
+}
+@media screen and (max-width:380px) {
+  .whosbaobab{
+    &__container{
+      margin-left: 0;
+      &--right{
+        margin-left: 0;
+      }
+    }
+  }
+
 }

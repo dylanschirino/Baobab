@@ -41,6 +41,12 @@
     margin:-1.5em auto;
   }
 }
+@media screen and (max-width:913px) {
+  .lastactu{
+    width: 100%;
+  }
+
+}
 @media screen and (max-width:882px) {
   .actu{
     &:last-child{
@@ -59,9 +65,8 @@
     }
   }
 }
-@media screen and (max-width:335px) {
+@media screen and (max-width:375px) {
   .lastactu{
-    width:100%;
-    margin: auto;
+    width:93%;
   }
 }

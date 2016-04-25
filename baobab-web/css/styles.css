@@ -99,7 +99,6 @@ html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
 body {
-  background: url("../img/grille.png") center center;
   opacity: .8; }
 
 h1, h2, h3 {
@@ -264,6 +263,10 @@ a {
   position: relative;
   top: 20px; }
 
+@media screen and (max-width: 1212px) {
+  .whosbaobab__maincontainer {
+    width: 100%; } }
+
 @media screen and (max-width: 885px) {
   .whosbaobab__container {
     width: 30em; }
@@ -290,6 +293,12 @@ a {
       margin: auto; }
     .whosbaobab__container {
       margin-bottom: 5em; } }
+
+@media screen and (max-width: 380px) {
+  .whosbaobab__container {
+    margin-left: 0; }
+    .whosbaobab__container--right {
+      margin-left: 0; } }
 
 /* BAOBAB Project
 *
@@ -353,7 +362,9 @@ a {
 
 @media screen and (max-width: 577px) {
   .decoration__image {
-    width: 80%; } }
+    width: 80%; }
+  .decoration__title {
+    margin-left: 2.1em; } }
 
 @media screen and (max-width: 516px) {
   .decoration__title {
@@ -397,6 +408,10 @@ a {
     height: 2.85em;
     margin: -1.5em auto; }
 
+@media screen and (max-width: 913px) {
+  .lastactu {
+    width: 100%; } }
+
 @media screen and (max-width: 882px) {
   .actu:last-child {
     margin-left: 1em; } }
@@ -408,10 +423,9 @@ a {
   .actu:last-child {
     display: none; } }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 375px) {
   .lastactu {
-    width: 100%;
-    margin: auto; } }
+    width: 93%; } }
 
 /* BAOBAB Project
  *
@@ -421,10 +435,10 @@ a {
  * started at 24/04/2016
  */
 .footer {
-  height: 18.6em;
+  height: auto;
   margin-top: 10em; }
   .footer__container {
-    width: 100em;
+    width: 100%;
     margin: auto; }
     .footer__container::after {
       content: "";
@@ -438,6 +452,19 @@ a {
   display: inline-block;
   float: right;
   margin-right: 8em; }
+
+@media screen and (max-width: 727px) {
+  .footer {
+    padding: 0.5em; }
+  .follow {
+    text-align: center;
+    display: block; }
+  .contact {
+    float: none;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2em; } }
 
 /* BAOBAB Project
  *
@@ -492,7 +519,7 @@ a {
  */
 .mainmenu {
   background-color: #E0C7B7;
-  opacity: 0.5; }
+  opacity: 0.9; }
   .mainmenu__shower {
     display: none; }
   .mainmenu__logo {

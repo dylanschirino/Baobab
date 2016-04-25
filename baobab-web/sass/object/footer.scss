@@ -6,10 +6,10 @@
  * started at 24/04/2016
  */
 .footer{
-  height:18.6em;
+  height:auto;
   margin-top:10em;
   &__container{
-    width:100em;
+    width:100%;
     margin: auto;
     &::after{
       content: "";
@@ -20,10 +20,26 @@
 }
 
 .follow{
-    display: inline-block;
+  display: inline-block;
 }
 .contact{
-    display: inline-block;
-    float: right;
-    margin-right:8em;
+  display: inline-block;
+  float: right;
+  margin-right:8em;
+}
+@media screen and (max-width:727px) {
+  .footer{
+    padding:0.5em;
+  }
+  .follow{
+    text-align: center;
+    display: block;
+  }
+  .contact{
+    float:none;
+    display: block;
+    margin:0;
+    text-align: center;
+    padding-bottom: 2em;
+  }
 }
