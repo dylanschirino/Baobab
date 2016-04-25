@@ -7,6 +7,9 @@
  */
 .mainmenu{
   background-color: rgba(173,104,63,0.47);
+  &__shower{
+    display:none;
+  }
   &__logo{
     padding: 1.1em 0;
     background: url("../img/logo.svg") no-repeat center;
@@ -17,7 +20,7 @@
   }
   &__link{
     color:black;
-    font:1.8em/1.7em $quicksandStack;
+    font:1.7em/1.7em $quicksandStack;
     display: block;
     text-align: center;
     padding: 0.833em;
@@ -67,5 +70,88 @@
         transform: scale(1);
       }
     }
+  }
+}
+
+@media screen and (max-width:1225px) {
+.mainmenu{
+  &__link{
+    &--donate{
+      margin:0;
+      font-size:1.4em;
+    }
+  }
+}
+}
+@media screen and (max-width:1190px) {
+.mainmenu{
+  &__link{
+    margin-right:0.8em;
+    &--donate{
+      margin:0;
+      font-size:1.4em;
+    }
+  }
+}
+}
+@media screen and (max-width:1116px) {
+.mainmenu{
+  font-size: 0.9em;
+  &__link{
+    margin:0;
+    padding:0.6em;
+  }
+  }
+}
+@media screen and (max-width:859px) {
+.mainmenu{
+  font-size: 0.8em;
+  }
+}
+@media screen and (max-width:764px) {
+.mainmenu{
+  height:auto;
+  &__shower{
+        display:none;
+      &:checked ~ .mainmenu__list {
+        display: block;
+      }
+    }
+    &__list{
+      padding-top:15em;
+      position: relative;
+      z-index: 1;
+      display: none;
+    }
+    &__element{
+      display: block;
+      padding-top:0.7em;
+      width:40em;
+      border-bottom: 1px solid black;
+      margin:auto;
+    }
+    &__link{
+      &--donate{
+        display:block;
+        margin-top:1em;
+        transform: skewY(0deg);
+      }
+      &:hover,&:focus{
+        transform: scale(1.2);
+        border:none;
+      }
+    }
+  }
+  .hamburger{
+    background: url("../img/burger.png")no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 3.5rem;
+    height:3.5rem;
+    top:100px;
+    right: 15px;
+    z-index:100;
+    cursor:pointer;
   }
 }

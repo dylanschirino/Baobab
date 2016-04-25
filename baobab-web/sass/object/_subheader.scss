@@ -40,3 +40,40 @@
     width: 2.5em;
   }
 }
+
+
+@media screen and (max-width:763px) {
+  .subheader{
+    &__menu{
+      font-size: 0.8em;
+    }
+    &__element{
+      &:first-child{
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width:542px) {
+  .subheader{
+    &__element{
+      &:first-child{
+        margin: 0;
+      }
+    }
+    &__link{
+      padding:0;
+      margin: 0;
+      &--facebook,&--youtube{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width:502px) {
+  .subheader{
+    &__link{
+      display: none;
+    }
+  }
+}

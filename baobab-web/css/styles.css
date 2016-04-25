@@ -145,6 +145,25 @@ a {
     top: 1.4em;
     width: 2.5em; }
 
+@media screen and (max-width: 763px) {
+  .subheader__menu {
+    font-size: 0.8em; }
+  .subheader__element:first-child {
+    margin: 0; } }
+
+@media screen and (max-width: 542px) {
+  .subheader__element:first-child {
+    margin: 0; }
+  .subheader__link {
+    padding: 0;
+    margin: 0; }
+    .subheader__link--facebook, .subheader__link--youtube {
+      display: none; } }
+
+@media screen and (max-width: 502px) {
+  .subheader__link {
+    display: none; } }
+
 /* BAOBAB Project
  *
  * /sass/object/header.scss - non design of header stylesheet
@@ -170,7 +189,7 @@ a {
     margin-right: 1.944em;
     /* 35/1.8em*/ }
     .mainmenu__link--donate {
-      margin: 1em 0em 0em 0.2em;
+      margin: 1em 0 0 0;
       /*40/1.8*/
       position: relative;
       top: -10px; }
@@ -388,6 +407,8 @@ a {
  */
 .mainmenu {
   background-color: rgba(173, 104, 63, 0.47); }
+  .mainmenu__shower {
+    display: none; }
   .mainmenu__logo {
     padding: 1.1em 0;
     background: url("../img/logo.svg") no-repeat center;
@@ -396,7 +417,7 @@ a {
     display: inline-block; }
   .mainmenu__link {
     color: black;
-    font: 1.8em/1.7em "Quicksand", Arial, sans-serif;
+    font: 1.7em/1.7em "Quicksand", Arial, sans-serif;
     display: block;
     text-align: center;
     padding: 0.833em;
@@ -437,6 +458,66 @@ a {
         background-color: #D36210;
         border: none;
         transform: scale(1); }
+
+@media screen and (max-width: 1225px) {
+  .mainmenu__link--donate {
+    margin: 0;
+    font-size: 1.4em; } }
+
+@media screen and (max-width: 1190px) {
+  .mainmenu__link {
+    margin-right: 0.8em; }
+    .mainmenu__link--donate {
+      margin: 0;
+      font-size: 1.4em; } }
+
+@media screen and (max-width: 1116px) {
+  .mainmenu {
+    font-size: 0.9em; }
+    .mainmenu__link {
+      margin: 0;
+      padding: 0.6em; } }
+
+@media screen and (max-width: 859px) {
+  .mainmenu {
+    font-size: 0.8em; } }
+
+@media screen and (max-width: 764px) {
+  .mainmenu {
+    height: auto; }
+    .mainmenu__shower {
+      display: none; }
+      .mainmenu__shower:checked ~ .mainmenu__list {
+        display: block; }
+    .mainmenu__list {
+      padding-top: 15em;
+      position: relative;
+      z-index: 1;
+      display: none; }
+    .mainmenu__element {
+      display: block;
+      padding-top: 0.7em;
+      width: 40em;
+      border-bottom: 1px solid black;
+      margin: auto; }
+    .mainmenu__link--donate {
+      display: block;
+      margin-top: 1em;
+      transform: skewY(0deg); }
+    .mainmenu__link:hover, .mainmenu__link:focus {
+      transform: scale(1.2);
+      border: none; }
+  .hamburger {
+    background: url("../img/burger.png") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 100px;
+    right: 15px;
+    z-index: 100;
+    cursor: pointer; } }
 
 /* BAOBAB Project
  *
