@@ -367,6 +367,8 @@ a {
     margin-left: 2.1em; } }
 
 @media screen and (max-width: 516px) {
+  .decoration__image {
+    width: 100%; }
   .decoration__title {
     width: 8em;
     margin-left: 0;
@@ -729,7 +731,15 @@ a {
   color: white;
   line-height: 2.4em;
   border-radius: 5px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  transition: .2s linear; }
+  .actu__button:hover {
+    transform: scale(1.1); }
+
+.actu__image {
+  transition: .2s linear; }
+  .actu__image:hover {
+    opacity: 0.8; }
 
 /* BAOBAB Project
 *
@@ -781,16 +791,6 @@ a {
       font-size: 1.33em; }
     .decoration__title--small {
       font-size: 0.66em; }
-  .decoration__image {
-    animation: movement 1.5s ease-in-out; }
-
-@keyframes movement {
-  0% {
-    transform: translateX(100%); }
-  50% {
-    transform: rotateZ(15deg); }
-  100% {
-    transform: translateX(0%); } }
 
 /* BAOBAB Project
 *

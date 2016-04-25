@@ -18,19 +18,4 @@
       font-size: 0.66em;
     }
   }
-  &__image{
-    animation: movement 1.5s ease-in-out;
-  }
-}
-
-@keyframes movement {
-  0% {
-    transform:translateX(100%);
-  }
-  50%{
-    transform: rotateZ(15deg);
-  }
-  100% {
-      transform:translateX(0%);
-  }
 }
