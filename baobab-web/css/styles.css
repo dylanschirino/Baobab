@@ -267,6 +267,33 @@ a {
   position: relative;
   top: 20px; }
 
+@media screen and (max-width: 885px) {
+  .whosbaobab__container {
+    width: 30em; }
+    .whosbaobab__container--right {
+      display: inline-block;
+      margin-left: 1em;
+      float: none; } }
+
+@media screen and (max-width: 714px) {
+  .whosbaobab__container {
+    width: 25em;
+    margin-left: 1em; }
+    .whosbaobab__container--right {
+      display: inline-block;
+      margin-left: 1em; } }
+
+@media screen and (max-width: 535px) {
+  .whosbaobab {
+    height: auto;
+    padding-bottom: 10em; }
+    .whosbaobab__maincontainer {
+      padding-top: 4em;
+      width: 25em;
+      margin: auto; }
+    .whosbaobab__container {
+      margin-bottom: 5em; } }
+
 /* BAOBAB Project
  *
  * /sass/object/doityourself.scss - non design of doityourself stylesheet

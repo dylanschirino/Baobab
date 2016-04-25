@@ -39,3 +39,41 @@
     top:20px;
   }
 }
+@media screen and (max-width:885px) {
+  .whosbaobab{
+    &__container{
+      width:30em;
+      &--right{
+      display: inline-block;
+      margin-left: 1em;
+      float:none;
+      }
+    }
+  }
+}
+@media screen and (max-width:714px) {
+  .whosbaobab{
+    &__container{
+      width:25em;
+      margin-left: 1em;
+      &--right{
+      display: inline-block;
+      margin-left: 1em;
+      }
+    }
+  }
+}
+@media screen and (max-width:535px) {
+  .whosbaobab{
+    height:auto;
+    padding-bottom: 10em;
+    &__maincontainer{
+      padding-top:4em;
+      width:25em;
+      margin:auto;
+    }
+    &__container{
+      margin-bottom:5em;
+    }
+  }
+}
