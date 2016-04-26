@@ -7,12 +7,12 @@
   <meta charset="utf-8">
   <meta name="description" content="Sur un baobab workshop animation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Sur un Baobab - Accueil</title>
+  <title>Sur un Baobab - Actualité</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1 aria-level="1">Sur un baobab - Accueil</h1>
+    <h1 aria-level="1">Sur un baobab - Actualité</h1>
     <nav class="subheader">
       <h2 aria-level="2" class="subheader__title">Menu secondaire</h2>
       <ul class="subheader__menu">
@@ -48,10 +48,11 @@
             <a href="#" class="subheader__link">Espace Partenaire /</a>
           </li>
           <li class="subheader__element subheader__element--right">
-            <a href="actualite.html" class="subheader__link">Actualité /</a>
+            <a href="#" class="subheader__link">Actualité /</a>
           </li>
         </ul>
       </nav>
+
       <nav class="mainmenu">
         <a href="index.html" title="Retour à la page d'acceuil" class="mainmenu__logo"><span class="visuallyhidden">Logo sur un baobab</span></a>
         <h2 class="mainmenu__title" aria-level="2">Menu Principale</h2>
@@ -82,64 +83,46 @@
       </nav>
     </header>
     <main>
-      <section class="mainimage">
-        <h2 aria-level="2" class="mainimage__title">
-          sur un baobab
-        </h2>
-        <p class="mainimage__subtitle">
-          projet safidinipela
-        </p>
-        <a class="mainimage__button" href="https://www.youtube.com/watch?v=92IwfppA5SQ&list=PLQe9p49ocj3Eu79F0kz3EbBz9vf4Nc3oN&index=2" title="Accéder à la vidéo sur youtube">Voir la vidéo</a>
-      </section>
 
-      <section class="whosbaobab">
-        <div class="whosbaobab__maincontainer" id="apparition">
-          <div class="whosbaobab__container">
-            <h3 aria-level="3" class="container__title">Qui sommes nous</h3>
-            <p class="container__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exdolore magna aliqua. Ut enim ad minim veniam, quis
-            </p>
-            <a href="projet.html" title="Accéder à la page projet" class="container__link">En savoir plus</a>
-          </div>
-
-          <article class="whosbaobab__soutien">
-            <div class="whosbaobab__container whosbaobab__container--right">
-              <h3 aria-level="3" class="container__title container__title--red">Faire un don</h3>
-              <p class="container__text container__text--red">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exdolore magna aliqua. Ut enim ad minim veniam, quis
-              </p>
-              <a href="projet.html" title="Accéder à la page projet" class="container__link container__link--red">En savoir plus</a>
-            </div>
-        </article>
-        </div>
-      </section>
-
-      <section class="doityourself">
-        <h3 aria-level="3" class="doityourself__title" id="apparition">
-          ce que tu peux faire toi même
-        </h3>
-        <div class="doityourself__container">
-        <a href="studio/dessine.html" class="doityourself__link"><img class="doityourself__image" src="img/dessinetonhistoire.jpg" width="345" height="345" alt="dessine ton histoire image">
-          Dessine ton histoire
-        </a>
-        <a href="studio/studio.html" class="doityourself__link"><img class="doityourself__image" src="img/ministudio.jpg" width="345" height="345" alt="dessine ton histoire image">Cree ton mini studio
-        </a>
+      <div class="ariane">
+        <ul class="ariane__menu">
+          <li class="ariane__element">
+            Accueil /
+          </li>
+          <li class="ariane__element">
+            Actualité
+          </li>
+        </ul>
       </div>
-      </section>
 
-      <section class="decoration">
-        <h3 aria-level="3" class="decoration__title" id="apparition">Une creation collective
-        <small class="decoration__title--small">avec</small> <strong class="decoration__title--strong"> 9 enfants</strong> <small class="decoration__title--small">et</small> <strong class="decoration__title--strong">adolescents</strong>
-        de tuléar, <strong class="decoration__title--strong">Madagascar</strong>
-      </h3>
-      <img class="decoration__image" id="deplacement" src="img/motard.png" width="585" height="430" alt="image d'un homme sur une moto en carton">
-      </section>
+      <aside class="aside">
+        <h4 class="aside__title" aria-level="3">Filtrer par</h3>
+          <ul class="aside__list">
+            <li class="aside__element">
+              <input class="aside__element--checkbox" type="checkbox" name="croissant" checked id="croissant">
+              <label for="croissant" class="aside__element--label">Date croissante
+              </label>
+            </li>
+            <li class="aside__element">
+              <input class="aside__element--checkbox" type="checkbox" name="decroissant" checked id="decroissant">
+              <label for="decroissant" class="aside__element--label">Date Décroissante
+              </label>
+            </li>
+            <li class="aside__element">
+              <input class="aside__element--checkbox" type="checkbox" name="categorie" checked id="categorie">
+              <label for="categorie" class="aside__element--label">Catégorie
+              </label>
+            </li>
+          </ul>
+      </aside>
 
-      <section class="lastactu">
-        <h3 class="lastactu__title" aria-level="3">Actualité</h3>
-
+      <section class="actualite">
+        <div class="actualite__header">
+        <img class="header__image" src="img/actuimg.png" width="464" height="356" alt="image decorative" id="apparition">
+        <h2 class="header__title" aria-level="2">Actualité</h2>
+      </div>
         <article class="actu">
-          <a class="actu__link" href="actu/viewactu.html" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="img/imgactu.jpg" width="297" height="240" alt="image actualité">
+          <a class="actu__link" href="#" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="img/imgactu.jpg" width="297" height="240" alt="image actualité">
           </a>
           <div class="actu__info">
         <h4 class="actu__title" aria-level="4">
@@ -153,13 +136,13 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
           </p>
         </div>
-        <a class="actu__button" href="actu/viewactu.html" title="Accéder à a fiche">
+        <a class="actu__button" href="#" title="Accéder à a fiche">
           Lire la suite
         </a>
         </article>
 
         <article class="actu">
-          <a class="actu__link" href="actu/viewactu.html" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="img/imgactu.jpg" width="297" height="240" alt="image actualité">
+          <a class="actu__link" href="#" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="img/imgactu.jpg" width="297" height="240" alt="image actualité">
           </a>
           <div class="actu__info">
         <h4 class="actu__title" aria-level="4">
@@ -173,7 +156,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
           </p>
         </div>
-        <a class="actu__button" href="actu/viewactu.html" title="Accéder à a fiche">
+        <a class="actu__button" href="#" title="Accéder à a fiche">
           Lire la suite
         </a>
         </article>
@@ -222,7 +205,6 @@
     <script>
     window.sr = ScrollReveal();
     sr.reveal('#apparition', {delay:300,opacity:0,mobile:true});
-    sr.reveal('#deplacement', { delay: 300,scale:1,mobile:false});
     </script>
   </body>
   </html>

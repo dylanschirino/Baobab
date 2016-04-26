@@ -34,7 +34,7 @@
   font-weight: normal;
   font-style: normal; }
 
-h1, label {
+h1, .subheader__label {
   display: none; }
 
 .subheader__title {
@@ -431,6 +431,80 @@ a {
 
 /* BAOBAB Project
  *
+ * /sass/object/actualitypage.scss - non design of actualitypage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 26/04/2016
+ */
+label {
+  display: block; }
+
+.ariane {
+  width: 34.8em;
+  height: 4.3em;
+  margin: 3.7em 0 2.5em  -2em;
+  text-align: center; }
+  .ariane__element {
+    display: inline-block; }
+
+.actualite {
+  display: inline-block;
+  width: 75%;
+  margin: auto; }
+
+.actu {
+  margin-left: 3.4em; }
+  .actu:last-child {
+    margin-left: 10em; }
+
+.header {
+  position: relative; }
+  .header__title {
+    display: inline-block;
+    position: absolute;
+    bottom: 1.5em;
+    margin-left: 2em; }
+
+.aside {
+  display: inline-block;
+  width: 21%;
+  height: 50em;
+  float: right; }
+  .aside__list {
+    width: 100%;
+    margin: auto; }
+
+@media screen and (max-width: 999px) {
+  .header__title {
+    font-size: 5em;
+    display: block;
+    position: static;
+    margin-bottom: 1em; }
+  .actu:last-child {
+    margin: 3.2em;
+    display: block; } }
+
+@media screen and (max-width: 652px) {
+  .aside {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 479px) {
+  .header__image {
+    padding-top: 2em;
+    max-width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 360px) {
+  .ariane {
+    width: 100%; }
+  .actu {
+    margin-left: 1em; }
+    .actu:last-child {
+      margin-left: 1em; } }
+
+/* BAOBAB Project
+ *
  * /sass/object/footer.scss - non design of footer stylesheet
  *
  * coded by Dylan Schirino
@@ -740,6 +814,54 @@ a {
   transition: .2s linear; }
   .actu__image:hover {
     opacity: 0.8; }
+
+/* BAOBAB Project
+ *
+ * /sass/components/actualitypage.scss - design of actualitypage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 26/04/2016
+ */
+.ariane {
+  background-color: #0098FF;
+  color: white;
+  transform: skewX(-15deg); }
+  .ariane__element {
+    font-size: 1.8em;
+    line-height: 2.2em; }
+
+.header__title {
+  font-size: 6em; }
+
+.header__image {
+  display: inline-block; }
+
+.aside {
+  background-color: #17100E;
+  color: white; }
+  .aside__title {
+    font-size: 2em;
+    padding: 2em 0;
+    text-transform: uppercase;
+    text-align: center; }
+  .aside__element--checkbox {
+    display: none; }
+  .aside__element--label {
+    display: inline-block;
+    font-size: 1.6em;
+    padding: 0em 0em 2.3em 2em; }
+    .aside__element--label::before {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border: 1px solid white;
+      margin-right: 2em; }
+
+input[type="checkbox"]:checked + label::before {
+  border-radius: 50%;
+  background-color: white;
+  transition: .3s ease-in-out; }
 
 /* BAOBAB Project
 *
