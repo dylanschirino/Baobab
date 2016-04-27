@@ -98,9 +98,6 @@ table {
 html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
-body {
-  opacity: .8; }
-
 h1, h2, h3 {
   font-family: "Amatic", sans-serif; }
 
@@ -452,9 +449,9 @@ label {
   width: 75%;
   margin: auto; }
 
-.actu {
+.actu--page {
   margin-left: 3.4em; }
-  .actu:last-child {
+  .actu--page:last-child {
     margin-left: 10em; }
 
 .header {
@@ -480,7 +477,7 @@ label {
     display: block;
     position: static;
     margin-bottom: 1em; }
-  .actu:last-child {
+  .actu--page:last-child {
     margin: 3.2em;
     display: block; } }
 
@@ -505,6 +502,86 @@ label {
 
 /* BAOBAB Project
  *
+ * /sass/object/viewpage.scss -NON design of viewpage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 27/04/2016
+ */
+.ariane--absolute {
+  position: absolute; }
+
+.fiche__image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover; }
+
+.fiche__title {
+  margin: 0.684em 0 0.842em 1.0789em; }
+
+.header__list {
+  border-bottom: 1px solid #979797;
+  margin: 0 3.2em; }
+
+.header__element {
+  margin-left: 2.5em; }
+
+.actualite {
+  width: 80.7%;
+  margin: auto;
+  margin-left: 11.2em; }
+  .actualite::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .actualite__title--right {
+    text-align: right; }
+  .actualite__text {
+    width: 60%;
+    margin-bottom: 2em; }
+    .actualite__text--right {
+      float: right; }
+  .actualite__image {
+    margin: 6em 0; }
+    .actualite__image--right {
+      float: right; }
+
+.commentaire {
+  margin-top: 6em;
+  width: 72em;
+  margin: auto; }
+  .commentaire__container {
+    margin: 4.7em 0; }
+
+.container__article {
+  width: 56em;
+  margin: auto; }
+  .container__article:not(:last-child) {
+    border-bottom: 1px solid #979797; }
+
+.article__text {
+  width: 30em; }
+
+.form::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.form__input {
+  width: 23em;
+  margin-right: 2em; }
+
+.form__textarea {
+  width: 99%;
+  height: 16em; }
+
+.form__submit {
+  float: right;
+  width: 13.6875em;
+  height: 2.8125em;
+  margin-top: 1.5em; }
+
+/* BAOBAB Project
+ *
  * /sass/object/footer.scss - non design of footer stylesheet
  *
  * coded by Dylan Schirino
@@ -522,7 +599,8 @@ label {
       clear: both; }
 
 .follow {
-  display: inline-block; }
+  display: inline-block;
+  padding-left: 10em; }
 
 .contact {
   display: inline-block;
@@ -534,7 +612,8 @@ label {
     padding: 0.5em; }
   .follow {
     text-align: center;
-    display: block; }
+    display: block;
+    padding: 0; }
   .contact {
     float: none;
     display: block;
@@ -840,7 +919,7 @@ label {
   background-color: #17100E;
   color: white; }
   .aside__title {
-    font-size: 2em;
+    font: 2em "Quicksand", Arial, sans-serif;
     padding: 2em 0;
     text-transform: uppercase;
     text-align: center; }
@@ -858,10 +937,95 @@ label {
       border: 1px solid white;
       margin-right: 2em; }
 
+.actu__title {
+  font-family: "Quicksand", Arial, sans-serif; }
+
 input[type="checkbox"]:checked + label::before {
   border-radius: 50%;
   background-color: white;
   transition: .3s ease-in-out; }
+
+/* BAOBAB Project
+ *
+ * /sass/components/viewpage.scss - design of viewpage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 27/04/2016
+ */
+.fiche__title {
+  font: 3.8em "Quicksand", Arial, sans-serif; }
+
+.header__element {
+  font: bold 1.6em "Quicksand", Arial, sans-serif;
+  color: #363333;
+  padding-bottom: 1em; }
+  .header__element--date::before {
+    content: "";
+    padding-right: 1.2em;
+    font: 1.2em "glyphs"; }
+  .header__element--file::before {
+    content: "";
+    padding-right: 1.2em;
+    font: 1.2em "glyphs"; }
+  .header__element--author::before {
+    content: "";
+    padding-right: 1.2em;
+    font: 1.2em "glyphs"; }
+
+.actualite__title {
+  font: 2.8em "Quicksand", Arial, sans-serif;
+  padding: 1.714em 0 1.535em 0em; }
+
+.actualite__text {
+  font-size: 1.6em;
+  line-height: 2.1875em; }
+
+.commentaire__title {
+  font-size: 4.8em;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 0.3125em; }
+
+.commentaire__container {
+  background-color: #F6F8FA; }
+
+.article__heading {
+  padding: 3.7em 0 1.6em 0; }
+
+.article__element {
+  display: inline-block;
+  font-size: 1.2em; }
+
+.article__text {
+  font-size: 1.4em;
+  padding-bottom: 2.714em; }
+
+.form__input {
+  background: none;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  padding: 1em; }
+
+.form__label {
+  font-size: 1.6em;
+  padding: 1em 0;
+  display: inline-block; }
+
+.form__textarea {
+  border: 1px solid #979797;
+  border-radius: 5px;
+  font-family: "Quicksand", Arial, sans-serif; }
+
+.form__submit {
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  border: none;
+  background-color: #F89F1F;
+  border-radius: 5px;
+  transition: .2s ease-in-out; }
+  .form__submit:hover {
+    background-color: #FCDA7A;
+    cursor: pointer; }
 
 /* BAOBAB Project
 *
@@ -1025,7 +1189,8 @@ input[type="checkbox"]:checked + label::before {
 
 .contact__element {
   font: 1.8em "Quicksand", Arial, sans-serif;
-  color: white; }
+  color: white;
+  padding-bottom: 1em; }
 
 .contact__link {
   color: white;

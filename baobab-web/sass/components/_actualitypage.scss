@@ -26,7 +26,7 @@
   background-color:#17100E;
   color:white;
   &__title{
-    font-size: 2em;
+    font: 2em $quicksandStack;
     padding:2em 0;
     text-transform: uppercase;
     text-align: center;
@@ -49,6 +49,11 @@
 
       }
     }
+  }
+}
+.actu{
+  &__title{
+    font-family: $quicksandStack;
   }
 }
 input[type="checkbox"]:checked + label::before{

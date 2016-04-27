@@ -21,6 +21,7 @@
 
 .follow{
   display: inline-block;
+  padding-left: 10em;
 }
 .contact{
   display: inline-block;
@@ -34,6 +35,7 @@
   .follow{
     text-align: center;
     display: block;
+    padding: 0;
   }
   .contact{
     float:none;

@@ -24,9 +24,11 @@ label{
   margin:auto;
 }
 .actu{
-  margin-left: 3.4em;
-  &:last-child{
-    margin-left:10em;
+  &--page{
+      margin-left: 3.4em;
+      &:last-child{
+      margin-left:10em;
+      }
   }
 }
 .header{
@@ -58,9 +60,11 @@ label{
     }
     }
     .actu{
-      &:last-child{
-        margin:3.2em;
-        display: block;
+      &--page{
+        &:last-child{
+          margin:3.2em;
+          display: block;
+        }
       }
     }
 }
