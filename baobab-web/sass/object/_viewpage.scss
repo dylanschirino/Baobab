@@ -13,7 +13,6 @@
  .fiche{
    &__image{
      width: 100%;
-     height:350px;
      object-fit: cover;
    }
    &__title{
@@ -31,7 +30,7 @@
   }
 }
 
-.actualite{
+.actuality{
   width:80.7%;
   margin: auto;
   margin-left: 11.2em;

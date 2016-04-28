@@ -37,7 +37,7 @@
     &--red{
       color:#D75151;
       &::after{
-        content:"\e906";
+        content:"";
         display: block;
         font:3em $glyphsStack;
         padding:26px 0;
