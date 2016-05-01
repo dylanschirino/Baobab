@@ -103,3 +103,62 @@
   margin-top: 1.5em;
   }
 }
+@media screen and (max-width:734px) {
+  .commentaire{
+    max-width: 100%;
+    &__title{
+      text-align: center;
+    }
+  }
+
+}
+@media screen and (max-width:665px) {
+  .actuality{
+    margin: 0;
+    width: 100%;
+    &__image{
+      max-width: 100%;
+      height: auto;
+      float: none;
+    }
+    &__text{
+      margin:1em;
+      width:80%;
+    }
+    &__title{
+      margin-left: 1em;
+      &--right{
+        margin-right: 1em;
+      }
+    }
+  }
+}
+@media screen and (max-width:572px) {
+  .container {
+    &__article{
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .form{
+    &__input{
+      display: block;
+      margin-left: 1em;
+    }
+    &__label{
+      margin-left: 1em;
+    }
+  }
+  &__textarea{
+    max-width:90%;
+  }
+
+  .article{
+    &__text{
+      max-width:100%;
+    }
+  }
+
+
+}

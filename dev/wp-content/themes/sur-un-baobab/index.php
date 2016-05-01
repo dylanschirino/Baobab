@@ -37,7 +37,7 @@ endif;?>
             <?php the_title();?>
           </h4>
           <p class="article__date">
-            Publié le <?php the_date('l j F');?></p>
+            Publié le <?php the_time('l j F');?></p>
             <p class="article__excerpt">
               <?php the_custom_excerpt();?>
             </p>
