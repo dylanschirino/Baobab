@@ -1,0 +1,50 @@
+/* BAOBAB Project
+ *
+ * /sass/object/about.scss - non design of about stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/05/2016
+ */
+
+.aboutasbl{
+  width:75%;
+  margin: auto;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    text-align: center;
+  }
+}
+
+.description{
+  width: 27em;
+  display:block;
+  float:left;
+  margin-left: 2.1em;
+}
+
+.equipe{
+  width:70%;
+  margin:auto;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__membre{
+    width: 47%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+}
+
+.membre{
+  &__text{
+      width:100%;
+      margin: auto;
+  }
+}
