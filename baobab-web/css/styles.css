@@ -730,6 +730,102 @@ label {
 
 /* BAOBAB Project
  *
+ * /sass/object/video.scss - NON design of video stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/05/2016
+ */
+.ariane {
+  position: static; }
+
+.video {
+  margin-bottom: -10em; }
+  .video__title {
+    margin-top: -1.65em;
+    margin-left: 3em; }
+  .video__list {
+    text-align: center; }
+  .video__subtitle {
+    margin-bottom: 0.78125em; }
+  .video li {
+    display: inline-block; }
+  .video__link--diffusion {
+    margin-left: 1em; }
+  .video__voirfilm {
+    margin-top: 6.7em;
+    text-align: center; }
+
+.voirfilm__text {
+  width: 40%;
+  margin: auto; }
+
+@media screen and (max-width: 792px) {
+  .voirfilm__video {
+    width: 100%; } }
+
+@media screen and (max-width: 473px) {
+  .voirfilm__text {
+    width: 90%;
+    padding: 1em; }
+  .video__title, .video__subtitle {
+    margin: 0; }
+  .ariane {
+    display: none; } }
+
+.discover {
+  width: 60%;
+  margin: auto; }
+  .discover__text {
+    width: 80%;
+    margin: auto; }
+
+.makingof {
+  width: 60%;
+  margin: auto; }
+  .makingof::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .makingof__image {
+    float: left;
+    width: auto;
+    height: 15em; }
+
+@media screen and (max-width: 590px) {
+  .makingof__image {
+    display: block;
+    max-width: 100%;
+    height: auto; } }
+
+.fichetechnique {
+  width: 60%;
+  margin: auto; }
+  .fichetechnique::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .fichetechnique__affiche {
+    float: left;
+    margin-right: 3em; }
+
+@media screen and (max-width: 389px) {
+  .fichetechnique {
+    width: 90%;
+    margin: auto; }
+    .fichetechnique__affiche {
+      margin: 0;
+      max-width: 100%;
+      height: auto; } }
+
+/* onglet qui fonctionne et qui affiche leur contenu */
+.tab-pane {
+  display: none; }
+
+.active {
+  display: block; }
+
+/* BAOBAB Project
+ *
  * /sass/object/footer.scss - non design of footer stylesheet
  *
  * coded by Dylan Schirino
@@ -1434,6 +1530,110 @@ input[type="checkbox"]:checked + label::before {
     content: "";
     font: 1.8em "glyphs";
     padding-right: 1em; }
+
+/* BAOBAB Project
+*
+* /sass/components/video.scss - design of video stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/05/2016
+*/
+.video {
+  color: white;
+  background-color: #17100e;
+  padding-bottom: 3em; }
+  .video__title {
+    font-size: 6.4em;
+    padding-top: 2em; }
+  .video__subtitle {
+    font: 6.4em "Amatic", sans-serif;
+    text-align: right;
+    padding-right: 1.5625em; }
+  .video__link {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    color: white;
+    padding: 1em;
+    border: 3px solid white;
+    border-bottom: none; }
+    .video__link:hover {
+      transform: translateY(-10px); }
+    .video__link--diffusion {
+      border: 3px solid #1F5274; }
+      .video__link--diffusion:hover {
+        background-color: white;
+        color: black;
+        transform: none; }
+
+@media screen and (max-width: 473px) {
+  .voirfilm__text {
+    width: 90%;
+    padding: 1em; }
+  .video__title, .video__subtitle {
+    font-size: 4em;
+    padding: 0.4em 0;
+    text-align: center; } }
+
+.voirfilm__title {
+  font-size: 4em;
+  padding: 1em 0; }
+
+.voirfilm__text {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  text-align: left; }
+
+.discover__text {
+  font-size: 1.6em;
+  line-height: 1.8em;
+  padding: 2em 0; }
+
+.discover__title {
+  font-size: 5em; }
+
+.discover__image {
+  padding: 2em; }
+
+@media screen and (max-width: 754px) {
+  .discover {
+    padding: 0;
+    width: 90%;
+    margin: auto; }
+    .discover__image {
+      padding: 0;
+      max-width: 90%;
+      height: auto; } }
+
+.makingof__title {
+  font-size: 5em;
+  padding-bottom: 1em; }
+
+.fichetechnique__title {
+  font-size: 4em;
+  padding-bottom: 1em; }
+
+.fichetechnique__table {
+  font-size: 1.5em;
+  line-height: 1.7em; }
+
+.table__caption {
+  font: 2em "Amatic", sans-serif;
+  line-height: 2.2em; }
+
+.table__row {
+  border-bottom: 1px solid white;
+  transition: .2s linear; }
+  .table__row:hover {
+    background-color: #ccc;
+    color: black; }
+
+.table__data {
+  padding: 1em 0; }
+
+.table__head {
+  padding: 1em 2em 1em 0;
+  font-weight: bold; }
 
 /* BAOBAB Project
  *

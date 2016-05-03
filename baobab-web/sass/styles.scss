@@ -31,8 +31,11 @@
 @import "object/viewpage";
 @import "object/about";
 @import "object/courtmetrage";
+@import "object/video";
 @import "object/footer";
+
 // 6. Components - Design des composants, morceaux d'UI
+
 @import "components/subheader";
 @import "components/header";
 @import "components/whosbaobab";
@@ -44,4 +47,5 @@
 @import "components/mainimage";
 @import "components/about";
 @import "components/courtmetrage";
+@import "components/video";
 @import "components/footer";
