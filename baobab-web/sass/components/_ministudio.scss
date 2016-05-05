@@ -1,0 +1,35 @@
+/* BAOBAB Project
+ *
+ * /sass/components/ministudio.scss - design of ministudio stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+
+.ministudio{
+  &__explain{
+    font-size: 1.6em;
+    padding: 1em;
+  }
+}
+
+.timeline{
+  position: relative;
+  &::before{
+content:"";
+position: absolute;
+top:0;
+left:40px;
+height:100%;
+width:2px;
+background: black;
+  }
+  &__element{
+    background-color: #F89F1F;
+    font: 4.8em $amaticStack;
+    border-radius: 50%;
+    text-align: center;
+    line-height:1.7em;
+    position: relative;
+  }
+}

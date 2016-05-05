@@ -920,12 +920,69 @@ label {
 
 @media screen and (max-width: 459px) {
   .animetoimeme__door {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 3em; }
   .door__image {
     max-width: 100%;
     height: auto; } }
+
+/* BAOBAB Project
+ *
+ * /sass/object/ministudio.scss - NON  design of ministudio stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+.animetoimeme::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.ministudio {
+  display: inline-block;
+  float: right;
+  width: 80%;
+  margin: auto;
+  margin-top: 8em;
+  text-align: center; }
+  .ministudio__title {
+    display: none; }
+  .ministudio__image {
+    width: 52.7%;
+    margin: auto;
+    margin-bottom: 1em; }
+  .ministudio__explain {
+    width: 50%;
+    margin: auto;
+    text-align: left; }
+
+.timeline {
+  display: inline-block;
+  margin-top: 15em;
+  margin-left: 5em;
+  float: left; }
+  .timeline__element {
+    width: 1.7708333333em;
+    height: 1.7708333333em;
+    margin-bottom: 6.3em;
+    z-index: 1; }
+
+@media screen and (max-width: 720px) {
+  .timeline {
+    display: none; }
+  .ministudio {
+    display: block;
+    float: none; }
+    .ministudio__title {
+      display: block;
+      font-size: 4em;
+      margin-bottom: 1em; }
+    .ministudio__explain {
+      width: 90%; }
+    .ministudio__image {
+      width: 90%;
+      height: auto; } }
 
 /* BAOBAB Project
  *
@@ -1006,13 +1063,11 @@ label {
     font-family: "Quicksand", Arial, sans-serif;
     border: none;
     background-color: #E38039;
-    -webkit-transform: skewX(-15deg);
-            transform: skewX(-15deg);
+    transform: skewX(-15deg);
     transition: .2s linear; }
     .subheader__submit:hover {
       cursor: pointer;
-      -webkit-transform: skewX(0deg);
-              transform: skewX(0deg); }
+      transform: skewX(0deg); }
 
 /* BAOBAB Project
  *
@@ -1041,8 +1096,7 @@ label {
     transition: .1s linear; }
     .mainmenu__link:hover {
       border-bottom: 1px solid black;
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      transform: scale(1.1); }
     .mainmenu__link--home {
       margin-left: 1.5em; }
       .mainmenu__link--home::before {
@@ -1071,13 +1125,11 @@ label {
       font-size: 1.8em;
       font-weight: bold;
       text-transform: uppercase;
-      -webkit-transform: skewY(-5deg);
-              transform: skewY(-5deg); }
+      transform: skewY(-5deg); }
       .mainmenu__link--donate:hover {
         background-color: #D36210;
         border: none;
-        -webkit-transform: scale(1);
-                transform: scale(1); }
+        transform: scale(1); }
 
 @media screen and (max-width: 1225px) {
   .mainmenu__link--donate {
@@ -1123,11 +1175,9 @@ label {
     .mainmenu__link--donate {
       display: block;
       margin-top: 1em;
-      -webkit-transform: skewY(0deg);
-              transform: skewY(0deg); }
+      transform: skewY(0deg); }
     .mainmenu__link:hover, .mainmenu__link:focus {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
+      transform: scale(1.2);
       border: none; }
   .hamburger {
     background: url("../img/burger.png") no-repeat center center;
@@ -1241,8 +1291,7 @@ label {
   border: 1px solid black;
   transition: .2s linear; }
   .actu__button:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    transform: scale(1.1); }
 
 .actu__image {
   transition: .2s linear; }
@@ -1259,8 +1308,7 @@ label {
 .ariane {
   background-color: #0098FF;
   color: white;
-  -webkit-transform: skewX(-15deg);
-          transform: skewX(-15deg); }
+  transform: skewX(-15deg); }
   .ariane__element {
     font-size: 1.8em;
     line-height: 2.2em; }
@@ -1392,6 +1440,8 @@ input[type="checkbox"]:checked + label::before {
 */
 .doityourself {
   background: #d9a200;
+  background: -moz-linear-gradient(top, #d9a200 0%, #b26900 100%);
+  background: -webkit-linear-gradient(top, #d9a200 0%, #b26900 100%);
   background: linear-gradient(to bottom, #d9a200 0%, #b26900 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a200', endColorstr='#b26900',GradientType=0 ); }
   .doityourself__title {
@@ -1409,8 +1459,7 @@ input[type="checkbox"]:checked + label::before {
     letter-spacing: 3px; }
     .doityourself__link:hover, .doityourself__link:focus {
       opacity: 0.8;
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      transform: scale(1.1); }
   .doityourself__image {
     display: block;
     text-align: center;
@@ -1669,15 +1718,13 @@ input[type="checkbox"]:checked + label::before {
     border: 3px solid white;
     border-bottom: none; }
     .video__link:hover {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px); }
+      transform: translateY(-10px); }
     .video__link--diffusion {
       border: 3px solid #1F5274; }
       .video__link--diffusion:hover {
         background-color: white;
         color: black;
-        -webkit-transform: none;
-                transform: none; }
+        transform: none; }
 
 @media screen and (max-width: 473px) {
   .voirfilm__text {
@@ -1758,6 +1805,8 @@ input[type="checkbox"]:checked + label::before {
 .diffusion {
   background: #c77d0c;
   /* Old browsers */
+  background: -moz-linear-gradient(top, #c77d0c 1%, #954705 100%);
+  background: -webkit-linear-gradient(top, #c77d0c 1%, #954705 100%);
   background: linear-gradient(to bottom, #c77d0c 1%, #954705 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77d0c', endColorstr='#954705',GradientType=0 );
   /* IE6-9 */
@@ -1827,6 +1876,35 @@ input[type="checkbox"]:checked + label::before {
 
 /* BAOBAB Project
  *
+ * /sass/components/ministudio.scss - design of ministudio stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+.ministudio__explain {
+  font-size: 1.6em;
+  padding: 1em; }
+
+.timeline {
+  position: relative; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 100%;
+    width: 2px;
+    background: black; }
+  .timeline__element {
+    background-color: #F89F1F;
+    font: 4.8em "Amatic", sans-serif;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.7em;
+    position: relative; }
+
+/* BAOBAB Project
+ *
  * /sass/components/footer.scss - design of footer stylesheet
  *
  * coded by Dylan Schirino
@@ -1888,4 +1966,5 @@ input[type="checkbox"]:checked + label::before {
   color: white;
   font-weight: bold;
   letter-spacing: 1px; }
+
 /*# sourceMappingURL=styles.css.map */
