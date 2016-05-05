@@ -7,12 +7,12 @@
   <meta charset="utf-8">
   <meta name="description" content="Sur un baobab workshop animation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Sur un Baobab - Court Métrage</title>
+  <title>Sur un Baobab - Je diffuse</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1 aria-level="1">Sur un baobab - Court Métrage</h1>
+    <h1 aria-level="1">Sur un baobab - Diffusion du film</h1>
     <nav class="subheader">
       <h2 aria-level="2" class="subheader__title">Menu secondaire</h2>
       <ul class="subheader__menu">
@@ -83,133 +83,47 @@
     </header>
     <main>
 
-      <div class="ariane">
-        <ul class="ariane__menu">
-          <li class="ariane__element">
-            Accueil /
-          </li>
-          <li class="ariane__element">
-            Court métrages
-          </li>
-        </ul>
-      </div>
+      <section class="diffusion">
+        <h2 class="diffusion__title" aria-level="2"> Je veux diffuser ce film</h2>
+        <form action="#" method="post" class="diffusion__form">
+          <label class="diffusion__label" for="name">Nom
+          </label>
+          <input class="diffusion__input" type="text" id="name" placeholder="Dupont" name="name">
 
+          <label class="diffusion__label" for="firstname">Prénom
+          </label>
+          <input class="diffusion__input" type="text" id="firstname" placeholder="Jean" name="firstname">
 
-      <section class="imagecover">
-        <h2 aria-level="2" class="imagecover__title">
-          Court métrages
-        </h2>
-      </section>
+          <label class="diffusion__label" for="mail">Mail
+          </label>
+          <input class="diffusion__input" type="email" id="mail" placeholder="jean.dupont@me.be" name="mail">
 
-      <section class="videolist">
-        <h3 aria-level="3" class="videolist__title">
-          Liste des vidéo
-        </h3>
-        <a href="donate.html" title="Vers la page de don" class="videolist__button">
-          Aider les enfants !
-        </a>
+          <div class="diffusion__inputleft">
+          <label class="diffusion__label diffusion__label--inline" for="city">Ville
+          </label>
+          <input class="diffusion__input diffusion__input--inline" type="text" id="city" placeholder="Brussel" name="city">
+        </div>
+          <div class="diffusion__inputright">
+          <label class="diffusion__label diffusion__label--country" for="country">Pays
+          </label>
+          <input class="diffusion__input diffusion__input--country" type="text" id="country" placeholder="Belgium" name="country">
+        </div>
 
-        <article class="cards">
-          <ul class="cards__list">
-            <li class="cards__element">
-              <a class="cards__link" href="viewvideo.html" title="Vers la vidéo sur Youtube">Voir le film</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html" class="cards__link" title="Voir le projet">Découvrir le projet</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html" class="cards__link" title="Voir le projet">Découvrir le projet</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html/#makingof" class="cards__link" title="Voir le projet">Making of</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html/#fichetechnique" class="cards__link" title="Voir le projet">Fiche technique</a>
-            </li>
-          </ul>
-          <h3 aria-level="3" class="cards__title">Safidin'i Pela</h3>
-          <div class="cards__icon">
-            <ul class="icon__list">
-              <li class="icon__element icon__element--lieu">
-                Lieu
-              </li>
-              <li class="icon__element icon__element--duree">
-                Durée
-              </li>
-              <li class="icon__element icon__element--date">
-                Date
-              </li>
-              <li class="icon__element icon__element--theme">
-                Thème
-              </li>
-            </ul>
-            <ul class="icon__list icon__list--right">
-              <li class="icon__element icon__element--langue">
-                Langue
-              </li>
-              <li class="icon__element icon__element--soustitre">
-                Sous-titre
-              </li>
-              <li class="icon__element icon__element--participant">
-                Nombre participants
-              </li>
-            </ul>
-          </div>
-          <img class="cards__image" src="../img/safidini.jpg" width="378" height="217" alt="Image du projet">
-        </article>
+          <label class="diffusion__label diffusion__label--text" for="textarea">Message
+          </label>
+          <textarea class="diffusion__input diffusion__input--textarea" id="textarea" name="message">
+          </textarea>
 
-        <article class="cards">
-          <ul class="cards__list">
-            <li class="cards__element">
-              <a class="cards__link" href="https://www.youtube.com/watch?v=92IwfppA5SQ" title="Vers la vidéo sur Youtube">Voir le film</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html" class="cards__link" title="Voir le projet">Découvrir le projet</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html" class="cards__link" title="Voir le projet">Découvrir le projet</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html/#makingof" class="cards__link" title="Voir le projet">Making of</a>
-            </li>
-            <li class="cards__element">
-              <a href="viewvideo.html/#fichetechnique" class="cards__link" title="Voir le projet">Fiche technique</a>
-            </li>
-          </ul>
-          <h3 aria-level="3" class="cards__title">Safidin'i Pela</h3>
-          <div class="cards__icon">
-            <ul class="icon__list">
-              <li class="icon__element icon__element--lieu">
-                Lieu
-              </li>
-              <li class="icon__element icon__element--duree">
-                Durée
-              </li>
-              <li class="icon__element icon__element--date">
-                Date
-              </li>
-              <li class="icon__element icon__element--theme">
-                Thème
-              </li>
-            </ul>
-            <ul class="icon__list icon__list--right">
-              <li class="icon__element icon__element--langue">
-                Langue
-              </li>
-              <li class="icon__element icon__element--soustitre">
-                Sous-titre
-              </li>
-              <li class="icon__element icon__element--participant">
-                Nombre participants
-              </li>
-            </ul>
-          </div>
-          <img class="cards__image" src="../img/safidini.jpg" width="378" height="217" alt="Image du projet">
-        </article>
-      </section>
+          <input class="diffusion__submit" type="submit" value="Envoyer">
+
+        </form>
+
+          <figure class="diffusion__figure">
+            <img class="diffusion__image" src="img/vony.png" width="135" height="210" alt="image d'un personnage">
+          </figure>
+       </section>
 
       <footer class="footer">
-
         <div class="footer__container">
           <article class="follow">
             <h3 class="follow__title" aria-level="3">Nous suivre</h3>

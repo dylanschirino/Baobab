@@ -735,7 +735,7 @@ label {
  * coded by Dylan Schirino
  * started at 03/05/2016
  */
-.ariane {
+.ariane--static {
   position: static; }
 
 .video {
@@ -823,6 +823,44 @@ label {
 
 .active {
   display: block; }
+
+/* BAOBAB Project
+*
+* /sass/object/diffusion.scss - NON design of diffusion stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+.diffusion {
+  position: relative;
+  margin-bottom: -10em; }
+  .diffusion::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .diffusion__title {
+    text-align: right; }
+  .diffusion__form {
+    width: 31.6%;
+    margin: auto; }
+  .diffusion__input {
+    width: 100%;
+    height: 3.9em; }
+    .diffusion__input--textarea {
+      width: 100%;
+      height: 14em; }
+  .diffusion__inputleft, .diffusion__inputright {
+    width: 45%; }
+  .diffusion__submit {
+    width: 8.75em;
+    height: 2.25em;
+    display: block;
+    margin-top: 1.25em;
+    float: right; }
+  .diffusion__figure {
+    display: inline-block;
+    margin-left: 12em;
+    margin-top: -10em; }
 
 /* BAOBAB Project
  *
@@ -1634,6 +1672,48 @@ input[type="checkbox"]:checked + label::before {
 .table__head {
   padding: 1em 2em 1em 0;
   font-weight: bold; }
+
+/* BAOBAB Project
+*
+* /sass/components/diffusion.scss - design of diffusion stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+.diffusion {
+  background: #c77d0c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c77d0c 1%, #954705 100%);
+  background: -webkit-linear-gradient(top, #c77d0c 1%, #954705 100%);
+  background: linear-gradient(to bottom, #c77d0c 1%, #954705 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77d0c', endColorstr='#954705',GradientType=0 );
+  /* IE6-9 */
+  opacity: 0.8;
+  background: url("../img/diffusion.jpg") no-repeat center;
+  background-size: cover; }
+  .diffusion__title {
+    font-size: 4.8em;
+    padding-top: 0.8958em;
+    padding-right: 2.8541666667em; }
+  .diffusion__form {
+    padding-top: 8.5em; }
+  .diffusion__label {
+    font-size: 1.8em;
+    padding: 0.611em 0;
+    text-shadow: 0px 0.5px black; }
+    .diffusion__label--textarea {
+      padding-top: 1em; }
+  .diffusion__input {
+    border: none;
+    padding-left: 1em;
+    border-radius: 5px;
+    border: 1px solid black; }
+  .diffusion__submit {
+    border: none;
+    background-color: #0098FF;
+    font: 1.6em "Quicksand", Arial, sans-serif;
+    color: white;
+    border-radius: 5px; }
 
 /* BAOBAB Project
  *

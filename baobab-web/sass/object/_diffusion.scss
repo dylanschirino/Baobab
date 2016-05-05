@@ -1,0 +1,47 @@
+/* BAOBAB Project
+*
+* /sass/object/diffusion.scss - NON design of diffusion stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+
+.diffusion{
+  position:relative;
+    margin-bottom: -10em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    text-align: right;
+  }
+  &__form{
+    width:31.6%;
+    margin: auto;
+  }
+  &__input{
+    width:100%;
+    height: 3.9em;
+    &--textarea{
+      width:100%;
+      height:14em;
+    }
+  }
+  &__inputleft,&__inputright{
+    width:45%;
+  }
+  &__submit{
+    width: 8.75em;
+    height:2.25em;
+    display: block;
+    margin-top: 1.25em;
+    float: right;
+  }
+  &__figure{
+    display: inline-block;
+    margin-left:12em;
+    margin-top:-10em;
+  }
+}
