@@ -985,6 +985,41 @@ label {
       height: auto; } }
 
 /* BAOBAB Project
+*
+* /sass/object/donate.scss - non design of donate stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+.donate {
+  width: 40em;
+  height: 40em;
+  margin: auto; }
+  .donate__input {
+    width: 16em;
+    height: 2.7333em;
+    display: block;
+    margin: auto;
+    margin-bottom: 3.4667em; }
+  .donate__submit {
+    width: 16em;
+    height: 2.7333em;
+    margin: auto;
+    display: block; }
+  .donate__figure::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .donate__image {
+    float: right;
+    margin-right: 14em; }
+
+@media screen and (max-width: 414px) {
+  .donate {
+    width: 90%;
+    margin-bottom: 3em; } }
+
+/* BAOBAB Project
  *
  * /sass/object/footer.scss - non design of footer stylesheet
  *
@@ -1902,6 +1937,41 @@ input[type="checkbox"]:checked + label::before {
     text-align: center;
     line-height: 1.7em;
     position: relative; }
+
+/* BAOBAB Project
+ *
+ * /sass/components/donate.scss - design of donate stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+.bckg {
+  background-color: #D8D8D8;
+  padding-top: 2em; }
+
+.donate {
+  background-color: #DEE4EA;
+  border-radius: 5px;
+  text-align: center; }
+  .donate__title {
+    font: 3.6em "Quicksand", Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 2.1111em 0 1.444em 0; }
+  .donate__label {
+    font-size: 1.4em;
+    line-height: 1.7em; }
+  .donate__input {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em; }
+  .donate__submit {
+    font: 1.5em "Quicksand", Arial, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #06A182; }
 
 /* BAOBAB Project
  *
