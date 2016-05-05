@@ -45,3 +45,17 @@
     margin-top:-10em;
   }
 }
+
+@media screen and (max-width:760px) {
+  .diffusion{
+    &__figure{
+      display: block;
+      margin-left: 1em;
+      margin-top: 0;
+    }
+    &__form{
+    min-width:90%;
+    margin: auto;
+    }
+  }
+}

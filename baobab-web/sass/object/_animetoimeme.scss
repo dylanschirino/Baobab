@@ -1,0 +1,82 @@
+/* BAOBAB Project
+*
+* /sass/object/animetoimeme.scss - NON design of animetoimeme stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+
+.animetoimeme{
+  &__title{
+    text-align: center;
+  }
+  &__container{
+    width: 82.1%;
+    margin: auto;
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  &__door{
+    display: inline-block;
+    margin-top: 7em;
+    &--right{
+      float:right;
+      margin-right: 1.7em;
+    }
+  }
+}
+
+.door{
+  &__link{
+    display:block;
+    width:99%.4;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:965px) {
+
+  .animetoimeme{
+    &__container{
+      width: 40%;
+      margin: auto;
+    }
+    &__door{
+      &--right{
+        float: none;
+      }
+    }
+  }
+}
+@media screen and (max-width:586px) {
+  .animetoimeme{
+    &__container{
+      width: 80%;
+      margin: auto;
+
+    }
+  }
+  .door{
+    &__image{
+      max-width: 100%;
+    }
+  }
+}
+@media screen and (max-width:459px) {
+  .animetoimeme{
+    &__door{
+      width:90%;
+      margin: auto;
+      margin-top:3em;
+    }
+  }
+  .door{
+    &__image{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

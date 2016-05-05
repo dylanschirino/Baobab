@@ -623,6 +623,9 @@ label {
  * coded by Dylan Schirino
  * started at 02/05/2016
  */
+.ariane--static {
+  position: static; }
+
 .aboutasbl {
   width: 75%;
   margin: auto; }
@@ -862,6 +865,68 @@ label {
     margin-left: 12em;
     margin-top: -10em; }
 
+@media screen and (max-width: 760px) {
+  .diffusion__figure {
+    display: block;
+    margin-left: 1em;
+    margin-top: 0; }
+  .diffusion__form {
+    min-width: 90%;
+    margin: auto; } }
+
+/* BAOBAB Project
+*
+* /sass/object/animetoimeme.scss - NON design of animetoimeme stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+.animetoimeme__title {
+  text-align: center; }
+
+.animetoimeme__container {
+  width: 82.1%;
+  margin: auto; }
+  .animetoimeme__container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.animetoimeme__door {
+  display: inline-block;
+  margin-top: 7em; }
+  .animetoimeme__door--right {
+    float: right;
+    margin-right: 1.7em; }
+
+.door__link {
+  display: block;
+  width: 99% 0.4;
+  text-align: center; }
+
+@media screen and (max-width: 965px) {
+  .animetoimeme__container {
+    width: 40%;
+    margin: auto; }
+  .animetoimeme__door--right {
+    float: none; } }
+
+@media screen and (max-width: 586px) {
+  .animetoimeme__container {
+    width: 80%;
+    margin: auto; }
+  .door__image {
+    max-width: 100%; } }
+
+@media screen and (max-width: 459px) {
+  .animetoimeme__door {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em; }
+  .door__image {
+    max-width: 100%;
+    height: auto; } }
+
 /* BAOBAB Project
  *
  * /sass/object/footer.scss - non design of footer stylesheet
@@ -941,11 +1006,13 @@ label {
     font-family: "Quicksand", Arial, sans-serif;
     border: none;
     background-color: #E38039;
-    transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
     transition: .2s linear; }
     .subheader__submit:hover {
       cursor: pointer;
-      transform: skewX(0deg); }
+      -webkit-transform: skewX(0deg);
+              transform: skewX(0deg); }
 
 /* BAOBAB Project
  *
@@ -974,7 +1041,8 @@ label {
     transition: .1s linear; }
     .mainmenu__link:hover {
       border-bottom: 1px solid black;
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     .mainmenu__link--home {
       margin-left: 1.5em; }
       .mainmenu__link--home::before {
@@ -1003,11 +1071,13 @@ label {
       font-size: 1.8em;
       font-weight: bold;
       text-transform: uppercase;
-      transform: skewY(-5deg); }
+      -webkit-transform: skewY(-5deg);
+              transform: skewY(-5deg); }
       .mainmenu__link--donate:hover {
         background-color: #D36210;
         border: none;
-        transform: scale(1); }
+        -webkit-transform: scale(1);
+                transform: scale(1); }
 
 @media screen and (max-width: 1225px) {
   .mainmenu__link--donate {
@@ -1053,9 +1123,11 @@ label {
     .mainmenu__link--donate {
       display: block;
       margin-top: 1em;
-      transform: skewY(0deg); }
+      -webkit-transform: skewY(0deg);
+              transform: skewY(0deg); }
     .mainmenu__link:hover, .mainmenu__link:focus {
-      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
       border: none; }
   .hamburger {
     background: url("../img/burger.png") no-repeat center center;
@@ -1169,7 +1241,8 @@ label {
   border: 1px solid black;
   transition: .2s linear; }
   .actu__button:hover {
-    transform: scale(1.1); }
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .actu__image {
   transition: .2s linear; }
@@ -1186,7 +1259,8 @@ label {
 .ariane {
   background-color: #0098FF;
   color: white;
-  transform: skewX(-15deg); }
+  -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg); }
   .ariane__element {
     font-size: 1.8em;
     line-height: 2.2em; }
@@ -1318,8 +1392,6 @@ input[type="checkbox"]:checked + label::before {
 */
 .doityourself {
   background: #d9a200;
-  background: -moz-linear-gradient(top, #d9a200 0%, #b26900 100%);
-  background: -webkit-linear-gradient(top, #d9a200 0%, #b26900 100%);
   background: linear-gradient(to bottom, #d9a200 0%, #b26900 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a200', endColorstr='#b26900',GradientType=0 ); }
   .doityourself__title {
@@ -1337,7 +1409,8 @@ input[type="checkbox"]:checked + label::before {
     letter-spacing: 3px; }
     .doityourself__link:hover, .doityourself__link:focus {
       opacity: 0.8;
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .doityourself__image {
     display: block;
     text-align: center;
@@ -1596,13 +1669,15 @@ input[type="checkbox"]:checked + label::before {
     border: 3px solid white;
     border-bottom: none; }
     .video__link:hover {
-      transform: translateY(-10px); }
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px); }
     .video__link--diffusion {
       border: 3px solid #1F5274; }
       .video__link--diffusion:hover {
         background-color: white;
         color: black;
-        transform: none; }
+        -webkit-transform: none;
+                transform: none; }
 
 @media screen and (max-width: 473px) {
   .voirfilm__text {
@@ -1683,8 +1758,6 @@ input[type="checkbox"]:checked + label::before {
 .diffusion {
   background: #c77d0c;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #c77d0c 1%, #954705 100%);
-  background: -webkit-linear-gradient(top, #c77d0c 1%, #954705 100%);
   background: linear-gradient(to bottom, #c77d0c 1%, #954705 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77d0c', endColorstr='#954705',GradientType=0 );
   /* IE6-9 */
@@ -1714,6 +1787,43 @@ input[type="checkbox"]:checked + label::before {
     font: 1.6em "Quicksand", Arial, sans-serif;
     color: white;
     border-radius: 5px; }
+
+@media screen and (max-width: 429px) {
+  .diffusion__title {
+    text-align: center;
+    padding: 0;
+    padding-top: 1em; } }
+
+/* BAOBAB Project
+ *
+ * /sass/components/animetoimeme.scss - design of animetoimeme stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+.animetoimeme__title {
+  font-size: 6.4em;
+  background-color: #E27526;
+  padding: 0.3125em 0; }
+
+@media screen and (max-width: 459px) {
+  .animetoimeme__title {
+    font-size: 4.4em; } }
+
+.door__link {
+  font: 3.6em "Amatic", sans-serif;
+  background-color: #D8B8A5;
+  color: black;
+  padding-top: 0.4167em;
+  border: 1px solid black;
+  transition: .2s linear; }
+  .door__link:hover {
+    opacity: .5; }
+  .door__link--dessine {
+    background-color: #14CC4C; }
+
+.door__image {
+  display: block; }
 
 /* BAOBAB Project
  *
@@ -1778,5 +1888,4 @@ input[type="checkbox"]:checked + label::before {
   color: white;
   font-weight: bold;
   letter-spacing: 1px; }
-
 /*# sourceMappingURL=styles.css.map */

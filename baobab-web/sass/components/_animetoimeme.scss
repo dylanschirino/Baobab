@@ -1,0 +1,43 @@
+/* BAOBAB Project
+ *
+ * /sass/components/animetoimeme.scss - design of animetoimeme stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+
+ .animetoimeme{
+   &__title{
+     font-size: 6.4em;
+     background-color: #E27526;
+     padding: 0.3125em 0;
+   }
+ }
+
+ @media screen and (max-width:459px) {
+   .animetoimeme{
+     &__title{
+       font-size: 4.4em;
+     }
+   }
+ }
+
+ .door{
+   &__link{
+     font: 3.6em $amaticStack;
+     background-color: #D8B8A5;
+     color: black;
+     padding-top:0.4167em;
+     border:1px solid black;
+     transition: .2s linear;
+     &:hover{
+       opacity: .5;
+     }
+     &--dessine{
+       background-color: #14CC4C;
+     }
+   }
+   &__image{
+     display: block;
+   }
+ }
