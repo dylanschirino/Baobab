@@ -1021,6 +1021,95 @@ label {
 
 /* BAOBAB Project
  *
+ * /sass/object/contact.scss - NON design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 10/05/2016
+ */
+.maps__image {
+  width: 100%;
+  height: 70vh;
+  background-size: cover; }
+
+.contactinfo {
+  width: 82%;
+  margin: auto; }
+  .contactinfo::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .contactinfo__container {
+    width: 40em;
+    height: 14.5em; }
+  .contactinfo__information {
+    display: inline-block;
+    float: left; }
+  .contactinfo__formulaire::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .contactinfo__formcontent {
+    width: 40em;
+    height: 14.5em;
+    float: right;
+    display: block; }
+    .contactinfo__formcontent::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .contactinfo__image {
+    display: block; }
+  .contactinfo__title {
+    margin: 1.125em 0 1.6875em 2.3em; }
+  .contactinfo__label {
+    margin-left: 2.8em; }
+  .contactinfo__link {
+    margin-left: 3.75em; }
+  .contactinfo__input {
+    width: 33.4em;
+    height: 4.1em; }
+    .contactinfo__input--textarea {
+      width: 28em;
+      height: 7em; }
+  .contactinfo__submit {
+    width: 8.88em;
+    height: 3.05em;
+    float: right;
+    margin: 2.24em 1em 0 0; }
+  .contactinfo__image {
+    margin: 3em auto;
+    transform: rotate(20deg); }
+
+@media screen and (max-width: 991px) {
+  .contactinfo {
+    width: 100%;
+    margin: auto; } }
+
+@media screen and (max-width: 832px) {
+  .contactinfo__information, .contactinfo__formcontent {
+    float: none;
+    display: block; }
+  .contactinfo__container {
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+  .contactinfo__formcontent {
+    width: 100%;
+    margin: 3em auto;
+    text-align: center; }
+  .contactinfo__input {
+    width: 80%;
+    margin: auto; } }
+
+@media screen and (max-width: 771px) {
+  .contactinfo__submit {
+    display: block;
+    text-align: center; }
+  .contactinfo__image {
+    display: none; } }
+
+/* BAOBAB Project
+ *
  * /sass/object/footer.scss - non design of footer stylesheet
  *
  * coded by Dylan Schirino
@@ -1972,6 +2061,78 @@ input[type="checkbox"]:checked + label::before {
     border-radius: 5px;
     color: white;
     background-color: #06A182; }
+
+/* BAOBAB Project
+ *
+ * /sass/components/contact.scss - design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 10/05/2016
+ */
+.maps__title {
+  display: none; }
+
+.contactinfo__container--mail {
+  background-color: #D8B8A5; }
+
+.contactinfo__container--whatsapp {
+  background-color: #ECA67D; }
+
+.contactinfo__container--phone {
+  background-color: #D37842; }
+
+.contactinfo__title {
+  font-size: 4.8em; }
+
+.contactinfo__label {
+  font-size: 2em;
+  padding-top: 1.55em; }
+
+.contactinfo__link {
+  font-size: 1.5em;
+  color: white; }
+  .contactinfo__link::after {
+    padding-left: 1.2em;
+    font: 4em "glyphs"; }
+  .contactinfo__link--mail::after {
+    content: ""; }
+  .contactinfo__link--whatsapp::after {
+    content: "";
+    padding-left: 2.2em; }
+  .contactinfo__link--phone::after {
+    content: "";
+    padding-left: 2.4em; }
+
+.contactinfo__formlabel {
+  font-size: 1.7em;
+  padding: 1em 0; }
+  .contactinfo__formlabel:first-child {
+    padding: 0;
+    padding-bottom: 1em; }
+
+.contactinfo__input {
+  border: none;
+  padding-left: 1em;
+  border: 1px solid black;
+  background: none; }
+
+.contactinfo__submit {
+  font: 1.71em "Quicksand", Arial, sans-serif;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: #D8B8A5;
+  border: none;
+  transition: .2s ease-in-out; }
+  .contactinfo__submit:hover {
+    cursor: pointer;
+    background-color: #D37842;
+    color: white; }
+
+@media screen and (max-width: 394px) {
+  .contactinfo__link::after {
+    padding-left: 0.7em; }
+  .contactinfo__link--mail::after {
+    padding-left: 0; } }
 
 /* BAOBAB Project
  *

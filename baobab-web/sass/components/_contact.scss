@@ -1,0 +1,92 @@
+/* BAOBAB Project
+ *
+ * /sass/components/contact.scss - design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 10/05/2016
+ */
+.maps{
+  &__title{
+    display: none;
+  }
+}
+
+.contactinfo{
+  &__container{
+    &--mail{
+      background-color: #D8B8A5;
+    }
+    &--whatsapp{
+      background-color: #ECA67D;
+    }
+    &--phone{
+      background-color: #D37842;
+    }
+  }
+  &__title{
+    font-size: 4.8em;
+  }
+  &__label{
+    font-size: 2em;
+    padding-top:1.55em;
+  }
+  &__link{
+    font-size: 1.5em;
+    color:white;
+    &::after{
+      padding-left:1.2em;
+      font: 4em $glyphsStack;
+    }
+    &--mail::after{
+        content:"";
+    }
+    &--whatsapp::after{
+      content:"";
+      padding-left:2.2em;
+    }
+    &--phone::after{
+      content:"";
+      padding-left:2.4em;
+    }
+  }
+  &__formlabel{
+    font-size:1.7em;
+    padding: 1em 0;
+    &:first-child{
+      padding:0;
+      padding-bottom: 1em;
+    }
+  }
+  &__input{
+    border:none;
+    padding-left: 1em;
+    border:1px solid black;
+    background: none;
+  }
+  &__submit{
+    font: 1.71em $quicksandStack;
+    border-radius: 8px;
+    text-transform: uppercase;
+    background-color: #D8B8A5;
+    border: none;
+    transition: .2s ease-in-out;
+    &:hover{
+      cursor: pointer;
+      background-color:#D37842;
+      color: white;
+    }
+  }
+}
+
+@media screen and(max-width:394px) {
+  .contactinfo{
+    &__link{
+      &::after{
+        padding-left:0.7em;
+      }
+      &--mail::after{
+        padding-left:0;
+      }
+    }
+  }
+}

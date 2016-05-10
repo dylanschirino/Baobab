@@ -1,0 +1,121 @@
+/* BAOBAB Project
+ *
+ * /sass/object/contact.scss - NON design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 10/05/2016
+ */
+ .maps{
+   &__image{
+     width: 100%;
+     height:70vh;
+     background-size:cover;
+   }
+ }
+
+ .contactinfo{
+   width:82%;
+   margin: auto;
+   &::after{
+     content:"";
+     display: block;
+     clear: both;
+   }
+   &__container{
+     width: 40em;
+     height: 14.5em;
+   }
+   &__information{
+     display: inline-block;
+     float: left;
+   }
+   &__formulaire{
+     &::after{
+       content:"";
+       display: block;
+       clear: both;
+     }
+   }
+   &__formcontent{
+     width: 40em;
+     height: 14.5em;
+     float: right;
+     display:block;
+     &::after{
+       content:"";
+       display: block;
+       clear: both;
+     }
+   }
+   &__image{
+     display: block;
+   }
+   &__title{
+     margin:1.125em 0 1.6875em 2.3em ;
+   }
+   &__label{
+     margin-left: 2.8em;
+   }
+   &__link{
+     margin-left:3.75em;
+   }
+  &__input{
+    width: 33.4em;
+    height: 4.1em;
+    &--textarea{
+      width: 28em;
+      height:7em;
+    }
+  }
+  &__submit{
+    width:8.88em;
+    height:3.05em;
+    float: right;
+    margin:2.24em 1em 0 0;
+  }
+  &__image{
+    margin:3em auto;
+    transform: rotate(20deg);
+  }
+}
+
+@media screen and(max-width:991px) {
+  .contactinfo{
+    width:100%;
+    margin: auto;
+  }
+}
+@media screen and(max-width:832px) {
+  .contactinfo{
+    &__information,&__formcontent{
+      float: none;
+      display: block;
+    }
+    &__container{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+    &__formcontent{
+      width: 100%;
+      margin:3em auto;
+      text-align: center;
+    }
+    &__input{
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and(max-width:771px) {
+  .contactinfo{
+    &__submit{
+      display: block;
+      text-align: center;
+    }
+    &__image{
+      display:none;
+    }
+  }
+}
