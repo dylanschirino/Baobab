@@ -6,21 +6,22 @@
 * started at 22/04/2016
 */
 .lastactu{
-  width:90em;
-  margin: auto;
+  max-width:100%;
+  text-align: center;
   &::after{
     content:"";
     display: block;
     clear: both;
   }
   &__title{
-    margin:4.309em 0em 1.69em 0.2em;
+    margin:1em 0em 1.69em 0;
+    text-align: inherit;
   }
 }
 .actu{
   width: 29.7em;
   height:30em;
-  margin-left: 1.2em;
+  margin-left:-2em;
   display: inline-block;
   &:first-child{
   float:left;
@@ -29,16 +30,19 @@
     margin-left:25.9em;
   }
   &__info{
-    margin-top:-2px;
+    position: relative;
+    top:-2px;
   }
   &__text{
     padding-bottom:2.4em;
   }
   &__button{
-    display: block;
+    display:block;
     width:10em;
     height:2.85em;
-    margin:-1.5em auto;
+    position:absolute;
+    bottom:-20px;
+    left:70px;
   }
 }
 @media screen and (max-width:913px) {
@@ -67,6 +71,17 @@
 }
 @media screen and (max-width:375px) {
   .lastactu{
-    width:93%;
+    width:95%;
+    margin:0;
+    margin:auto;
+  }
+  .actu{
+    width:90%;
+    margin: 0;
+    margin:auto;
+    &__image{
+      width:100%;
+      margin: auto;
+    }
   }
 }

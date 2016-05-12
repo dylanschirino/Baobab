@@ -45,6 +45,12 @@
     font: 1.6em $quicksandStack;
     color:white;
     border-radius: 5px;
+    -webkit-appearance: none;
+    &:hover,&:focus{
+      cursor: pointer;
+      background-color: white;
+      color:#0098FF;
+    }
   }
 }
 

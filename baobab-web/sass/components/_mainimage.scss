@@ -10,12 +10,10 @@
   background: url("../img/mainimage.jpg") no-repeat center center;
   background-size:cover;
   &__title{
-    font-size: 5.2em;
+    font-size:10em;
     padding-top: 0.6667em;
-  }
-  &__subtitle{
-    font:4.2em $amaticStack;
-    padding-top:0.714em;
+    color:white;
+    text-shadow: 2px 2px white;
   }
   &__button{
     font:bold 2.4em/3em $quicksandStack;

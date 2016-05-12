@@ -41,8 +41,9 @@
     }
   }
   &__text{
-    padding-top:2.928em;
+    padding:2.928em 1em 0 1em;
     font-size: 1.4em;
+    line-height: 1.4em;
   }
 }
 
@@ -95,13 +96,16 @@
       &__membre{
         float: none;
         &--francois{
-          padding: 0;
+          padding:2em 0 0 0;
         }
       }
     }
 }
 @media screen and (max-width:347px) {
   .description{
-    width: 80%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    margin: auto;
   }
 }

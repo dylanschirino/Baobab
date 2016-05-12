@@ -13,7 +13,7 @@
  .fiche{
    &__image{
      width: 100%;
-     object-fit: cover;
+     height: auto;
    }
    &__title{
      margin:0.684em 0 0.842em 1.0789em;

@@ -1,99 +1,87 @@
 <?php
 
 /*
-      Template Name: Homepage
+  Template Name: Homepage
 */
 
 get_header();
+
 ?>
-      <main class="ma-page">
-            <section class="ma-page__content">
 
-<?php if ( have_posts() ):
-      while ( have_posts() ):
-            the_post(); ?>
-                  <h2 class="ma-page__title"><?php the_title();?></h2>
+      <section class="intro">
 
-                  <div class="ma-page__text">
-                        <?php the_content();?>
+      <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+
+            <h2 class="intro__title"><?php the_title();?></h2>
+            <p class="intro__slogan"><?php bloginfo('description');?></p>
+            <div class="intro__text">
+                  <?php the_content();?>
+            </div>
+
+            <aside class="about">
+                  <h3 class="about__title"><?php the_field('about_title');?></h3>
+                  <div class="about__text">
+                        <?php the_field('about_content');?>
                   </div>
+            </aside>
 
-                  <aside class="about">
-                        <h3 class="about__title"><?php the_field('about_title');?></h3>
+      <?php endwhile; endif; ?>
 
-                        <div class="about__content">
-                              <?php the_field('about_content');?>
-                        </div>
-                  </aside>
+      </section>
 
-<?php endwhile;
-endif;?>
+      <section class="latest-articles">
+            <h2 class="latest-articles__title"><?php _e('Mes articles','b');?></h2>
 
-                  <section class="last-articles">
-                        <h3 class="last-articles__title"><?php
-                        echo str_replace ('%s','<span class="sro">'.get_the_title().'</span>',__('Derniers articles %s','b'));
-                        ?></h3>
-                        <ul>
-                          <li></li>
-                          </ul>
-                        <div class="last-articles__container">
+            <div class="latest-articles__container">
 
-<?php
-$posts = new WP_Query(['posts_per_page' => 3]);
+            <?php
+                  $posts = new WP_Query( ['posts_per_page' => 3] );
+                  if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
+            ?>
 
-// HAS POSTS
-if ( $posts->have_posts() ) :
-      // THE LOOP
-      while ( $posts->have_posts() ) :
-            $posts->the_post(); ?>
+                  <article class="article">
+                        <h3 class="article__title"><?php the_title();?></h3>
+                        <p class="article__date"><?php
+                              $sTime = '<time datetime="' . get_the_time('c') . '">' . get_the_time('l j F') . '</time>';
+                              echo str_replace('%s', $sTime, __('Publié le %s.','b'));
+                        ?></p>
+                        <p class="article__excerpt"><?php the_custom_excerpt(90);?></p>
+                        <a href="<?php the_permalink();?>" class="article__more"><?php the_link('Voir l\'article %s');?></a>
+                  </article>
 
-      <article class="article">
-            <h4 class="article__title"><?php the_title();?></h4>
-            <p class="article__date">Publié le <time class="article__time" datetime="<?php the_date('c');?>"><?php the_date('l j F');?></time></p>
-            <p class="article__excerpt"><?php the_custom_excerpt();?></p>
-            <a href="<?php the_permalink();?>" class="article__link">Lire la suite</a>
-      </article>
+            <?php endwhile; endif; ?>
 
-      <?php
-      // END LOOP
-      endwhile;?>
-<?php endif; ?>
+            </div>
+      </section>
 
-                        </div>
-                  </section>
-            </section>
-            <section class="latest-project">
-              <h2 class="latest-project__title">
-                Mes dernieres réalisations
-              </h2>
-              <div class="latest-project__container">
-                <?php
-                $posts = new WP_Query(['posts_per_page' => 2,'post_type'=>'project']);
+      <section class="latest-projects">
+            <h2 class="latest-projects__title"><?php _e('Mes dernières réalisations','b');?></h2>
+            <div class="latest-projects__container">
 
-                // HAS POSTS
-                if ( $posts->have_posts() ) :
-                      // THE LOOP
-                      while ( $posts->have_posts() ) :
-                            $posts->the_post(); ?>
+            <?php
+                  $posts = new WP_Query( ['posts_per_page' => 2, 'post_type' => 'project'] );
+                  if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
+            ?>
 
-                      <article class="article">
-                            <h4 class="article__title"><?php the_title();?></h4>
-                            <p class="project__country">Pays: <?php the_field('country') ?>
-                            </p>
-                            <p class="project__country">Pays: <?php the_field('time') ?>
-                            </p>
-                            <p class="article__excerpt"><?php the_custom_excerpt();?></p>
-                            <a href="<?php the_permalink();?>" class="article__link">Lire la suite</a>
-                            <img src="<?php the_post_thumbnail_url()?>">
-                      </article>
+                  <article class="project">
+                        <h3 class="project__title"><?php the_title();?></h3>
+                        <figure class="project__fig">
+                              <img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php echo str_replace('%s', get_the_title(), __('Affiche du court-métrage %s','b'));?>" class="project__thumb">
+                        </figure>
+                        <dl class="project__details">
+                              <dt class="project__label"><?php _e('Pays de réalisation&nbsp;:');?></dt>
+                              <dd class="project__value"><?php the_field('country');?></dd>
+                              <dt class="project__label"><?php _e('Durée&nbsp;:');?></dt>
+                              <dd class="project__value"><?php the_field('time');?></dd>
+                        </dl>
+                        <a href="<?php the_permalink();?>" class="project__link"><?php the_link('Voir le projet %s');?></a>
+                  </article>
 
-                      <?php
-                      // END LOOP
-                      endwhile;?>
-                <?php endif; ?>
-              </div>
-            </section>
-      </main>
+            <?php endwhile; endif; ?>
+
+            </div>
+      </section>
+
 <?php
 
 get_footer();

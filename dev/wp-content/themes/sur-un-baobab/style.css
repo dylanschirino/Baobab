@@ -11,10 +11,3 @@ Text Domain: b
 .sticky {}          /* DO NOT EDIT THIS */
 .gallery-caption {} /* THESE ARE USELESS */
 .bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
-
-
-  .sro{
-    position: absolute;
-    top:-9999px;
-    left:-9999px;
-  }

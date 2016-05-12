@@ -70,6 +70,7 @@
     background-color: #D8B8A5;
     border: none;
     transition: .2s ease-in-out;
+    -webkit-appearance: none;
     &:hover{
       cursor: pointer;
       background-color:#D37842;
@@ -78,7 +79,12 @@
   }
 }
 
-@media screen and(max-width:394px) {
+@media screen and (max-width:394px) {
+  .maps{
+    &__image{
+      display: none;
+    }
+  }
   .contactinfo{
     &__link{
       &::after{

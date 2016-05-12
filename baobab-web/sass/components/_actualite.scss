@@ -7,7 +7,7 @@
 */
 
 .lastactu{
-  padding-bottom: 2em;
+  padding-bottom:15em;
   &__title{
     font:4.8em $amaticStack;
     text-transform: uppercase;
@@ -22,7 +22,7 @@
   }
   &__title{
     font-size:1.5em;
-    padding:1.8em 0 1.2em 0;
+    padding:0.8em 0 1.2em 0;
     font-weight: bold;
   }
   &__element{
@@ -35,6 +35,7 @@
     }
   }
   &__text{
+    font-size: 1.3em;
     line-height: 1.3em;
   }
   &__button{
@@ -46,6 +47,7 @@
     border-radius: 5px;
     border:1px solid black;
     transition: .2s linear;
+
     &:hover{
       transform: scale(1.1);
     }

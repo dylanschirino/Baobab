@@ -7,23 +7,18 @@
  */
  .mainimage{
      min-height:65.9vh;
+     position: relative;
    &__title{
      text-align: center;
-     position: relative;
-   }
-   &__subtitle{
-     margin-right:7.14289em;
-     text-align:right;
-     display: block;
-     margin-bottom: 3em;
    }
    &__button{
     display:block;
     height:76px;
     width:12.412916667em;/*292+5/2.4*/
-    vertical-align:middle;
-    position: relative;
-    left:-50px;
+    position: absolute;
+    bottom:30px;
+    left:0;
+    right:0;
     margin:auto;
    }
  }
@@ -31,13 +26,6 @@
    .mainimage{
      &__subtitle{
        margin-right:1.5em;
-     }
-   }
- }
- @media screen and (max-width:413px) {
-   .mainimage{
-     &__button{
-       position:static;
      }
    }
  }

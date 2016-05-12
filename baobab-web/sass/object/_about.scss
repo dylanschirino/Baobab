@@ -27,7 +27,7 @@
   width: 27em;
   display:block;
   float:left;
-  margin-left: 2.1em;
+  margin:0 2.1em;
 }
 
 .equipe{
@@ -43,12 +43,5 @@
     display: inline-block;
     float: left;
     text-align: center;
-  }
-}
-
-.membre{
-  &__text{
-      width:100%;
-      margin: auto;
   }
 }

@@ -55,7 +55,7 @@
         }
 
         // tab panes
-        $tabLinks = document.querySelectorAll( ".nav-tabs li a" );
+        $tabLinks = document.querySelectorAll( ".video__element a" );
         $tabPanes = document.querySelectorAll( ".tab-pane" );
 
         for ( i = 0 ; i < $tabLinks.length ; i++ ) {

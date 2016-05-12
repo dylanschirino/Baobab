@@ -51,11 +51,10 @@
     background-color: #E38039;
     transform: skewX(-15deg);
     transition: .2s linear;
+    -webkit-appearance: none;
     &:hover{
       cursor: pointer;
       transform: skewX(0deg);
     }
   }
  }
-
- 
