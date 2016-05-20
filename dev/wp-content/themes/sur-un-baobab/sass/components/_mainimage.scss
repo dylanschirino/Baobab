@@ -1,0 +1,65 @@
+/* BAOBAB Project
+*
+* /sass/components/mainimage.scss - Design of mainimage stylesheet
+*
+* coded by Dylan Schirino
+* started at 21/04/2016
+*/
+
+.mainimage{
+  background: url("../img/mainimage.jpg") no-repeat center center;
+  background-size:cover;
+  &__title{
+    font-size:10em;
+    padding-top: 0.6667em;
+    color:white;
+    text-shadow: 2px 2px white;
+  }
+  &__button{
+    font:bold 2.4em/3em $quicksandStack;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    background-color: #0098FF;
+    &::before{
+      content: "";
+      display: inline-block;
+      font-family: $glyphsStack;
+      padding-right: 15px;
+    }
+  }
+}
+.mainimage__button:hover:before,.mainimage__button:focus:before{
+  -webkit-animation-name: iconanim;
+  animation-name: iconanim;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes iconanim {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes iconanim {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}

@@ -1,0 +1,31 @@
+/* BAOBAB Project
+ *
+ * /sass/object/mainimage.scss - Design of mainimage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 21/04/2016
+ */
+ .mainimage{
+     min-height:65.9vh;
+     position: relative;
+   &__title{
+     text-align: center;
+   }
+   &__button{
+    display:block;
+    height:76px;
+    width:12.412916667em;/*292+5/2.4*/
+    position: absolute;
+    bottom:30px;
+    left:0;
+    right:0;
+    margin:auto;
+   }
+ }
+ @media screen and (max-width:545px) {
+   .mainimage{
+     &__subtitle{
+       margin-right:1.5em;
+     }
+   }
+ }

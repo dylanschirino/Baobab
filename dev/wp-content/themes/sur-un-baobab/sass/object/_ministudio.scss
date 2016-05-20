@@ -1,0 +1,72 @@
+/* BAOBAB Project
+ *
+ * /sass/object/ministudio.scss - NON  design of ministudio stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+ .animetoimeme{
+   &::after{
+     content: "";
+     display: block;
+     clear: both;
+   }
+ }
+ .ministudio{
+   display: inline-block;
+   float: right;
+   width: 80%;
+   margin: auto;
+   margin-top: 8em;
+   text-align: center;
+   &__title{
+     display: none;
+   }
+   &__image{
+     width: 52.7%;
+     margin: auto;
+     margin-bottom: 1em;
+   }
+   &__explain{
+     width: 50%;
+     margin: auto;
+     text-align: left;
+   }
+ }
+
+ .timeline{
+   display: inline-block;
+   margin-top:15em;
+   margin-left: 5em;
+   float: left;
+   &__element{
+     width:1.7708333333em;
+     height:1.7708333333em;
+     margin-bottom:6.3em;
+     z-index: 1;
+   }
+ }
+
+ @media screen and (max-width:720px) {
+
+   .timeline{
+     display: none;
+   }
+   .ministudio{
+     display: block;
+     float: none;
+     &__title{
+       display: block;
+       font-size:4em;
+       margin-bottom: 1em;
+     }
+     &__explain{
+       width: 90%;
+     }
+     &__image{
+       width: 90%;
+       height: auto;
+     }
+   }
+
+ }

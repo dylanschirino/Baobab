@@ -1,0 +1,97 @@
+/* BAOBAB Project
+ *
+ * /sass/object/actualitypage.scss - non design of actualitypage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 26/04/2016
+ */
+
+label{
+  display: block;
+}
+
+.ariane{
+  width:34.8em;
+  height:4.3em;
+  margin: 3.7em 0 2.5em  -2em;
+  text-align: center;
+  &__element{
+    display: inline-block;
+  }
+}
+.actualite{
+  display: inline-block;
+  width:75%;
+  margin:auto;
+}
+.actu{
+  &--page{
+      margin-left: 3.4em;
+      &:last-child{
+      margin-left:10em;
+      }
+  }
+}
+.header{
+  position:relative;
+  &__title{
+    display:inline-block;
+    position:absolute;
+    bottom:1.5em;
+    margin-left:2em;
+  }
+}
+.aside{
+  display:inline-block;
+  width: 21%;
+  height:50em;
+  float: right;
+  &__list{
+    width:100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width:999px) {
+    .header{
+    &__title{
+      font-size: 5em;
+      display: block;
+      position: static;
+      margin-bottom: 1em;
+    }
+    }
+    .actu{
+      &--page{
+        &:last-child{
+          margin:3.2em;
+          display: block;
+        }
+      }
+    }
+}
+@media screen and (max-width:652px) {
+    .aside{
+      width:100%;
+      height:auto;
+    }
+}
+@media screen and (max-width:479px) {
+  .header{
+    &__image{
+      padding-top: 2em;
+      max-width:100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width:360px) {
+  .ariane{
+    width: 100%;
+  }
+.actu{
+  margin-left:1em;
+  &:last-child{
+    margin-left: 1em;
+  }
+}
+}

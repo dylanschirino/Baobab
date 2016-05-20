@@ -1,0 +1,21 @@
+/* BAOBAB Project
+*
+* /sass/components/decoration.scss - design of decoration stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+
+.decoration{
+  background-color: #34A037;
+  &__title{
+    padding-top:1.277em;
+    font:3.6em $amaticStack;
+    &--strong{
+      font-size:1.33em;
+    }
+    &--small{
+      font-size: 0.66em;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* BAOBAB Project
+*
+* /sass/components/doityourself.scss - design of doityourself stylesheet
+*
+* coded by Dylan Schirino
+* started at 22/04/2016
+*/
+.doityourself{
+  background: #d9a200;
+  background: -moz-linear-gradient(top,  #d9a200 0%, #b26900 100%);
+  background: -webkit-linear-gradient(top,  #d9a200 0%,#b26900 100%);
+  background: linear-gradient(to bottom,  #d9a200 0%,#b26900 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a200', endColorstr='#b26900',GradientType=0 );
+
+  &__title{
+    padding-top: 0.625em;/*45px/7.2em*/
+    text-align: center;
+    font-size:7.2em;
+  }
+  &__link{
+    display:inline-block;
+    text-align: center;
+    font:bold 2em $quicksandStack;
+    text-transform: uppercase;
+    color:white;
+    transition: .2s linear;
+    letter-spacing: 3px;
+    &:hover,&:focus{
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+  &__image{
+    display: block;
+    text-align: center;
+    border-radius:50%;
+  }
+}

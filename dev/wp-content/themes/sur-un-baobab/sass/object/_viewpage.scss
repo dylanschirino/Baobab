@@ -1,0 +1,164 @@
+/* BAOBAB Project
+ *
+ * /sass/object/viewpage.scss -NON design of viewpage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 27/04/2016
+ */
+ .ariane{
+   &--absolute{
+    position: absolute;
+   }
+ }
+ .fiche{
+   &__image{
+     width: 100%;
+     height: auto;
+   }
+   &__title{
+     margin:0.684em 0 0.842em 1.0789em;
+   }
+ }
+
+.header{
+  &__list{
+      border-bottom: 1px solid #979797;
+      margin: 0 3.2em;
+  }
+  &__element{
+    margin-left:2.5em;
+  }
+}
+
+.actuality{
+  width:80.7%;
+  margin: auto;
+  margin-left: 11.2em;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    &--right{
+      text-align: right;
+    }
+  }
+  &__text{
+    width: 60%;
+    margin-bottom:2em;
+    &--right{
+      float: right;
+    }
+  }
+  &__image{
+    margin:6em 0;
+    &--right{
+      float: right;
+    }
+  }
+}
+
+.commentaire{
+  margin-top: 6em;
+  width: 72em;
+  margin: auto;
+  &__container{
+     margin: 4.7em 0;
+  }
+}
+
+.container{
+  &__article{
+    width:56em;
+    margin: auto;
+    &:not(:last-child){
+      border-bottom: 1px solid #979797;
+    }
+  }
+}
+.article{
+  &__text{
+    width:30em;
+  }
+}
+.form{
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__input{
+    width:23em;
+    margin-right:2em;
+  }
+  &__textarea{
+    width:99%;
+    height:16em;
+  }
+  &__submit{
+  float:right;
+  width:13.6875em;
+  height:2.8125em;
+  margin-top: 1.5em;
+  }
+}
+@media screen and (max-width:734px) {
+  .commentaire{
+    max-width: 100%;
+    &__title{
+      text-align: center;
+    }
+  }
+
+}
+@media screen and (max-width:665px) {
+  .actuality{
+    margin: 0;
+    width: 100%;
+    &__image{
+      max-width: 100%;
+      height: auto;
+      float: none;
+    }
+    &__text{
+      margin:1em;
+      width:80%;
+    }
+    &__title{
+      margin-left: 1em;
+      &--right{
+        margin-right: 1em;
+      }
+    }
+  }
+}
+@media screen and (max-width:572px) {
+  .container {
+    &__article{
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .form{
+    &__input{
+      display: block;
+      margin-left: 1em;
+    }
+    &__label{
+      margin-left: 1em;
+    }
+  }
+  &__textarea{
+    max-width:90%;
+  }
+
+  .article{
+    &__text{
+      max-width:100%;
+    }
+  }
+
+
+}

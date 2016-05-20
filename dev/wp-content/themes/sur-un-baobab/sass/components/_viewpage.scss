@@ -1,0 +1,104 @@
+/* BAOBAB Project
+ *
+ * /sass/components/viewpage.scss - design of viewpage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 27/04/2016
+ */
+.fiche{
+  &__title{
+    font: 3.8em $quicksandStack;
+  }
+}
+.header{
+  &__element{
+    font:bold 1.6em $quicksandStack;
+    color:#363333;
+    padding-bottom: 1em;
+    &--date::before{
+      content:"";
+      padding-right:1.2em;
+      font:1.2em $glyphsStack;
+    }
+    &--file::before{
+      content:"";
+      padding-right:1.2em;
+      font:1.2em $glyphsStack;
+    }
+    &--author::before{
+      content:"";
+      padding-right:1.2em;
+      font:1.2em $glyphsStack;
+    }
+  }
+}
+
+.actuality{
+  &__title{
+    font:2.8em $quicksandStack;
+    padding:1.714em 0 1.535em 0em;
+  }
+  &__text{
+    font-size: 1.6em;
+    line-height:2.1875em;
+  }
+}
+
+
+.commentaire{
+  &__title{
+    font-size:4.8em;
+    border-bottom: 1px solid #979797;
+    padding-bottom:0.3125em;
+  }
+  &__container{
+    background-color: #F6F8FA;
+  }
+}
+
+
+.article{
+  &__heading{
+    padding: 3.7em 0 1.6em 0;
+  }
+  &__element{
+    display: inline-block;
+    font-size: 1.2em;
+  }
+  &__text{
+    font-size: 1.4em;
+    padding-bottom: 2.714em;
+  }
+}
+.form{
+  &__input{
+    background: none;
+    border:1px solid #979797;
+    border-radius: 5px;
+    padding:1em;
+  }
+  &__label{
+    font-size: 1.6em;
+    padding: 1em 0;
+    display: inline-block;
+  }
+  &__textarea{
+    border:1px solid #979797;
+    border-radius: 5px;
+    font-family:$quicksandStack;
+  }
+  &__submit{
+    text-align:center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    border:none;
+    background-color: #F89F1F;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    -webkit-appearance: none;
+    &:hover{
+      background-color: #FCDA7A;
+      cursor: pointer;
+    }
+  }
+}

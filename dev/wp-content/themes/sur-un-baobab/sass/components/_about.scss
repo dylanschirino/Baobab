@@ -1,0 +1,111 @@
+/* BAOBAB Project
+ *
+ * /sass/components/about.scss - design of about stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/05/2016
+ */
+
+ .aboutasbl{
+   &__title{
+     font: 4.8em $amaticStack;
+   }
+ }
+
+.description{
+  &__title{
+    font: 2.4em $quicksandStack;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+    padding-top:2em;
+    &--groupe::after{
+      content:"";
+      text-align: center;
+      padding: 0.12em 0em;
+      display: block;
+      font:4em $glyphsStack;
+    }
+    &--resultat::after{
+      content:"";
+      text-align: center;
+      padding: 0.12em 0em;
+      display: block;
+      font:4em $glyphsStack;
+    }
+    &--developpement::after{
+      content:"";
+      text-align: center;
+      padding: 0.12em 0em;
+      display: block;
+      font:4em $glyphsStack;
+    }
+  }
+  &__text{
+    padding:2.928em 1em 0 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+}
+
+.equipe{
+  &__title{
+    font-size: 4.8em;
+    padding-top:1em;
+  }
+  &__membre{
+    padding-top:5em;
+    &--francois{
+      border-left: 1px solid #979797;
+      padding-left:4.7em;
+    }
+  }
+}
+
+.membre{
+  &__title{
+    font:3em $quicksandStack;
+    padding-bottom: 1.2em;
+  }
+  &__text{
+    font-size:1.4em;
+    line-height: 1.8em;
+    text-align:left;
+    padding:2em 2em 2em 0em;
+  }
+}
+
+
+
+
+@media screen and (max-width:1133px) {
+
+  .equipe {
+    &__membre{
+      width: 100%;
+      margin: auto;
+      &--francois{
+        border-left: none;
+        border-top: 1px solid #979797;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:511px) {
+    .equipe{
+      &__membre{
+        float: none;
+        &--francois{
+          padding:2em 0 0 0;
+        }
+      }
+    }
+}
+@media screen and (max-width:347px) {
+  .description{
+    width: 100%;
+    margin:0;
+    padding:0;
+    margin: auto;
+  }
+}

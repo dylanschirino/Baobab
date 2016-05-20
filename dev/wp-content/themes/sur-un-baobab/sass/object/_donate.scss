@@ -1,0 +1,44 @@
+/* BAOBAB Project
+*
+* /sass/object/donate.scss - non design of donate stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+
+.donate{
+  width: 40em;
+  height:40em;
+  margin: auto;
+  &__input{
+    width: 16em;
+    height: 2.7333em;
+    display: block;
+    margin: auto;
+    margin-bottom: 3.4667em;
+  }
+  &__submit{
+    width: 16em;
+    height: 2.7333em;
+    margin: auto;
+    display: block;
+  }
+  &__figure{
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  &__image{
+    float:right;
+    margin-right: 14em;
+  }
+}
+
+@media screen and (max-width:414px) {
+.donate{
+  width: 90%;
+  margin-bottom: 3em;
+}
+}

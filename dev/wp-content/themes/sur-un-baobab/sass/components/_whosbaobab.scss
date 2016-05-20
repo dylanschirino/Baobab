@@ -1,0 +1,65 @@
+/* BAOBAB Project
+ *
+ * /sass/components/whosbaobab.scss - design of whosbaobab stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 23/04/2016
+ */
+ .whosbaobab{
+   background: url("../img/quisommesnous.jpg") center fixed;
+   color:black;
+   &__container{
+     background-color: white;
+     text-align: center;
+     border-radius: 5px;
+     transition: .2s ease-in-out;
+     &:hover .container__link{
+       background-color:#193E56;
+     }
+     &--right:hover .container__link{
+       background-color: #AD4343;
+     }
+   }
+ }
+.container{
+  &__title{
+    font-size: 3.2em;
+    padding-top: 0.78125em; /*25/3.2*/
+    color:#006BB2;
+    &::after{
+      content:"";
+      display: block;
+      font:3em $glyphsStack;
+      padding:0.083em 0;
+      margin:0 60px;
+      border-bottom: 1px solid #006BB2;
+    }
+    &--red{
+      color:#D75151;
+      &::after{
+        content:"";
+        display: block;
+        font:3.6em $glyphsStack;
+        padding:0.083em 0;
+        margin:0 60px;
+        border-bottom: 1px solid #D75151;
+      }
+    }
+  }
+  &__text{
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding:2em 3em 7em 2.5em;
+    text-align:text;
+  }
+  &__link{
+    font-size: 1.4em;
+    line-height: 2.8em;
+    background-color: #006BB2;
+    color:white;
+    border-radius: 5px;
+    &--red{
+      background-color:#D75151;
+    }
+  }
+}

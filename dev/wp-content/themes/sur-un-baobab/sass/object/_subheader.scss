@@ -1,0 +1,79 @@
+/* BAOBAB Project
+*
+* /sass/object/subheader.scss - non design of subheader stylesheet
+*
+* coded by Dylan Schirino
+* started at 21/04/2016
+*/
+.subheader{
+  width: 100%;
+  height:2.222em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__element{
+    display: inline-block;
+    &:first-child{
+      margin-left: 2.4em;
+    }
+    &--right{
+      float:right;
+    }
+  }
+  &__link{
+    margin-right:1em;
+  }
+  &__search{
+    width:16.3em;
+    height:23px;
+    position: relative;
+    top:-3px;
+    margin-right: 3.6em;
+  }
+  &__submit{
+    height: 1.6em;
+    position: absolute;
+    right: 4em;
+    top: 1.4em;
+    width: 2.5em;
+  }
+}
+
+
+@media screen and (max-width:763px) {
+  .subheader{
+    &__menu{
+      font-size: 0.8em;
+    }
+    &__element{
+      &:first-child{
+        margin-left:1em;
+      }
+    }
+  }
+}
+@media screen and (max-width:542px) {
+  .subheader{
+    &__element{
+      &:first-child{
+        margin-left:1em;
+      }
+    }
+    &__link{
+      padding:0;
+      margin: 0;
+      &--facebook,&--youtube{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width:502px) {
+  .subheader{
+    &__link{
+      display: none;
+    }
+  }
+}

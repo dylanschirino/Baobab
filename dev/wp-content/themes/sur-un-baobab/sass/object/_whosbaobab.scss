@@ -1,0 +1,80 @@
+/* BAOBAB Project
+ *
+ * /sass/object/whosbaobab.scss - non design of whosbaobab stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 23/04/2016
+ */
+.whosbaobab{
+  height:auto;
+  padding-bottom: 5em;
+  &__maincontainer{
+    width:90em;
+    padding-top: 8em;
+    margin:auto;
+    &::after{
+      content:"";
+      display: block;
+      clear: both;
+    }
+  }
+  &__container{
+    width:30em;
+    display:block;
+    max-height:40.8em;
+    margin-left: 8.9em;
+    position: relative;
+    float: left;
+    &--right{
+      float: right;
+      margin-right:3em;
+    }
+  }
+}
+.container{
+  &__link{
+    display:block;
+    margin: auto;
+    width:10em;/*140px*/
+    height:2.8571em; /*40px*/
+    position:absolute;
+    bottom:-20px;
+    left:0;
+    right: 0;
+  }
+}
+@media screen and (max-width:1212px){
+  .whosbaobab{
+    &__maincontainer{
+      width:100%;
+    }
+  }
+}
+@media screen and (max-width:885px) {
+  .whosbaobab{
+    &__container{
+      width:30em;
+      &--right{
+      display: inline-block;
+      margin-left: 1em;
+      float:none;
+      }
+    }
+  }
+}
+@media screen and (max-width:745px) {
+  .whosbaobab{
+    &__container{
+      width:95%;
+      float: none;
+      margin:0;
+      margin:auto auto 4em auto;
+      &--right{
+      display:block;
+      float:none;
+      margin:0;
+      margin:auto;
+      }
+    }
+  }
+}

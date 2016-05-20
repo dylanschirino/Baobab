@@ -1,0 +1,61 @@
+/* BAOBAB Project
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 21/04/2016
+ */
+
+// 1. Settings - Variables globales
+// @import "settings/colors";
+@import "settings/fonts";
+@import "settings/hidden";
+
+// 2. Tools - Mixins globaux, functions & outils
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "object/subheader";
+@import "object/header";
+@import "object/mainimage";
+@import "object/whosbaobab";
+@import "object/doityourself";
+@import "object/decoration";
+@import "object/actualite";
+@import "object/actualitypage";
+@import "object/viewpage";
+@import "object/about";
+@import "object/courtmetrage";
+@import "object/video";
+@import "object/diffusion";
+@import "object/animetoimeme";
+@import "object/ministudio";
+@import "object/donate";
+@import "object/contact";
+@import "object/footer";
+
+// 6. Components - Design des composants, morceaux d'UI
+
+@import "components/subheader";
+@import "components/header";
+@import "components/whosbaobab";
+@import "components/actualite";
+@import "components/actualitypage";
+@import "components/viewpage";
+@import "components/doityourself";
+@import "components/decoration";
+@import "components/mainimage";
+@import "components/about";
+@import "components/courtmetrage";
+@import "components/video";
+@import "components/diffusion";
+@import "components/animetoimeme";
+@import "components/ministudio";
+@import "components/donate";
+@import "components/contact";
+@import "components/footer";

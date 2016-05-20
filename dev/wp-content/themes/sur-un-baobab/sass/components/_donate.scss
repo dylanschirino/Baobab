@@ -1,0 +1,50 @@
+/* BAOBAB Project
+ *
+ * /sass/components/donate.scss - design of donate stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 05/05/2016
+ */
+.bckg{
+  background-color: #D8D8D8;
+  padding-top:2em;
+}
+
+.donate{
+  background-color: #DEE4EA;
+  border-radius: 5px;
+  text-align: center;
+  &__title{
+    font:3.6em $quicksandStack;
+    text-transform: uppercase;
+    padding: 2.1111em 0 1.444em 0;
+  }
+  &__label{
+    font-size: 1.4em;
+    line-height: 1.7em;
+    padding-bottom: 1em;
+  }
+  &__input{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    -webkit-appearance: none;
+  }
+  &__submit{
+    font: 1.5em $quicksandStack;
+    text-transform: uppercase;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    background-color: #06A182;
+    -webkit-appearance: none;
+    transition: .2s ease-in-out;
+    &:hover,&:focus{
+      cursor:pointer;
+      color: #06A182;
+      background-color: white;
+      border:1px solid #06A182;
+    }
+  }
+}

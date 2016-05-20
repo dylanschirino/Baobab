@@ -2,9 +2,7 @@
 /*
  * Define post_types & taxonomies
  */
-
 add_theme_support( 'post-thumbnails' );
-
 register_post_type( 'project', [
             'label' => __('Court-métrages','b'),
             'labels' => [
@@ -18,7 +16,6 @@ register_post_type( 'project', [
             'supports' => ['title','editor','thumbnail'],
             'has_archive' => true
       ] );
-
 register_taxonomy( 'project-type', 'project', [
             'label' => __('Types de projets','b'),
             'labels' => [
@@ -28,24 +25,17 @@ register_taxonomy( 'project-type', 'project', [
             'description' => __('Le procédé utilisé pour créer ce projet','b'),
             'hierarchical' => true
       ] );
+      /*
+       * Defines Option page
+       */
+
 /*
-*  Register nav menus
-*/
-register_nav_menu('main-nav',__('Menu principale utilisé dans le header.','b'));
-
-function b_get_menu_id($location){
-  $locations = get_nav_menu_locations();
-
-  if(isset($locations[$location])){
-    return $locations[$location];
-  }
-    return false;
-}
-
+ * Defines navigation menus.
+ */
+register_nav_menu( 'main-nav', __('Menu principal, affiché dans le header.','b') );
 /*
  * Generates a custom excerpt, used on the homepage
  */
-
 function get_the_custom_excerpt($length = 150)
 {
       $excerpt = get_the_content();
@@ -58,16 +48,13 @@ function get_the_custom_excerpt($length = 150)
       // - etc.
       return substr($excerpt, 0, $length);
 }
-
 function the_custom_excerpt($length = 150)
 {
       echo get_the_custom_excerpt($length);
 }
-
 /*
  * Generates a link label containing the post_title (from the loop)
  */
-
 function get_the_link($string, $replace = '%s')
 {
       // Mode opératoire :
@@ -78,21 +65,52 @@ function get_the_link($string, $replace = '%s')
       // Cette amélioration va impacter l'accessibilité de votre site, mais donc aussi son référencement.
       return str_replace($replace, '<span class="sro">' . get_the_title() . '</span>', __($string,'b'));
 }
-
 function the_link($string, $replace = '%s')
 {
       echo get_the_link($string, $replace);
 }
-
-function b_get_menu_items($Location)
+/*
+ * Generates a custom menu array
+ */
+function b_get_menu_id( $location )
 {
-      $a =[];
-      foreach(wp_get_nav_menu_items(b_get_menu_id($Location))as $obj){
-        $item=new stdClass;
-        $item->Label=$obj->title;
-        $item->url=$obj->url;
-        array_push($a,$item);
-
-      };
-      return $a;
+      $a = get_nav_menu_locations();
+      if (isset($a[$location])) return $a[$location];
+      return false;
+}
+function b_get_menu_items( $location )
+{
+      $navItems = [];
+      foreach (wp_get_nav_menu_items( b_get_menu_id($location) ) as $obj) {
+            // Si vous avoir un contrôle sur les liens affichés, c'est ici. (Par exemple: mettre $item->isCurrent à true|false)
+            $item = new stdClass();
+            $item->url = $obj->url;
+            $item->label = $obj->title;
+            $item->icon = $obj->classes[0];
+            array_push($navItems, $item);
+      }
+      return $navItems;
+}
+/*
+ *    Generates a languages menu
+ *    Based on Polylang (plugin)
+ */
+function b_get_languages()
+{
+      $langItems = [];
+      $rawItems = pll_the_languages( [
+            'echo' => false,
+            'hide_if_empty' => false,
+            'hide_if_no_translation' => false,
+            'raw' => true
+      ] );
+      foreach ($rawItems as $raw) {
+            // Si vous souhaitez faire des manipulations sur le format des données, c'est ici. (Par exemple: changer les codes de langues de "es" à "ESP" pour des besoins en CSS)
+            $item = new stdClass();
+            $item->label = $raw['name'];
+            $item->url = $raw['url'];
+            $item->code = $raw['slug'];
+            array_push($langItems, $item);
+      }
+      return $langItems;
 }

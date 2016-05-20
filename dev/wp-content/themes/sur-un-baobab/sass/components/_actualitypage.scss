@@ -1,0 +1,63 @@
+/* BAOBAB Project
+ *
+ * /sass/components/actualitypage.scss - design of actualitypage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 26/04/2016
+ */
+.ariane{
+  background-color: #0098FF;
+  color:white;
+  transform: skewX(-15deg);
+  &__element{
+    font-size: 1.8em;
+    line-height: 2.2em;
+  }
+}
+.header{
+  &__title{
+      font-size:6em;
+  }
+  &__image{
+    display: inline-block;
+  }
+}
+.aside{
+  background-color:#17100E;
+  color:white;
+  &__title{
+    font: 2em $quicksandStack;
+    padding:2em 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__element{
+    &--checkbox{
+      display: none;
+    }
+    &--label{
+      display: inline-block;
+      font-size: 1.6em;
+      padding:0em 0em 2.3em 2em;
+      &::before{
+        content:"";
+        display:inline-block;
+        width:1em;
+        height:1em;
+        border:1px solid white;
+        margin-right:2em;
+
+      }
+    }
+  }
+}
+.actu{
+  &__title{
+    font-family: $quicksandStack;
+  }
+}
+input[type="checkbox"]:checked + label::before{
+    border-radius: 50%;
+    background-color: white;
+    transition: .3s ease-in-out;
+}

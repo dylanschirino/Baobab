@@ -7,81 +7,99 @@
 get_header();
 
 ?>
-
-      <section class="intro">
-
-      <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
-
-            <h2 class="intro__title"><?php the_title();?></h2>
-            <p class="intro__slogan"><?php bloginfo('description');?></p>
-            <div class="intro__text">
-                  <?php the_content();?>
-            </div>
-
-            <aside class="about">
-                  <h3 class="about__title"><?php the_field('about_title');?></h3>
-                  <div class="about__text">
-                        <?php the_field('about_content');?>
-                  </div>
-            </aside>
-
-      <?php endwhile; endif; ?>
-
+    <main>
+      <section class="mainimage">
+        <h2 aria-level="2" class="mainimage__title">
+          <?php echo bloginfo();?>
+        </h2>
+        <a class="mainimage__button" href="<?php echo the_field('home_url');?>" title="Accéder à la vidéo sur youtube"><?php _e('Voir la vidéo','b');?></a>
       </section>
 
-      <section class="latest-articles">
-            <h2 class="latest-articles__title"><?php _e('Mes articles','b');?></h2>
+      <section class="whosbaobab">
+        <div class="whosbaobab__maincontainer" id="apparition">
+          <div class="whosbaobab__container">
+            <h3 aria-level="3" class="container__title"><?php _e('Qui sommes nous','b');?></h3>
+            <p class="container__text">
+            <?php echo the_field('description_baobab');?>
+            </p>
+            <a href="<?php echo the_permalink('65'); ?>" title="Accéder à la page projet" class="container__link"><?php _e('Nous connaitre','b');?></a>
+          </div>
 
-            <div class="latest-articles__container">
-
-            <?php
-                  $posts = new WP_Query( ['posts_per_page' => 3] );
-                  if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
-            ?>
-
-                  <article class="article">
-                        <h3 class="article__title"><?php the_title();?></h3>
-                        <p class="article__date"><?php
-                              $sTime = '<time datetime="' . get_the_time('c') . '">' . get_the_time('l j F') . '</time>';
-                              echo str_replace('%s', $sTime, __('Publié le %s.','b'));
-                        ?></p>
-                        <p class="article__excerpt"><?php the_custom_excerpt(90);?></p>
-                        <a href="<?php the_permalink();?>" class="article__more"><?php the_link('Voir l\'article %s');?></a>
-                  </article>
-
-            <?php endwhile; endif; ?>
-
+          <article class="whosbaobab__soutien">
+            <div class="whosbaobab__container whosbaobab__container--right">
+              <h3 aria-level="3" class="container__title container__title--red"><?php _e('Faire un don','b');?></h3>
+              <p class="container__text container__text--red">
+                <?php echo the_field('pourquoi_donner');?>
+              </p>
+              <a href="<?php echo the_permalink('69');?>" title="Accéder à la page projet" class="container__link container__link--red"><?php _e('Faire un don','b');?></a>
             </div>
+        </article>
+        </div>
       </section>
 
-      <section class="latest-projects">
-            <h2 class="latest-projects__title"><?php _e('Mes dernières réalisations','b');?></h2>
-            <div class="latest-projects__container">
+      <section class="lastactu">
+        <h3 class="lastactu__title" aria-level="3"><?php _e('Actualité','b');?></h3>
 
-            <?php
-                  $posts = new WP_Query( ['posts_per_page' => 2, 'post_type' => 'project'] );
-                  if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
-            ?>
+        <article class="actu">
+          <a class="actu__link" href="actu/viewactu.html" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="img/imgactu.jpg" width="297" height="240" alt="image actualité">
+          </a>
+          <div class="actu__info">
+        <h4 class="actu__title" aria-level="4">
+          Projection de Safidin’i Pela à Tuléar</h4>
+          <ul class="actu__list">
+            <li class="actu__element">8 avril 2016 /</li>
+            <li class="actu__element actu__element--green">ressources /</li>
+            <li class="actu__element">auteur&nbsp;:&nbsp;helena</li>
+          </ul>
+          <p class="actu__text">
+          La première projection du dessin animé Safidin’i Pela est prévue ce samedi 31 octobre 2015 à 9h au cinéma Le Tropic de Tuléar. Le film sera projeté en vezo sous-titré en français.
+          </p>
+          <a class="actu__button" href="actu/viewactu.html" title="Accéder à a fiche">
+            Lire la suite
+          </a>
+        </div>
+        </article>
 
-                  <article class="project">
-                        <h3 class="project__title"><?php the_title();?></h3>
-                        <figure class="project__fig">
-                              <img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php echo str_replace('%s', get_the_title(), __('Affiche du court-métrage %s','b'));?>" class="project__thumb">
-                        </figure>
-                        <dl class="project__details">
-                              <dt class="project__label"><?php _e('Pays de réalisation&nbsp;:');?></dt>
-                              <dd class="project__value"><?php the_field('country');?></dd>
-                              <dt class="project__label"><?php _e('Durée&nbsp;:');?></dt>
-                              <dd class="project__value"><?php the_field('time');?></dd>
-                        </dl>
-                        <a href="<?php the_permalink();?>" class="project__link"><?php the_link('Voir le projet %s');?></a>
-                  </article>
-
-            <?php endwhile; endif; ?>
-
-            </div>
+        <article class="actu">
+          <a class="actu__link" href="actu/viewactu.html" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="img/imgactu.jpg" width="297" height="240" alt="image actualité">
+          </a>
+          <div class="actu__info">
+        <h4 class="actu__title" aria-level="4">
+          Sur Un Baobab a un an !</h4>
+          <ul class="actu__list">
+            <li class="actu__element">8 avril 2016</li>
+            <li class="actu__element actu__element--green">ressources</li>
+            <li class="actu__element">auteur&nbsp;:&nbsp;helena</li>
+          </ul>
+          <p class="actu__text">
+           Il y a juste un an, François et moi partions seuls pour Madagascar avec pour unique certitude l’envie commune de réaliser un projet où se rejoignent nos passions pour l’éducation et le cinéma d’animation...
+          </p>
+          <a class="actu__button" href="actu/viewactu.html" title="Accéder à a fiche">
+            Lire la suite
+          </a>
+        </div>
+        </article>
       </section>
 
-<?php
+      <section class="doityourself">
+        <h3 aria-level="3" class="doityourself__title" id="apparition">
+          ce que tu peux faire toi même
+        </h3>
+        <div class="doityourself__container">
+        <a href="ministudio.html" class="doityourself__link"><img class="doityourself__image" src="<?php echo the_field('dessine_img');?>" width="345" height="345" alt="dessine ton histoire image">
+          Dessine ton histoire
+        </a>
+        <a href="ministudio.html" class="doityourself__link"><img class="doityourself__image" src="img/ministudio.jpg" width="345" height="345" alt="dessine ton histoire image">Cree ton mini studio
+        </a>
+      </div>
+      </section>
 
-get_footer();
+      <section class="decoration">
+        <h3 aria-level="3" class="decoration__title" id="apparition">Une creation collective
+        <small class="decoration__title--small">avec</small> <strong class="decoration__title--strong"> 9 enfants</strong> <small class="decoration__title--small">et</small> <strong class="decoration__title--strong">adolescents</strong>
+        de tuléar, <strong class="decoration__title--strong">Madagascar</strong>
+      </h3>
+      <img class="decoration__image" id="deplacement" src="img/motard.png" width="585" height="430" alt="image d'un homme sur une moto en carton">
+      </section>
+  </main>
+  <?php get_footer();?>

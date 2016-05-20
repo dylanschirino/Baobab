@@ -1,0 +1,97 @@
+/* BAOBAB Project
+ *
+ * /sass/components/courtmetrage.scss - design of courtmetrage stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/04/2016
+ */
+
+.imagecover{
+  position: relative;
+  &__title{
+    font-size:6.4em;
+    text-align: right;
+    padding-top: 0.703125em;
+    padding-right:1.5em;
+  }
+}
+
+.videolist{
+  background-color: #17100e;
+  padding:8em 0;
+  &__button{
+    background-color: #E28139;
+    font-size:1.8em;
+    line-height: 3.7em;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+
+.cards{
+  color:white;
+  padding-top: 7.5em;
+  &__list{
+    border-top: 1px solid white;
+    padding: 1.3em 0;
+  }
+  &__link{
+    font-size: 1.8em;
+    font-weight: bold;
+    color:white;
+    transition: .2s linear;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__title{
+    font:2.6em $quicksandStack;
+    padding-bottom:0.6538em;
+  }
+}
+.icon{
+  &__element{
+    font-size: 1.2em;
+    padding-bottom: 2.3em;
+    &--right{
+      font-size: 1.2em;
+      padding-bottom: 2.3em;
+    }
+    &--lieu::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+    &--duree::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+    &--date::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+    &--theme::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+    &--langue::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+    &--soustitre::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+    &--participant::before{
+      content:"";
+      font:1.8em $glyphsStack;
+      padding-right:1em;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+/* BAOBAB Project
+ *
+ * /sass/object/video.scss - NON design of video stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/05/2016
+ */
+
+ .ariane{
+   &--static{
+        position:static;
+   }
+ }
+.video{
+    margin-bottom: -10em;
+  &__title{
+    margin-top: -1.65em;
+    margin-left: 3em;
+  }
+  &__list{
+    text-align: center;
+  }
+  &__subtitle{
+    margin-bottom:0.78125em;
+  }
+  & li{
+    display: inline-block;
+  }
+  &__link{
+    &--diffusion{
+      margin-left: 1em;
+    }
+  }
+  &__voirfilm{
+    margin-top:6.7em;
+    text-align: center;
+  }
+}
+.voirfilm{
+  &__text{
+    width: 40%;
+    margin: auto;
+  }
+}
+@media screen and (max-width:792px) {
+  .voirfilm{
+    &__video{
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width:473px) {
+  .voirfilm{
+    &__text{
+      width: 90%;
+      padding: 1em;
+    }
+  }
+  .video{
+    &__title,&__subtitle{
+      margin: 0;
+    }
+  }
+  .ariane{
+    display:none;
+  }
+}
+
+.discover{
+  width: 60%;
+  margin: auto;
+  &__text{
+    width: 80%;
+    margin: auto;
+  }
+}
+.makingof{
+  width: 60%;
+  margin: auto;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__image{
+    float: left;
+    width:auto;
+    height: 15em;
+  }
+}
+
+@media screen and (max-width:590px) {
+
+  .makingof{
+    &__image{
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+.fichetechnique{
+  width: 60%;
+  margin: auto;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__affiche{
+    float:left;
+    margin-right: 3em;
+  }
+}
+@media screen and (max-width:389px) {
+
+  .fichetechnique{
+    width:90%;
+    margin: auto;
+    &__affiche{
+      margin: 0;
+      max-width:100%;
+      height: auto;
+    }
+
+  }
+
+}
+/* onglet qui fonctionne et qui affiche leur contenu */
+
+.tab-pane{
+  display: none;
+}
+
+.active{
+  display:block;
+}

@@ -1,0 +1,65 @@
+/* BAOBAB Project
+*
+* /sass/components/diffusion.scss - design of diffusion stylesheet
+*
+* coded by Dylan Schirino
+* started at 05/05/2016
+*/
+
+.diffusion{
+  background: #c77d0c; /* Old browsers */
+  background: -moz-linear-gradient(top,  #c77d0c 1%, #954705 100%);
+  background: -webkit-linear-gradient(top,  #c77d0c 1%,#954705 100%);
+  background: linear-gradient(to bottom,  #c77d0c 1%,#954705 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77d0c', endColorstr='#954705',GradientType=0 ); /* IE6-9 */
+  opacity: 0.8;
+  background: url("../img/diffusion.jpg") no-repeat center;
+  background-size: cover;
+
+
+  &__title{
+    font-size: 4.8em;
+    padding-top: 0.8958em;
+    padding-right: 2.8541666667em;
+  }
+  &__form{
+    padding-top: 8.5em;
+  }
+  &__label{
+    font-size: 1.8em;
+    padding:0.611em 0;
+    text-shadow: 0px 0.5px black;
+    &--textarea{
+      padding-top:1em;
+    }
+  }
+  &__input{
+    border: none;
+    padding-left: 1em;
+    border-radius: 5px;
+    border:1px solid black;
+  }
+  &__submit{
+    border: none;
+    background-color: #0098FF;
+    font: 1.6em $quicksandStack;
+    color:white;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    &:hover,&:focus{
+      cursor: pointer;
+      background-color: white;
+      color:#0098FF;
+    }
+  }
+}
+
+@media screen and (max-width:429px) {
+  .diffusion{
+    &__title{
+      text-align: center;
+      padding: 0;
+      padding-top: 1em;
+    }
+  }
+}

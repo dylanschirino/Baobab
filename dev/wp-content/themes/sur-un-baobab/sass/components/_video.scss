@@ -1,0 +1,135 @@
+/* BAOBAB Project
+*
+* /sass/components/video.scss - design of video stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/05/2016
+*/
+
+.video{
+  color:white;
+  background-color: #17100e;
+  padding-bottom: 3em;
+  &__title{
+    font-size: 6.4em;
+    padding-top: 2em;
+  }
+  &__subtitle{
+    font: 6.4em $amaticStack;
+    text-align: right;
+    padding-right:1.5625em;
+  }
+  &__link{
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    color:white;
+    padding:1em;
+    border: 3px solid white;
+    border-bottom:none;
+    &:hover{
+      transform: translateY(-10px);
+    }
+    &--diffusion{
+      border: 3px solid #1F5274;
+      &:hover{
+        background-color: white;
+        color:black;
+        transform:none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:473px) {
+  .voirfilm{
+    &__text{
+      width: 90%;
+      padding: 1em;
+    }
+  }
+  .video{
+    &__title,&__subtitle{
+      font-size: 4em;
+      padding:0.4em 0;
+      text-align: center;
+    }
+  }
+}
+.voirfilm{
+  &__title{
+    font-size:4em;
+    padding:1em 0;
+  }
+  &__text{
+    font-size: 1.4em;
+    line-height: 1.6em;
+    text-align: left;
+  }
+}
+.discover{
+  &__text{
+    font-size: 1.6em;
+    line-height: 1.8em;
+    padding:2em 0;
+  }
+  &__title{
+    font-size: 5em;
+  }
+  &__image{
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width:754px) {
+  .discover{
+    padding:0;
+    width:90%;
+    margin: auto;
+    &__image{
+      padding: 0;
+      max-width:90%;
+      height: auto;
+    }
+  }
+}
+
+.makingof{
+  &__title{
+    font-size:5em;
+    padding-bottom: 1em;
+  }
+}
+
+.fichetechnique{
+  &__title{
+    font-size: 4em;
+    padding-bottom:1em;
+  }
+  &__table{
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+}
+
+.table{
+  &__caption{
+    font:2em $amaticStack;
+    line-height: 2.2em;
+  }
+  &__row{
+    border-bottom: 1px solid white;
+    transition: .2s linear;
+    &:hover{
+      background-color: #ccc;
+      color:black;
+    }
+  }
+  &__data{
+    padding: 1em 0;
+  }
+  &__head{
+    padding:1em 2em 1em 0;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,100 @@
+/* BAOBAB Project
+*
+* /sass/object/courtmetrage.scss - NON design of courtmetrage stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/04/2016
+*/
+.ariane{
+  position: absolute;
+  z-index: 111;
+}
+.imagecover{
+  background: url("../img/courtmetrage.jpg") no-repeat center center;
+  background-size: cover;
+  height:60em;
+  position:relative;
+  top:-10px;
+}
+
+.videolist{
+  margin-top:-1em;
+  margin-bottom: -10em;
+  &__title{
+    display: none;
+  }
+  &__button{
+    width:17em;
+    height:4.111em;
+    display: block;
+    margin:auto;
+
+  }
+}
+
+.cards{
+  width: 65%;
+  margin-left:11.24em;
+  padding-bottom:11em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__element{
+    display:inline-block;
+    margin-right:2em;
+  }
+  &__image{
+    float: right;
+  }
+  &__icon{
+    display:inline-block;
+  }
+}
+
+.icon{
+  &__list{
+    display: inline-block;
+    &--right{
+      display: inline-block;
+      vertical-align: top;
+      margin-left:10em;
+    }
+  }
+}
+
+
+@media screen and (max-width:587px) {
+  .cards{
+    width: 80%;
+    margin:auto;
+    &__element{
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media screen and (max-width:472px) {
+  .cards{
+    margin-left:3em;
+    &__image{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .icon{
+    &__list{
+      &--right{
+        margin-left:0;
+      }
+    }
+  }
+}
+@media screen and (max-width:343px) {
+  .icon{
+    &__list{
+      font-size: 0.9em;
+    }
+  }
+}
