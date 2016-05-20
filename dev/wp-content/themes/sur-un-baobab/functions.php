@@ -114,3 +114,11 @@ function b_get_languages()
       }
       return $langItems;
 }
+
+function the_link_image(){
+
+  $image = get_field('image');
+  $width = $image['sizes'][ 350 . '-width' ];
+	$height = $image['sizes'][ $size . '-height' ];
+  echo $image['url'];
+}
