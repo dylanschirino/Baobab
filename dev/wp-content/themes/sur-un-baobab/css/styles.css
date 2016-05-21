@@ -42,6 +42,9 @@ h1, .subheader__label {
 
 .mainmenu__title {
   display: none; }
+  #reply-title,.logged-in-as{
+    display: none;
+  }
 
 /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
 .visuallyhidden {
@@ -1496,7 +1499,10 @@ input[type="checkbox"]:checked + label::before {
 
 .actuality__text {
   font-size: 1.6em;
-  line-height: 2.1875em; }
+  line-height: 1.9em; }
+
+.actuality__image {
+  padding-left: 3em; }
 
 .commentaire__title {
   font-size: 4.8em;

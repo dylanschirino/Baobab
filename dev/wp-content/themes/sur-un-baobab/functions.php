@@ -127,7 +127,7 @@ register_post_type( 'project', [
         if(!is_home()){
           echo 'Accueil '.'/ ';
           if(is_category()||is_single()){
-            the_category('title_li=');
+            the_category('title');
           }
           else if(is_search()){
             echo 'Termes recherchés&nbsp;:'.get_search_query();
@@ -137,3 +137,27 @@ register_post_type( 'project', [
           }
         }
       }
+
+/*
+***Commentaire changement
+*/
+
+      $comment_args = array( 'fields' => apply_filters( 'comment_form_default_fields', array(
+
+          'author' =>
+          '<label for="author" class="form__label">' . __( 'Pseudo' ) . '</label> '.
+          '<input id="author" class="form__input" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />',
+
+          'email'  =>
+          '<label for="email" class="form__label">' . __( 'Mail' ) . '</label> ' .
+          '<input id="email" class="form__input" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />',
+
+          'url'    => '' ) ),
+
+          'comment_field' =>'<label for="comment" class="form__label">' . __( 'Message' ) . '</label>' .
+           '<textarea id="comment" class="form__textarea" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
+
+           'class_submit'=>'form__submit',
+           'label_submit'=>'Commenter'
+
+  );

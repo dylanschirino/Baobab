@@ -6,13 +6,10 @@ Template Name: Homepage
 
 get_header();
 /*Verification du chargement des images*/
-if( get_field('image_dessine') ):
 $image = get_field('image_dessine');
 
-if( get_field('image_ministudio') ):
 $image_mini = get_field('image_ministudio');
 
-if( get_field('image_detourer') ):
 $image_detourer = get_field('image_detourer');
 /*WP query global pour charger les 2 derniers post*/
 if(is_page()){
@@ -55,6 +52,24 @@ if(is_page()){
     </div>
   </section>
 
+  <section class="doityourself">
+    <h3 aria-level="3" class="doityourself__title" id="apparition">
+      <?php echo the_field('tutoriel_title');?>
+    </h3>
+    <div class="doityourself__container">
+
+    <a href="ministudio.html" class="doityourself__link" title="Accéder au tutoriel Dessine ton histoire">
+      <img class="doityourself__image" src="<?php echo $image['url'];?>" width="345" height="345" alt="dessine ton histoire image">
+      <?php _e('Dessine ton histoire','b');?>
+    </a>
+    <a href="ministudio.html" class="doityourself__link">
+
+      <img class="doityourself__image" src="<?php echo $image_mini['url'];?>" width="345" height="345" alt="dessine ton histoire image">
+      <?php _e('Cree ton mini studio','b');?>
+    </a>
+  </div>
+</section>
+
   <section class="lastactu">
     <h3 class="lastactu__title" aria-level="3"><?php _e('Actualité','b');?></h3>
 
@@ -84,26 +99,6 @@ if(is_page()){
 
       </section>
 
-      <section class="doityourself">
-        <h3 aria-level="3" class="doityourself__title" id="apparition">
-          <?php echo the_field('tutoriel_title');?>
-        </h3>
-        <div class="doityourself__container">
-
-        <a href="ministudio.html" class="doityourself__link" title="Accéder au tutoriel Dessine ton histoire">
-          <img class="doityourself__image" src="<?php echo $image['url'];?>" width="345" height="345" alt="dessine ton histoire image">
-            <?php endif;?>
-          <?php _e('Dessine ton histoire','b');?>
-        </a>
-        <a href="ministudio.html" class="doityourself__link">
-
-          <img class="doityourself__image" src="<?php echo $image_mini['url'];?>" width="345" height="345" alt="dessine ton histoire image">
-        <?php endif;?>
-          <?php _e('Cree ton mini studio','b');?>
-        </a>
-      </div>
-    </section>
-
     <section class="decoration">
       <h3 aria-level="3" class="decoration__title" id="apparition">
         <?php _e('Une creation collective','b');?>
@@ -114,7 +109,6 @@ if(is_page()){
       </h3>
 
       <img class="decoration__image" id="deplacement" src="<?php echo $image_detourer['url'];?>" width="585" height="430" alt="image d'un homme sur une moto en carton">
-    <?php endif;?>
     </section>
   </main>
   <?php get_footer();?>

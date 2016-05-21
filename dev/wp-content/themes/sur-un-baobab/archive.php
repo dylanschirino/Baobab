@@ -25,26 +25,6 @@ if(is_page()){
 }
 ?>
 
-<aside class="aside">
-  <h3 class="aside__title" aria-level="3">Filtrer par</h3>
-    <ul class="aside__list">
-      <li class="aside__element">
-        <input class="aside__element--checkbox" type="checkbox" name="croissant" id="croissant">
-        <label for="croissant" class="aside__element--label">Date croissante
-        </label>
-      </li>
-      <li class="aside__element">
-        <input class="aside__element--checkbox" type="checkbox" name="decroissant" id="decroissant">
-        <label for="decroissant" class="aside__element--label">Date Décroissante
-        </label>
-      </li>
-      <li class="aside__element">
-        <input class="aside__element--checkbox" type="checkbox" name="categorie" id="categorie">
-        <label for="categorie" class="aside__element--label">Catégorie
-        </label>
-      </li>
-    </ul>
-</aside>
 
 <section class="actualite">
   <div class="actualite__header">
@@ -82,6 +62,34 @@ if(is_page()){
   </article>
     <?php endwhile; endif;?>
 </section>
+
+
+<aside class="aside">
+  <h3 class="aside__title" aria-level="3"><?php _e('Filtrer par','b');?></h3>
+  <form method="post">
+    <ul class="aside__list">
+      <?php $post=get_post();
+      $categorie=get_the_category($post->ID);?>
+      <li class="aside__element">
+        <input class="aside__element--checkbox" type="checkbox" name="croissant" id="croissant" value="<?php echo $categorie[0]->cat_name;?>">
+        <label for="croissant" class="aside__element--label">
+        <?php echo $categorie[0]->cat_name;?>
+        </label>
+      </li>
+      <li class="aside__element">
+        <input class="aside__element--checkbox" type="checkbox" name="decroissant" id="decroissant">
+        <label for="decroissant" class="aside__element--label"><?php echo $categorie[0]->cat_name;?>
+        </label>
+      </li>
+      <li class="aside__element">
+        <input class="aside__element--checkbox" type="checkbox" name="categorie" id="categorie">
+        <label for="categorie" class="aside__element--label">Catégorie
+        </label>
+      </li>
+    </ul>
+    <input type="submit" value="rechercher">
+    </form>
+</aside>
 
 <?php
 get_footer();
