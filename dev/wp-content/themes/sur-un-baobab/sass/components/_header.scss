@@ -33,28 +33,28 @@
     &--home{
     margin-left: 1.5em;
     &::before{
-      content:"";
+      content:"\e948";
       display: block;
       font:1.6em $glyphsStack;
     }
   }
     &--video::before{
-      content:"";
+      content:"\e900";
       display: block;
       font:1.6em $glyphsStack;
     }
     &--anime::before{
-      content:"";
+      content:"\e905";
       display: block;
       font:1.6em $glyphsStack;
     }
     &--project::before{
-      content:"";
+      content:"\e906";
       display: block;
       font:1.6em $glyphsStack;
     }
     &--contact::before{
-      content:"";
+      content:"\e94a";
       display: block;
       font:1.6em $glyphsStack;
     }

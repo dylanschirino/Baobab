@@ -19,6 +19,7 @@
      font-size:1.2em;
      display: inline-block;
      padding-left: 2em;
+     transition: .2s linear;
    }
    &__link{
      color:white;
@@ -29,25 +30,31 @@
     }
      &--facebook::before{
        padding-bottom: 6px;
-       content:"";
+       content:"\e93e";
        display: block;
        font:3em $glyphsStack;
      }
      &--vimeo::before{
        padding-bottom: 6px;
-       content:"";
+       content:"\e952";
        display: block;
        font:3em $glyphsStack;
      }
      &--youtube::before{
        padding-bottom: 6px;
-       content:"";
+       content:"\e956";
        display: block;
        font:3em $glyphsStack;
      }
-     &--rss::before{
+     &--instagram::before{
        padding-bottom: 6px;
-       content:"";
+       content:"\e901";
+       display: block;
+       font:3em $glyphsStack;
+     }
+     &--twitter::before{
+       padding-bottom: 6px;
+       content:"\e902";
        display: block;
        font:3em $glyphsStack;
      }

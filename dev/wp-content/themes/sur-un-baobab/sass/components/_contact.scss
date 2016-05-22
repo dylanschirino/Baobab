@@ -33,14 +33,14 @@
       font: 4em $glyphsStack;
     }
     &--mail::after{
-        content:"";
+        content:"\e93d";
     }
     &--whatsapp::after{
-      content:"";
+      content:"\e955";
       padding-left:2.2em;
     }
     &--phone::after{
-      content:"";
+      content:"\e94f";
       padding-left:2.4em;
     }
   }

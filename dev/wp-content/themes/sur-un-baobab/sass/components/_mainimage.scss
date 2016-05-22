@@ -7,13 +7,13 @@
 */
 
 .mainimage{
-  background: url("../img/mainimage.jpg") no-repeat center center;
+  background: url("../img/mainimage.jpg") no-repeat center fixed;
   background-size:cover;
   &__title{
-    font-size:10em;
+    font-size:8em;
     padding-top: 0.6667em;
     color:white;
-    text-shadow: 2px 2px white;
+    text-shadow: 1px 2px white;
   }
   &__button{
     font:bold 2.4em/3em $quicksandStack;
@@ -23,7 +23,7 @@
     color:white;
     background-color: #0098FF;
     &::before{
-      content: "";
+      content: "\e956";
       display: inline-block;
       font-family: $glyphsStack;
       padding-right: 15px;

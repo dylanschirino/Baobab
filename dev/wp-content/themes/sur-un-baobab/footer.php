@@ -16,6 +16,12 @@
     <li class="follow__element">
       <a class="follow__link follow__link--youtube" href="<?php echo $easy_options['youtube'];?>"><?php _e('Youtube','b');?></a>
     </li>
+    <li class="follow__element">
+      <a class="follow__link follow__link--instagram" href="<?php echo $easy_options['instagram'];?>"><?php _e('Instagram','b');?></a>
+    </li>
+    <li class="follow__element">
+      <a class="follow__link follow__link--twitter" href="<?php echo $easy_options['twitter'];?>"><?php _e('Twitter','b');?></a>
+    </li>
   </ul>
 </article>
 

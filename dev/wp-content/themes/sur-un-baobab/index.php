@@ -25,9 +25,9 @@ if(is_page()){
 <main>
   <section class="mainimage">
     <h2 aria-level="2" class="mainimage__title">
-      <?php echo bloginfo();?>
+      <?php _e('Animation Workshop','b');?>
     </h2>
-    <a class="mainimage__button" href="<?php echo the_field('home_url');?>" title="Accéder à la vidéo sur youtube"><?php _e('Voir la vidéo','b');?></a>
+    <a class="mainimage__button" href="<?php echo the_field('home_url');?>" title="Accéder à la vidéo sur youtube"><?php _e('Voir le projet','b');?></a>
   </section>
 
   <section class="whosbaobab">
@@ -74,7 +74,7 @@ if(is_page()){
     <h3 class="lastactu__title" aria-level="3"><?php _e('Actualité','b');?></h3>
 
     <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
-    <article class="actu">
+    <article class="actu actu--index">
       <a class="actu__link" href="<?php the_permalink();?>" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="<?php the_post_thumbnail_url();?>" width="297" height="240" alt="image actualité">
       </a>
       <div class="actu__info">

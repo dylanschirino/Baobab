@@ -59,37 +59,37 @@
       padding-bottom: 2.3em;
     }
     &--lieu::before{
-      content:"";
+      content:"\e950";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }
     &--duree::before{
-      content:"";
+      content:"\e939";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }
     &--date::before{
-      content:"";
+      content:"\e94d";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }
     &--theme::before{
-      content:"";
+      content:"\e945";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }
     &--langue::before{
-      content:"";
+      content:"\e949";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }
     &--soustitre::before{
-      content:"";
+      content:"\e954";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }
     &--participant::before{
-      content:"";
+      content:"\e94c";
       font:1.8em $glyphsStack;
       padding-right:1em;
     }

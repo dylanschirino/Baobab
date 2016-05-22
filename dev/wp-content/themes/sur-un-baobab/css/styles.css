@@ -42,9 +42,6 @@ h1, .subheader__label {
 
 .mainmenu__title {
   display: none; }
-  #reply-title,.logged-in-as{
-    display: none;
-  }
 
 /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
 .visuallyhidden {
@@ -101,6 +98,10 @@ table {
 html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
+body {
+  background: url("../img/grille.png") center center;
+  opacity: .8; }
+
 h1, h2, h3 {
   font-family: "Amatic", sans-serif; }
 
@@ -126,25 +127,14 @@ a {
     .subheader__element:first-child {
       margin-left: 2.4em; }
     .subheader__element--right {
-      float: right; }
+      float: right;
+      margin-right: 1em; }
   .subheader__link {
     margin-right: 1em; }
-  .subheader__search {
-    width: 16.3em;
-    height: 23px;
-    position: relative;
-    top: -3px;
-    margin-right: 3.6em; }
-  .subheader__submit {
-    height: 1.6em;
-    position: absolute;
-    right: 4em;
-    top: 1.4em;
-    width: 2.5em; }
 
 @media screen and (max-width: 763px) {
   .subheader__menu {
-    font-size: 0.8em; }
+    font-size: 1em; }
   .subheader__element:first-child {
     margin-left: 1em; } }
 
@@ -153,13 +143,11 @@ a {
     margin-left: 1em; }
   .subheader__link {
     padding: 0;
-    margin: 0; }
-    .subheader__link--facebook, .subheader__link--youtube {
-      display: none; } }
+    margin: 0; } }
 
-@media screen and (max-width: 502px) {
+@media screen and (max-width: 378px) {
   .subheader__link {
-    display: none; } }
+    margin-top: 1em; } }
 
 /* BAOBAB Project
  *
@@ -379,10 +367,11 @@ a {
   width: 29.7em;
   height: 30em;
   margin-left: -2em;
+  margin-bottom: 3em;
   display: inline-block; }
   .actu:first-child {
     float: left; }
-  .actu:last-child {
+  .actu--index:last-child {
     margin-left: 25.9em; }
   .actu__info {
     position: relative;
@@ -449,9 +438,8 @@ label {
   margin: auto; }
 
 .actu--page {
-  margin-left: 3.4em; }
-  .actu--page:last-child {
-    margin-left: 10em; }
+  margin-left: 3.4em;
+  margin-top: 10em; }
 
 .header {
   position: relative; }
@@ -1125,7 +1113,7 @@ label {
   float: right;
   margin-right: 8em; }
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 917px) {
   .footer {
     padding: 0.5em; }
   .follow {
@@ -1159,15 +1147,7 @@ label {
     color: black;
     transition: .2s linear; }
     .subheader__link:hover {
-      font-size: 1.3em; }
-    .subheader__link--youtube::before {
-      color: white;
-      content: "";
-      font: 1.2em "glyphs"; }
-    .subheader__link--facebook::before {
-      color: white;
-      content: "";
-      font: 1.2em "glyphs"; }
+      text-decoration: underline; }
   .subheader__search {
     border: none;
     -webkit-appearance: none;
@@ -1215,23 +1195,23 @@ label {
     .mainmenu__link--home {
       margin-left: 1.5em; }
       .mainmenu__link--home::before {
-        content: "";
+        content: "\e948";
         display: block;
         font: 1.6em "glyphs"; }
     .mainmenu__link--video::before {
-      content: "";
+      content: "\e900";
       display: block;
       font: 1.6em "glyphs"; }
     .mainmenu__link--anime::before {
-      content: "";
+      content: "\e905";
       display: block;
       font: 1.6em "glyphs"; }
     .mainmenu__link--project::before {
-      content: "";
+      content: "\e906";
       display: block;
       font: 1.6em "glyphs"; }
     .mainmenu__link--contact::before {
-      content: "";
+      content: "\e94a";
       display: block;
       font: 1.6em "glyphs"; }
     .mainmenu__link--donate {
@@ -1314,7 +1294,7 @@ label {
  * started at 23/04/2016
  */
 .whosbaobab {
-  background: url("../img/quisommesnous.jpg") center fixed;
+  background-color: #DACABF;
   color: black; }
   .whosbaobab__container {
     background-color: white;
@@ -1332,19 +1312,19 @@ label {
   /*25/3.2*/
   color: #006BB2; }
   .container__title::after {
-    content: "";
+    content: "\e953";
     display: block;
     font: 3em "glyphs";
-    padding: 0.083em 0;
+    padding: 0.2em 0;
     margin: 0 60px;
     border-bottom: 1px solid #006BB2; }
   .container__title--red {
     color: #D75151; }
     .container__title--red::after {
-      content: "";
+      content: "\e925";
       display: block;
-      font: 3.6em "glyphs";
-      padding: 0.083em 0;
+      font: 3em "glyphs";
+      padding: 0.2em 0;
       margin: 0 60px;
       border-bottom: 1px solid #D75151; }
 
@@ -1481,15 +1461,15 @@ input[type="checkbox"]:checked + label::before {
   color: #363333;
   padding-bottom: 1em; }
   .header__element--date::before {
-    content: "";
+    content: "\e94d";
     padding-right: 1.2em;
     font: 1.2em "glyphs"; }
   .header__element--file::before {
-    content: "";
+    content: "\e946";
     padding-right: 1.2em;
     font: 1.2em "glyphs"; }
   .header__element--author::before {
-    content: "";
+    content: "\e94e";
     padding-right: 1.2em;
     font: 1.2em "glyphs"; }
 
@@ -1611,13 +1591,13 @@ input[type="checkbox"]:checked + label::before {
 * started at 21/04/2016
 */
 .mainimage {
-  background: url("../img/mainimage.jpg") no-repeat center center;
+  background: url("../img/mainimage.jpg") no-repeat center fixed;
   background-size: cover; }
   .mainimage__title {
-    font-size: 10em;
+    font-size: 8em;
     padding-top: 0.6667em;
     color: white;
-    text-shadow: 2px 2px white; }
+    text-shadow: 1px 2px white; }
   .mainimage__button {
     font: bold 2.4em/3em "Quicksand", Arial, sans-serif;
     text-transform: uppercase;
@@ -1626,7 +1606,7 @@ input[type="checkbox"]:checked + label::before {
     color: white;
     background-color: #0098FF; }
     .mainimage__button::before {
-      content: "";
+      content: "\e956";
       display: inline-block;
       font-family: "glyphs";
       padding-right: 15px; }
@@ -1673,19 +1653,19 @@ input[type="checkbox"]:checked + label::before {
   text-align: center;
   padding-top: 2em; }
   .description__title--groupe::after {
-    content: "";
+    content: "\e947";
     text-align: center;
     padding: 0.12em 0em;
     display: block;
     font: 4em "glyphs"; }
   .description__title--resultat::after {
-    content: "";
+    content: "\e93b";
     text-align: center;
     padding: 0.12em 0em;
     display: block;
     font: 4em "glyphs"; }
   .description__title--developpement::after {
-    content: "";
+    content: "\e93c";
     text-align: center;
     padding: 0.12em 0em;
     display: block;
@@ -1787,31 +1767,31 @@ input[type="checkbox"]:checked + label::before {
     font-size: 1.2em;
     padding-bottom: 2.3em; }
   .icon__element--lieu::before {
-    content: "";
+    content: "\e950";
     font: 1.8em "glyphs";
     padding-right: 1em; }
   .icon__element--duree::before {
-    content: "";
+    content: "\e939";
     font: 1.8em "glyphs";
     padding-right: 1em; }
   .icon__element--date::before {
-    content: "";
+    content: "\e94d";
     font: 1.8em "glyphs";
     padding-right: 1em; }
   .icon__element--theme::before {
-    content: "";
+    content: "\e945";
     font: 1.8em "glyphs";
     padding-right: 1em; }
   .icon__element--langue::before {
-    content: "";
+    content: "\e949";
     font: 1.8em "glyphs";
     padding-right: 1em; }
   .icon__element--soustitre::before {
-    content: "";
+    content: "\e954";
     font: 1.8em "glyphs";
     padding-right: 1em; }
   .icon__element--participant::before {
-    content: "";
+    content: "\e94c";
     font: 1.8em "glyphs";
     padding-right: 1em; }
 
@@ -2106,12 +2086,12 @@ input[type="checkbox"]:checked + label::before {
     padding-left: 1.2em;
     font: 4em "glyphs"; }
   .contactinfo__link--mail::after {
-    content: ""; }
+    content: "\e93d"; }
   .contactinfo__link--whatsapp::after {
-    content: "";
+    content: "\e955";
     padding-left: 2.2em; }
   .contactinfo__link--phone::after {
-    content: "";
+    content: "\e94f";
     padding-left: 2.4em; }
 
 .contactinfo__formlabel {
@@ -2167,7 +2147,8 @@ input[type="checkbox"]:checked + label::before {
 .follow__element {
   font-size: 1.2em;
   display: inline-block;
-  padding-left: 2em; }
+  padding-left: 2em;
+  transition: .2s linear; }
 
 .follow__link {
   color: white;
@@ -2177,22 +2158,27 @@ input[type="checkbox"]:checked + label::before {
     color: black; }
   .follow__link--facebook::before {
     padding-bottom: 6px;
-    content: "";
+    content: "\e93e";
     display: block;
     font: 3em "glyphs"; }
   .follow__link--vimeo::before {
     padding-bottom: 6px;
-    content: "";
+    content: "\e952";
     display: block;
     font: 3em "glyphs"; }
   .follow__link--youtube::before {
     padding-bottom: 6px;
-    content: "";
+    content: "\e956";
     display: block;
     font: 3em "glyphs"; }
-  .follow__link--rss::before {
+  .follow__link--instagram::before {
     padding-bottom: 6px;
-    content: "";
+    content: "\e901";
+    display: block;
+    font: 3em "glyphs"; }
+  .follow__link--twitter::before {
+    padding-bottom: 6px;
+    content: "\e902";
     display: block;
     font: 3em "glyphs"; }
 

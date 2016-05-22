@@ -17,38 +17,22 @@
       <h2 aria-level="2" class="subheader__title"><?php _e('Menu Secondaire','b');?></h2>
       <ul class="subheader__menu">
         <li class="subheader__element">
-          FR /
+          <a href="#" class="subheader__link" title="Traduire le site en français">FR</a>
         </li>
         <li class="subheader__element">
-          EN /
+          <a href="#" class="subheader__link" title="Traduire le site en Anglais">EN</a>
         </li>
         <li class="subheader__element">
-          ES
+          <a href="#" class="subheader__link" title="Traduire le site en Espagnol">ES</a>
         </li>
-        <li class="subheader__element subheader__element--right">
-          <form method="get" action="#" class="subheader__form">
-            <label for="search" class="subheader__label">Rechercher</label>
-            <input type="search" id="search" placeholder="Rechercher" class="subheader__search" name="search">
-            <input type="submit" value="OK" class="subheader__submit">
-          </form>
-        </li>
-        <li class="subheader__element subheader__element--right">
-          <a href="https://www.facebook.com/surunbaobab" class="subheader__link subheader__link--facebook" title="Accéder à la page facebook">
-            <span class="visuallyhidden">Facebook</span></a>
+          <li class="subheader__element subheader__element--right">
+            <a href="#" class="subheader__link"><?php _e('Presse','b');?></a>
           </li>
           <li class="subheader__element subheader__element--right">
-            <a href="https://www.youtube.com/channel/UCipelOUyTh7WbpxdWcB30vg" class="subheader__link subheader__link--youtube" title="Accéder à la page youtube">
-              <span class="visuallyhidden"><?php _e('Youtube','b');?></span>
-            </a>
+            <a href="<?php echo the_permalink('81');?>" class="subheader__link"><?php echo get_the_title('81');?></a>
           </li>
           <li class="subheader__element subheader__element--right">
-            <a href="#" class="subheader__link"><?php _e('Presse','b');?> /</a>
-          </li>
-          <li class="subheader__element subheader__element--right">
-            <a href="<?php echo the_permalink('81');?>" class="subheader__link"><?php echo get_the_title('81');?> /</a>
-          </li>
-          <li class="subheader__element subheader__element--right">
-            <a href="<?php echo the_permalink('78');?>" class="subheader__link"><?php echo get_the_title('78');?> /</a>
+            <a href="<?php echo the_permalink('78');?>" class="subheader__link"><?php echo get_the_title('78');?></a>
           </li>
         </ul>
       </nav>

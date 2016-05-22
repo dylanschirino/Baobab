@@ -16,17 +16,17 @@
     color:#363333;
     padding-bottom: 1em;
     &--date::before{
-      content:"";
+      content:"\e94d";
       padding-right:1.2em;
       font:1.2em $glyphsStack;
     }
     &--file::before{
-      content:"";
+      content:"\e946";
       padding-right:1.2em;
       font:1.2em $glyphsStack;
     }
     &--author::before{
-      content:"";
+      content:"\e94e";
       padding-right:1.2em;
       font:1.2em $glyphsStack;
     }
