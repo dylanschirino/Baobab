@@ -11,12 +11,12 @@
    }
  }
  .fiche{
-   &__image{
-     width: 100%;
-     height: auto;
-   }
    &__title{
      margin:0.684em 0 0.842em 1.0789em;
+   }
+   & img{
+     display: block;
+     margin: auto;
    }
  }
 
@@ -93,7 +93,7 @@
     margin-right:2em;
   }
   &__textarea{
-    width:99%;
+    width:98%;
     height:16em;
   }
   &__submit{
@@ -101,6 +101,15 @@
   width:13.6875em;
   height:2.8125em;
   margin-top: 1.5em;
+  }
+}
+@media screen and (max-width:1015px) {
+  .fiche{
+    & img{
+      width: 100%;
+      margin: 0;
+      height: auto;
+    }
   }
 }
 @media screen and (max-width:734px) {
@@ -116,7 +125,7 @@
   .actuality{
     margin: 0;
     width: 100%;
-    &__image{
+    & img{
       max-width: 100%;
       height: auto;
       float: none;
@@ -159,6 +168,4 @@
       max-width:100%;
     }
   }
-
-
 }

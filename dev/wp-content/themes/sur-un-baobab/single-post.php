@@ -24,10 +24,13 @@ get_header();
 
   <section class="fiche">
     <div class="fiche__header">
+      <div class="fiche__image">
       <?php if( get_field('background_image') ):
           $background_image = get_field('background_image');
+          $bckgsize='thumb-actu-bckg';
       ?>
-    <img class="fiche__image" src="<?php echo $background_image['url'];?>" width="1200" height="400" alt="image actualité">
+      <?php echo wp_get_attachment_image($background_image['id'],$bckgsize);?>
+    </div>
   <?php endif;?>
     <h2 class="fiche__title" aria-level="2"><?php echo the_title();?></h2>
     <ul class="header__list">
@@ -44,8 +47,11 @@ get_header();
         </p>
         <?php if( get_field('image_bloc_1') ):
             $image_1 = get_field('image_bloc_1');
+            $actu_imagesize='thumb-actu-image';
         ?>
-        <img class="actuality__image actuality__image--right" src="<?php echo $image_1['url'];?>" width="542" height="361" alt="image actualité">
+        <div class="actuality__image actuality__image--right">
+        <?php echo wp_get_attachment_image($image_1['id'],$actu_imagesize);?>
+      </div>
       <?php endif;?>
     </article>
 
@@ -57,7 +63,9 @@ get_header();
         <?php if( get_field('image_bloc_2') ):
             $image_2 = get_field('image_bloc_2');
         ?>
-        <img class="actuality__image" src="<?php echo $image_2['url'];?>" width="542" height="361" alt="image actualité">
+      <div class="actuality__image">
+        <?php echo wp_get_attachment_image($image_2['id'],$actu_imagesize);?>
+      </div>
       <?php endif;?>
     </article>
 
@@ -69,7 +77,9 @@ get_header();
         <?php if( get_field('image_bloc_3') ):
             $image_3 = get_field('image_bloc_3');
         ?>
-        <img class="actuality__image actuality__image--right" src="<?php echo $image_3['url'];?>" width="542" height="361" alt="image actualité">
+        <div class="actuality__image actuality__image--right">
+          <?php echo wp_get_attachment_image($image_3['id'],$actu_imagesize);?>
+        </div>
       <?php endif;?>
     </article>
   </section>

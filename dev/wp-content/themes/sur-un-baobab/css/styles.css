@@ -280,12 +280,12 @@ a {
     text-align: center; }
   .doityourself__link {
     margin-left: 2em; }
-  .doityourself__image {
+  .doityourself img {
     margin-top: 3.7em;
     margin-bottom: 1.5em; }
 
 @media screen and (max-width: 793px) {
-  .doityourself__image {
+  .doityourself img {
     width: 300px;
     height: 300px; } }
 
@@ -297,7 +297,7 @@ a {
       margin-left: 0; } }
 
 @media screen and (max-width: 357px) {
-  .doityourself__image {
+  .doityourself img {
     width: 200px;
     height: 200px;
     margin: 2em auto; }
@@ -470,7 +470,7 @@ label {
     height: auto; } }
 
 @media screen and (max-width: 479px) {
-  .header__image {
+  .header img {
     padding-top: 2em;
     max-width: 100%;
     height: auto; } }
@@ -493,12 +493,12 @@ label {
 .ariane--absolute {
   position: absolute; }
 
-.fiche__image {
-  width: 100%;
-  height: auto; }
-
 .fiche__title {
   margin: 0.684em 0 0.842em 1.0789em; }
+
+.fiche img {
+  display: block;
+  margin: auto; }
 
 .header__list {
   border-bottom: 1px solid #979797;
@@ -553,7 +553,7 @@ label {
   margin-right: 2em; }
 
 .form__textarea {
-  width: 99%;
+  width: 98%;
   height: 16em; }
 
 .form__submit {
@@ -561,6 +561,12 @@ label {
   width: 13.6875em;
   height: 2.8125em;
   margin-top: 1.5em; }
+
+@media screen and (max-width: 1015px) {
+  .fiche img {
+    width: 100%;
+    margin: 0;
+    height: auto; } }
 
 @media screen and (max-width: 734px) {
   .commentaire {
@@ -572,7 +578,7 @@ label {
   .actuality {
     margin: 0;
     width: 100%; }
-    .actuality__image {
+    .actuality img {
       max-width: 100%;
       height: auto;
       float: none; }
@@ -742,7 +748,7 @@ label {
   margin: auto; }
 
 @media screen and (max-width: 792px) {
-  .voirfilm__video {
+  iframe {
     width: 100%; } }
 
 @media screen and (max-width: 473px) {
@@ -757,7 +763,7 @@ label {
 .discover {
   width: 60%;
   margin: auto; }
-  .discover__text {
+  .discover p {
     width: 80%;
     margin: auto; }
 
@@ -1559,7 +1565,7 @@ input[type="checkbox"]:checked + label::before {
     .doityourself__link:hover, .doityourself__link:focus {
       opacity: 0.8;
       transform: scale(1.1); }
-  .doityourself__image {
+  .doityourself img {
     display: block;
     text-align: center;
     border-radius: 50%; }
@@ -1586,26 +1592,24 @@ input[type="checkbox"]:checked + label::before {
 * coded by Dylan Schirino
 * started at 21/04/2016
 */
-.mainimage {
-  background: url("../img/mainimage.jpg") no-repeat center fixed;
-  background-size: cover; }
-  .mainimage__title {
-    font-size: 8em;
-    padding-top: 0.6667em;
-    color: white;
-    text-shadow: 1px 2px white; }
-  .mainimage__button {
-    font: bold 2.4em/3em "Quicksand", Arial, sans-serif;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-align: center;
-    color: white;
-    background-color: #0098FF; }
-    .mainimage__button::before {
-      content: "\e956";
-      display: inline-block;
-      font-family: "glyphs";
-      padding-right: 15px; }
+.mainimage__title {
+  font-size: 8em;
+  padding-top: 0.6667em;
+  color: white;
+  text-shadow: 1px 2px white; }
+
+.mainimage__button {
+  font: bold 2.4em/3em "Quicksand", Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: #0098FF; }
+  .mainimage__button::before {
+    content: "\e956";
+    display: inline-block;
+    font-family: "glyphs";
+    padding-right: 15px; }
 
 .mainimage__button:hover:before, .mainimage__button:focus:before {
   -webkit-animation-name: iconanim;
@@ -1844,7 +1848,7 @@ input[type="checkbox"]:checked + label::before {
   line-height: 1.6em;
   text-align: left; }
 
-.discover__text {
+.discover p {
   font-size: 1.6em;
   line-height: 1.8em;
   padding: 2em 0; }
@@ -1852,15 +1856,17 @@ input[type="checkbox"]:checked + label::before {
 .discover__title {
   font-size: 5em; }
 
-.discover__image {
-  padding: 2em; }
+.discover img {
+  padding: 2em;
+  width: 500px;
+  height: 340px; }
 
 @media screen and (max-width: 754px) {
   .discover {
     padding: 0;
     width: 90%;
     margin: auto; }
-    .discover__image {
+    .discover img {
       padding: 0;
       max-width: 90%;
       height: auto; } }

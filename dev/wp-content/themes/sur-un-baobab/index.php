@@ -5,12 +5,14 @@ Template Name: Homepage
 */
 
 get_header();
-/*Verification du chargement des images*/
+/*Déclaration des custom size des images*/
 $image = get_field('image_dessine');
-
+$size='thumb-doityourself';
 $image_mini = get_field('image_ministudio');
-
 $image_detourer = get_field('image_detourer');
+$detouresize='thumb-decoration';
+$mainimage = get_field('mainimage');
+$bigsize='thumb-mainimage';
 /*WP query global pour charger les 2 derniers post*/
 if(is_page()){
     query_posts([
@@ -24,6 +26,12 @@ if(is_page()){
 ?>
 <main>
   <section class="mainimage">
+    <style>
+    .mainimage{
+      background: url("<?php echo wp_get_attachment_image_url( $mainimage['id'], $bigsize );?>") no-repeat center fixed;
+      background-size:cover;
+    }
+    </style>
     <h2 aria-level="2" class="mainimage__title">
       <?php _e('Animation Workshop','b');?>
     </h2>
@@ -59,12 +67,12 @@ if(is_page()){
     <div class="doityourself__container">
 
     <a href="ministudio.html" class="doityourself__link" title="Accéder au tutoriel Dessine ton histoire">
-      <img class="doityourself__image" src="<?php echo $image['url'];?>" width="345" height="345" alt="dessine ton histoire image">
+      <?php echo wp_get_attachment_image( $image['id'], $size );?>
       <?php _e('Dessine ton histoire','b');?>
     </a>
     <a href="ministudio.html" class="doityourself__link">
 
-      <img class="doityourself__image" src="<?php echo $image_mini['url'];?>" width="345" height="345" alt="dessine ton histoire image">
+      <?php echo wp_get_attachment_image( $image_mini['id'], $size );?>
       <?php _e('Cree ton mini studio','b');?>
     </a>
   </div>
@@ -75,7 +83,10 @@ if(is_page()){
 
     <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <article class="actu actu--index">
-      <a class="actu__link" href="<?php the_permalink();?>" title="Accéder à la fiche de l'actualité"><img class="actu__image" src="<?php the_post_thumbnail_url();?>" width="297" height="240" alt="image actualité">
+      <a class="actu__link" href="<?php the_permalink();?>" title="Accéder à la fiche de l'actualité">
+        <div class="actu__image">
+        <?php the_post_thumbnail('thumb-cards');?>
+      </div>
       </a>
       <div class="actu__info">
         <h4 class="actu__title" aria-level="4">
@@ -107,8 +118,9 @@ if(is_page()){
         </strong>
         <?php _e('de tuléar','b');?>&nbsp;, <strong class="decoration__title--strong"><?php _e('Madagascar','b');?></strong>
       </h3>
-
-      <img class="decoration__image" id="deplacement" src="<?php echo $image_detourer['url'];?>" width="585" height="430" alt="image d'un homme sur une moto en carton">
+      <div class="decoration__image" id="apparition">
+      <?php echo wp_get_attachment_image( $image_detourer['id'], $detouresize );?>
+    </div>
     </section>
   </main>
   <?php get_footer();?>

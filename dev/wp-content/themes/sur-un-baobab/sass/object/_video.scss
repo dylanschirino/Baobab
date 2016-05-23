@@ -43,10 +43,8 @@
   }
 }
 @media screen and (max-width:792px) {
-  .voirfilm{
-    &__video{
+    iframe{
       width: 100%;
-    }
   }
 }
 @media screen and (max-width:473px) {
@@ -69,7 +67,7 @@
 .discover{
   width: 60%;
   margin: auto;
-  &__text{
+  & p{
     width: 80%;
     margin: auto;
   }

@@ -68,7 +68,7 @@
   }
 }
 .discover{
-  &__text{
+  & p{
     font-size: 1.6em;
     line-height: 1.8em;
     padding:2em 0;
@@ -76,8 +76,10 @@
   &__title{
     font-size: 5em;
   }
-  &__image{
+  & img{
     padding: 2em;
+    width: 500px;
+    height: 340px;
   }
 }
 
@@ -86,7 +88,7 @@
     padding:0;
     width:90%;
     margin: auto;
-    &__image{
+    & img{
       padding: 0;
       max-width:90%;
       height: auto;

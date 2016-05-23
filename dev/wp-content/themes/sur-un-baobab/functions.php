@@ -3,6 +3,15 @@
 * Define post_types & taxonomies
 */
 add_theme_support( 'post-thumbnails' );
+
+add_image_size( 'thumb-doityourself', 345, 345, true );
+add_image_size('thumb-mainimage', 1000, 667, true);
+add_image_size( 'thumb-cards', 297, 240, true);
+add_image_size( 'thumb-decoration', 585, 430, true);
+add_image_size('thumb-actu', 464, 356, true);
+add_image_size('thumb-actu-bckg', 1000, 500, true);
+add_image_size('thumb-actu-image', 542, 361, true);
+
 register_post_type( 'project', [
   'label' => __('Court-métrages','b'),
   'labels' => [

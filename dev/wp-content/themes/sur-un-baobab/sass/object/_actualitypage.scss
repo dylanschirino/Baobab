@@ -75,7 +75,7 @@ label{
 }
 @media screen and (max-width:479px) {
   .header{
-    &__image{
+    & img{
       padding-top: 2em;
       max-width:100%;
       height: auto;

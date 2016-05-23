@@ -52,13 +52,10 @@ get_header();
   <article class="cards">
     <ul class="cards__list">
       <li class="cards__element">
-        <a class="cards__link" href="<?php echo the_field('youtube_video');?>" title="Vers la vidéo sur Youtube"><?php _e('Voir le film','b');?></a>
-      </li>
-      <li class="cards__element">
         <a href="<?php the_permalink();?>" class="cards__link" title="Voir le projet"><?php _e('Découvrir le projet','b');?></a>
       </li>
       <li class="cards__element">
-        <a href="<?php the_permalink().'tab-two';?>" class="cards__link" title="Voir le Making of"><?php _e('Making of','b');?></a>
+        <a href="<?php the_permalink();?>" class="cards__link" title="Voir le Makingof"><?php _e('Making of','b');?></a>
       </li>
       <li class="cards__element">
         <a href="viewvideo.html" class="cards__link" title="Vers la Fiche Technique"><?php _e('Fiche technique','b');?></a>

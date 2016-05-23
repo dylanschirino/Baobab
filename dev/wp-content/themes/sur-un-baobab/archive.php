@@ -30,8 +30,11 @@ if(is_page()){
   <div class="actualite__header">
     <?php if( get_field('img_actu') ):
         $img_actu = get_field('img_actu');
+        $actusize='thumb-actu';
     ?>
-  <img class="header__image" src="<?php echo $img_actu['url'];?>" width="464" height="356" alt="image decorative" id="apparition">
+  <div class="header__image" id="apparition">
+    <?php echo wp_get_attachment_image($img_actu['id'],$actusize);?>
+  </div>
 <?php endif;?>
   <h2 class="header__title" aria-level="2">
     <?php _e('Actualité','b');?>
@@ -40,7 +43,9 @@ if(is_page()){
   <?php if ( have_posts() ): while ( have_posts() ): the_post();?>
   <article class="actu actu--page">
     <a class="actu__link" href="<?php the_permalink();?>" title="Accéder à la fiche de l'actualité">
-      <img class="actu__image" width="297" height="240" alt="image actualité" src="<?php the_post_thumbnail_url();?>">
+      <div class="actu__image">
+      <?php the_post_thumbnail('thumb-cards');?>
+    </div>
     </a>
     <div class="actu__info">
   <h3 class="actu__title" aria-level="3">
