@@ -87,7 +87,6 @@ if(is_page()){
         </label>
       </li>
     </ul>
-    <input type="submit" value="rechercher">
     </form>
 </aside>
 

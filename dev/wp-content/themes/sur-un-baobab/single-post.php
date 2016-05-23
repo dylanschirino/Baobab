@@ -33,9 +33,7 @@ get_header();
     <ul class="header__list">
       <li class="header__element header__element--date"><?php echo the_field('time');?></li>
       <li class="header__element header__element--file">
-        <?php $post=get_post();
-        $categorie=get_the_category($post->ID);?>
-        <?php echo ($categorie[0]->cat_name);?></li>
+        <?php the_tags('Tags : ','<a> ',' </a>') ?></li>
       <li class="header__element header__element--author">auteur&nbsp;:&nbsp;<?php echo the_field('auteur');?></li>
     </ul>
   </div>
@@ -52,7 +50,7 @@ get_header();
     </article>
 
     <article class="actuality">
-      <h3  class="actuality__title" aria-level="3"><?php echo the_field('titre_bloc_2');?></h3>
+      <h3 class="actuality__title actuality__title--right" aria-level="3"><?php echo the_field('titre_bloc_2');?></h3>
       <p class="actuality__text actuality__text--right">
         <?php echo the_field('texte_bloc_2');?>
         </p>

@@ -98,10 +98,6 @@ table {
 html {
   font: 62.5% "Quicksand", Arial, sans-serif; }
 
-body {
-  background: url("../img/grille.png") center center;
-  opacity: .8; }
-
 h1, h2, h3 {
   font-family: "Amatic", sans-serif; }
 
@@ -1135,7 +1131,7 @@ label {
  * started at 21/04/2016
  */
 .subheader {
-  background-color: #F89F1F;
+  background-color: #dd8500;
   box-shadow: 0px 1px 1px #D16925;
   font-size: 1.6em;
   padding-top: 1em; }
@@ -1147,7 +1143,8 @@ label {
     color: black;
     transition: .2s linear; }
     .subheader__link:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: white; }
   .subheader__search {
     border: none;
     -webkit-appearance: none;
@@ -1294,7 +1291,7 @@ label {
  * started at 23/04/2016
  */
 .whosbaobab {
-  background-color: #DACABF;
+  background-color: #E3CCBE;
   color: black; }
   .whosbaobab__container {
     background-color: white;
@@ -1358,8 +1355,9 @@ label {
     letter-spacing: 3px; }
 
 .actu__info {
-  border: 1px solid black;
-  padding: 2em; }
+  background-color: #F6F8FA;
+  padding: 2em;
+  text-align: left; }
 
 .actu__title {
   font-size: 1.5em;
@@ -1380,15 +1378,15 @@ label {
 
 .actu__button {
   font-size: 1.4em;
-  background-color: #CC5454;
+  background-color: #F89F1F;
   text-align: center;
   color: white;
-  line-height: 2.4em;
+  line-height: 2.7em;
   border-radius: 5px;
-  border: 1px solid black;
   transition: .2s linear; }
   .actu__button:hover {
-    transform: scale(1.1); }
+    background-color: #FCDA7A;
+    color: black; }
 
 .actu__image {
   transition: .2s linear; }
@@ -1573,15 +1571,13 @@ input[type="checkbox"]:checked + label::before {
 * coded by Dylan Schirino
 * started at 22/04/2016
 */
-.decoration {
-  background-color: #34A037; }
-  .decoration__title {
-    padding-top: 1.277em;
-    font: 3.6em "Amatic", sans-serif; }
-    .decoration__title--strong {
-      font-size: 1.33em; }
-    .decoration__title--small {
-      font-size: 0.66em; }
+.decoration__title {
+  padding-top: 1.277em;
+  font: 3.6em "Amatic", sans-serif; }
+  .decoration__title--strong {
+    font-size: 1.33em; }
+  .decoration__title--small {
+    font-size: 0.66em; }
 
 /* BAOBAB Project
 *
@@ -2136,7 +2132,7 @@ input[type="checkbox"]:checked + label::before {
  * started at 24/04/2016
  */
 .footer {
-  background-color: #4E727B; }
+  background-color: #dd8500; }
 
 .follow__title {
   font: 1.8em "Quicksand", Arial, sans-serif;

@@ -17,8 +17,9 @@
 
 .actu{
   &__info{
-    border:1px solid black;
+    background-color: #F6F8FA;
     padding:2em;
+    text-align: left;
   }
   &__title{
     font-size:1.5em;
@@ -40,16 +41,16 @@
   }
   &__button{
     font-size: 1.4em;
-    background-color: #CC5454;
+    background-color: #F89F1F;
     text-align: center;
     color:white;
-    line-height: 2.4em;
+    line-height: 2.7em;
     border-radius: 5px;
-    border:1px solid black;
     transition: .2s linear;
 
     &:hover{
-      transform: scale(1.1);
+      background-color: #FCDA7A;
+      color:black;
     }
   }
   &__image{
