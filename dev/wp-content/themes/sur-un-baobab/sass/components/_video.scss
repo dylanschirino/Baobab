@@ -78,21 +78,16 @@
   }
   & img{
     padding: 2em;
-    width: 500px;
-    height: 340px;
+    max-width:90%;
+    height: auto;
   }
 }
 
 @media screen and (max-width:754px) {
   .discover{
     padding:0;
-    width:90%;
+    width:100%;
     margin: auto;
-    & img{
-      padding: 0;
-      max-width:90%;
-      height: auto;
-    }
   }
 }
 

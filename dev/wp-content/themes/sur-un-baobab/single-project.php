@@ -78,93 +78,96 @@ get_header();
       <h3 aria-level="3" class="makingof__title">
         Making of
       </h3>
-      <img class="makingof__image" src="img/makingof/seq1.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq2.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq3.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq4.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq5.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq6.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq7.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq8.jpg" width="200" height="200" alt="image making of">
-      <img class="makingof__image" src="img/makingof/seq9.jpg" width="400" height="200" alt="image making of">
+        <?php $imagemakingof=get_field('making_of_image_1');
+              $imagemakingof2=get_field('making_of_image_2');
+              $imagemakingof3=get_field('making_of_image_3');
+              $imagemakingof4=get_field('making_of_image_4');
+              $imagemakingof5=get_field('making_of_image_5');
+              $imagemakingof6=get_field('making_of_image_6');
+              $sizeMakingof='thumb-makingof';
+              echo wp_get_attachment_image($imagemakingof['id'],$sizeMakingof);
+              echo wp_get_attachment_image($imagemakingof2['id'],$sizeMakingof);
+              echo wp_get_attachment_image($imagemakingof3['id'],$sizeMakingof);
+              echo wp_get_attachment_image($imagemakingof4['id'],$sizeMakingof);
+              echo wp_get_attachment_image($imagemakingof5['id'],$sizeMakingof);
+              echo wp_get_attachment_image($imagemakingof6['id'],$sizeMakingof);
+              ?>
     </div>
   </article>
 
   <article class="fichetechnique">
     <div class="tab-pane" id="tab-four">
       <h3 aria-level="3" class="fichetechnique__title">
-        Fiche Technique
+        <?php _e('Fiche Technique','b');?>
       </h3>
       <img class="fichetechnique__affiche" src="img/affiche.jpg" width="300" height="400" alt="affiche du film">
       <table class="fichetechnique__table">
-        <caption class="table__caption">Information</caption>
+        <caption class="table__caption">
+          <?php _e('Information','b');?>
+        </caption>
         <tr class="table__row">
-          <th class="table__head">Titre français</th>
-          <td class="table__data">Le choix de Pela</td>
+          <th class="table__head"><?php _e('Titre français','b');?></th>
+          <td class="table__data"><?php the_field('titre_francais_du_projet');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Durée</th>
-          <td class="table__data">6min 17sec</td>
+          <th class="table__head"><?php _e('Durée','b');?></th>
+          <td class="table__data"><?php echo the_field('time');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Pays</th>
-          <td class="table__data">Madagascar</td>
+          <th class="table__head"><?php _e('Pays','b');?></th>
+          <td class="table__data"><?php echo the_field('country');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Année</th>
-          <td class="table__data">2015</td>
+          <th class="table__head"><?php _e('Date','b');?></th>
+          <td class="table__data"><?php echo the_field('date');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Technique</th>
-          <td class="table__data">2D, papier-découpé, image par image, déchets recyclés</td>
+          <th class="table__head"><?php _e('Technique','b');?></th>
+          <td class="table__data"><?php echo the_field('technique');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Thème</th>
-          <td class="table__data">La grossesse précoce</td>
+          <th class="table__head"><?php _e('Thème','b');?></th>
+          <td class="table__data"><?php echo the_field('thème');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Participants</th>
-          <td class="table__data">9 enfants et adolescents de Tuléar bénéficiaires du Centre Art et Musique et du Foyer Social de l’ONG Bel Avenir</td>
+          <th class="table__head"><?php _e('Participants','b');?></th>
+          <td class="table__data"><?php echo the_field('participant');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Direction et coordination</th>
-          <td class="table__data">Elena CABEDO GARCIA et François CHENOT</td>
+          <th class="table__head"><?php _e('Direction et coordination','b');?></th>
+          <td class="table__data"><?php echo the_field('direction_et_coordination');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Direction et coordination</th>
-          <td class="table__data">Elena CABEDO GARCIA et François CHENOT</td>
+          <th class="table__head"><?php _e('Assistants','b');?></th>
+          <td class="table__data"><?php echo the_field('assistant');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Assistants</th>
-          <td class="table__data">Henrmine ANDRY, Virginie Olivia ANDRIAMPENOSOA Razandry M. LAFINIARIVO</td>
+          <th class="table__head"><?php _e('Histoire originale','b');?></th>
+          <td class="table__data"><?php echo the_field('histoire_originale');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Histoire originale</th>
-          <td class="table__data">Emma LIDON et Josué AHIAVAO</td>
+          <th class="table__head"><?php _e('Musique','b');?></th>
+          <td class="table__data"><?php echo the_field('musique');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Musique</th>
-          <td class="table__data">MIKEBO</td>
+          <th class="table__head"><?php _e('Montage son','b');?></th>
+          <td class="table__data"><?php echo the_field('montage_son');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Montage son</th>
-          <td class="table__data">Elena Cabedo Garcia</td>
+          <th class="table__head"><?php _e('Montage image','b');?></th>
+          <td class="table__data"><?php echo the_field('montage_image');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Montage image</th>
-          <td class="table__data">François Chenot</td>
+          <th class="table__head"><?php _e('Production','b');?></th>
+          <td class="table__data"><?php echo the_field('production');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Production</th>
-          <td class="table__data">Sur un baobab</td>
+          <th class="table__head"><?php _e('Langue','b');?></th>
+          <td class="table__data"><?php echo the_field('langue');?></td>
         </tr>
         <tr class="table__row">
-          <th class="table__head">Langue</th>
-          <td class="table__data">Vezo(dialecte malgache)</td>
-        </tr>
-        <tr class="table__row">
-          <th class="table__head">Sous-titres disponibles</th>
-          <td class="table__data">ES / FR / EN / MG /CAT /IT</td>
+          <th class="table__head"><?php _e('Sous-titres disponibles','b');?></th>
+          <td class="table__data"><?php echo the_field('sous_titre');?></td>
         </tr>
       </table>
     </div>

@@ -11,6 +11,9 @@ add_image_size( 'thumb-decoration', 585, 430, true);
 add_image_size('thumb-actu', 464, 356, true);
 add_image_size('thumb-actu-bckg', 1000, 500, true);
 add_image_size('thumb-actu-image', 542, 361, true);
+add_image_size('thumb-realisation', 376, 217, true);
+add_image_size('thumb-makingof', 200, 200, true);
+add_image_size('thumb-affiche', 400, 300, true);
 
 register_post_type( 'project', [
   'label' => __('Court-métrages','b'),

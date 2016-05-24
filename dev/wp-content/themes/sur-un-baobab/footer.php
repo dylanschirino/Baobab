@@ -29,13 +29,13 @@
   <h3 class="contact__title" aria-level="3"><?php _e('Nous contacter','b');?></h3>
   <ul class="contact__list">
     <li class="contact__element"><?php _e('Email','b');?>&nbsp;:&nbsp;
-      <a class="contact__link" href="mailto:<?php echo $easy_options['mail'];?>">surunbaobab@gmail.com</a>
+      <a class="contact__link" href="mailto:<?php echo $easy_options['mail'];?>"><?php echo $easy_options['mail'];?></a>
     </li>
     <li class="contact__element">Whatsapp&nbsp;:&nbsp;
-      <a class="contact__link" href="tel:<?php echo $easy_options['whatsapp'];?>">+32 (0)4 95 34 89 66</a>
+      <a class="contact__link" href="tel:<?php echo $easy_options['whatsapp'];?>"><?php echo $easy_options['whatsapp'];?></a>
     </li>
     <li class="contact__element"><?php _e('Téléphone','b');?>&nbsp;:&nbsp;
-      <a class="contact__link" href="tel:<?php echo $easy_options['telephone'];?>">+32 (0)4 97 36 39 75</a>
+      <a class="contact__link" href="tel:<?php echo $easy_options['telephone'];?>"><?php echo $easy_options['telephone'];?></a>
     </li>
   </ul>
 </article>

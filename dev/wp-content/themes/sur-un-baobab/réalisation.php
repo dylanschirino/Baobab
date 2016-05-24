@@ -27,11 +27,12 @@ get_header();
 
 <section class="imagecover">
   <?php if( get_field('header_img') ):
-      $header_img = get_field('header_img');
+      $headerRéalisation_img = get_field('header_img');
+      $size='thumb-mainimage'
   ?>
   <style>
   .imagecover {
-    background: url("<?php echo ($header_img['url']);?> ") no-repeat center center;
+    background: url("<?php echo wp_get_attachment_image_url( $headerRéalisation_img['id'], $bigsize );?>") no-repeat center fixed;
     background-size: cover;
   }
   <?php endif;?>
@@ -92,8 +93,11 @@ get_header();
     <a href="<?php echo the_permalink();?>" title="Voir la vidéo en détails"><span class="visuallyhidden"><?php _e('Vers la fiche de la vidéo','b');?></span>
       <?php if( get_field('image_previsualisation') ):
           $image_previsualisation = get_field('image_previsualisation');
+          $sizePrevi='thumb-realisation';
       ?>
-    <img class="cards__image" src="<?php echo $image_previsualisation['url'];?>" width="378" height="217" alt="Image du projet">
+    <div class="cards__image">
+      <?php echo wp_get_attachment_image($image_previsualisation['id'],$sizePrevi);?>
+    </div>
   <?php endif;?>
   </a>
   </article>

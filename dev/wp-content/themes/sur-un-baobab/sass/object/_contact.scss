@@ -40,7 +40,7 @@
        clear: both;
      }
    }
-   &__image{
+   & img{
      display: block;
    }
    &__title{
@@ -52,21 +52,21 @@
    &__link{
      margin-left:3.75em;
    }
-  &__input{
-    width: 33.4em;
-    height: 4.1em;
-    &--textarea{
-      width: 28em;
-      height:7em;
-    }
+  & input{
+    width: 22.26em;
+    height:2.73em;
   }
-  &__submit{
+  & textarea{
+    width:22.26em;
+    height:8em;
+  }
+  & input[type="submit"]{
     width:8.88em;
     height:3.05em;
     float: right;
     margin:2.24em 1em 0 0;
   }
-  &__image{
+  & img{
     margin:3em auto;
     transform: rotate(20deg);
   }
@@ -94,7 +94,7 @@
       margin:3em auto;
       text-align: center;
     }
-    &__input{
+    & input{
       width: 80%;
       margin: auto;
     }
@@ -103,11 +103,11 @@
 
 @media screen and(max-width:771px) {
   .contactinfo{
-    &__submit{
+    & input[type="submit"]{
       display: block;
       text-align: center;
     }
-    &__image{
+    & img{
       display:none;
     }
   }
