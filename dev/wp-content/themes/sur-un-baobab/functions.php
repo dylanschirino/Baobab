@@ -14,6 +14,7 @@ add_image_size('thumb-actu-image', 542, 361, true);
 add_image_size('thumb-realisation', 376, 217, true);
 add_image_size('thumb-makingof', 200, 200, true);
 add_image_size('thumb-affiche', 400, 300, true);
+add_image_size('thumb-diffusion', 135, 210, true);
 
 register_post_type( 'project', [
   'label' => __('Court-métrages','b'),

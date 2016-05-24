@@ -827,17 +827,17 @@ label {
     display: block;
     clear: both; }
   .diffusion__title {
-    text-align: right; }
+    text-align: left; }
   .diffusion__form {
     width: 31.6%;
     margin: auto; }
-  .diffusion__input {
+  .diffusion input:not([type="submit"]) {
     width: 100%;
-    height: 3.9em; }
-    .diffusion__input--textarea {
-      width: 100%;
-      height: 14em; }
-  .diffusion__inputleft, .diffusion__inputright {
+    height: 2.6em; }
+  .diffusion textarea {
+    width: 100%;
+    height: 9.3em; }
+  .diffusion #city, .diffusion #country {
     width: 45%; }
   .diffusion__submit {
     width: 8.75em;
@@ -1919,18 +1919,20 @@ input[type="checkbox"]:checked + label::before {
   .diffusion__title {
     font-size: 4.8em;
     padding-top: 0.8958em;
-    padding-right: 2.8541666667em; }
+    padding-left: 2.8541666667em; }
   .diffusion__form {
     padding-top: 8.5em; }
   .diffusion__label {
     font-size: 1.8em;
     padding: 0.611em 0;
     text-shadow: 0px 0.5px black; }
-    .diffusion__label--textarea {
-      padding-top: 1em; }
-  .diffusion__input {
+  .diffusion textarea {
+    padding-top: 1em;
+    font-size: 1.5em; }
+  .diffusion input:not([type="submit"]) {
     border: none;
     padding-left: 1em;
+    font-size: 1.5em;
     border-radius: 5px;
     border: 1px solid black; }
   .diffusion__submit {
