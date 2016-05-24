@@ -886,7 +886,7 @@ label {
 
 .door__link {
   display: block;
-  width: 99% 0.4;
+  width: 99.4%;
   text-align: center; }
 
 @media screen and (max-width: 965px) {
@@ -938,7 +938,7 @@ label {
     margin: auto;
     margin-bottom: 1em; }
   .ministudio__explain {
-    width: 50%;
+    width: 33%;
     margin: auto;
     text-align: left; }
 

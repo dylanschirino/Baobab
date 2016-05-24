@@ -15,6 +15,8 @@ add_image_size('thumb-realisation', 376, 217, true);
 add_image_size('thumb-makingof', 200, 200, true);
 add_image_size('thumb-affiche', 400, 300, true);
 add_image_size('thumb-diffusion', 135, 210, true);
+add_image_size('thumb-anime', 381, 368, true);
+add_image_size('thumb-tutoriel',300,225, true);
 
 register_post_type( 'project', [
   'label' => __('Court-métrages','b'),
@@ -41,7 +43,19 @@ register_post_type( 'project', [
     /*
     * Defines Option page
     */
-
+    register_post_type( 'tutoriel', [
+      'label' => __('Tutoriel','b'),
+      'labels' => [
+        'singular_name' => __('Tutoriel','b'),
+        'add_new' => __('Ajouter un nouveau tutoriel','b')
+      ],
+      'description' => __('La liste de tous les tutoriels affichés sur le site.','b'),
+      'public' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-welcome-learn-more',
+      'supports' => ['title','editor','thumbnail'],
+      'has_archive' => true
+      ] );
     /*
     * Defines navigation menus.
     */
