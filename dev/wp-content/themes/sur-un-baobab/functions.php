@@ -17,6 +17,7 @@ add_image_size('thumb-affiche', 400, 300, true);
 add_image_size('thumb-diffusion', 135, 210, true);
 add_image_size('thumb-anime', 381, 368, true);
 add_image_size('thumb-tutoriel',300,225, true);
+add_image_size('thumb-description',257,257, true);
 
 register_post_type( 'project', [
   'label' => __('Court-métrages','b'),

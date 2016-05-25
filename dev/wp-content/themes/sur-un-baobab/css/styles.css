@@ -316,25 +316,25 @@ a {
   .decoration__title {
     width: 11em;
     margin-left: 3.1em; }
-  .decoration__image {
+  .decoration img {
     display: block;
     margin-right: auto;
     margin-left: auto;
     width: 46.24505929%;
-    max-height: 430px; }
+    height: auto; }
 
 @media screen and (max-width: 700px) {
-  .decoration__image {
+  .decoration img {
     width: 80%; } }
 
 @media screen and (max-width: 577px) {
-  .decoration__image {
+  .decoration img {
     width: 80%; }
   .decoration__title {
     margin-left: 2.1em; } }
 
 @media screen and (max-width: 516px) {
-  .decoration__image {
+  .decoration img {
     width: 100%; }
   .decoration__title {
     width: 8em;

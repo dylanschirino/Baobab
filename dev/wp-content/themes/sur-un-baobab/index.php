@@ -66,11 +66,11 @@ if(is_page()){
     </h3>
     <div class="doityourself__container">
 
-    <a href="ministudio.html" class="doityourself__link" title="Accéder au tutoriel Dessine ton histoire">
+    <a href="<?php echo the_permalink('215');?>" class="doityourself__link" title="Accéder au tutoriel Dessine ton histoire">
       <?php echo wp_get_attachment_image( $image['id'], $size );?>
       <?php _e('Dessine ton histoire','b');?>
     </a>
-    <a href="ministudio.html" class="doityourself__link">
+    <a href="<?php echo the_permalink('212');?>" class="doityourself__link">
 
       <?php echo wp_get_attachment_image( $image_mini['id'], $size );?>
       <?php _e('Cree ton mini studio','b');?>
