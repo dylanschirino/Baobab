@@ -26,7 +26,7 @@ if(is_page()){
 ?>
 <main>
   <section class="mainimage">
-  <style>
+  <style scoped>
   .mainimage{
     background: url("<?php echo wp_get_attachment_image_url( $mainimage['id'], $bigsize );?>") no-repeat center fixed;
     background-size:cover;
@@ -39,7 +39,7 @@ if(is_page()){
 </section>
 
 <section class="whosbaobab">
-  <div class="whosbaobab__maincontainer" id="apparition">
+  <div class="whosbaobab__maincontainer apparition">
     <div class="whosbaobab__container">
       <h3 aria-level="3" class="container__title"><?php _e('Qui sommes nous','b');?></h3>
       <p class="container__text">
@@ -61,7 +61,7 @@ if(is_page()){
 </section>
 
 <section class="doityourself">
-  <h3 aria-level="3" class="doityourself__title" id="apparition">
+  <h3 aria-level="3" class="doityourself__title apparition">
     <?php echo the_field('tutoriel_title');?>
   </h3>
   <div class="doityourself__container">
@@ -111,14 +111,14 @@ if(is_page()){
   </section>
 
   <section class="decoration">
-    <h3 aria-level="3" class="decoration__title" id="apparition">
+    <h3 aria-level="3" class="decoration__title apparition">
       <?php _e('Une creation collective','b');?>
       <small class="decoration__title--small"><?php _e('avec','b');?></small> <strong class="decoration__title--strong"> <?php _e('9 enfants','b');?></strong> <small class="decoration__title--small"><?php _e('et','b');?></small> <strong class="decoration__title--strong">
         <?php _e('adolescent','b');?>
       </strong>
       <?php _e('de tuléar','b');?>&nbsp;, <strong class="decoration__title--strong"><?php _e('Madagascar','b');?></strong>
     </h3>
-    <div class="decoration__image" id="apparition">
+    <div class="decoration__image apparition">
       <?php echo wp_get_attachment_image( $image_detourer['id'], $detouresize );?>
     </div>
   </section>

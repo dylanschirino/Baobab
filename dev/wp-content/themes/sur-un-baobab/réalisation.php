@@ -30,7 +30,7 @@ get_header();
       $headerRéalisation_img = get_field('header_img');
       $size='thumb-mainimage'
       ?>
-      <style>
+      <style scoped>
       .imagecover {
         background: url("<?php echo wp_get_attachment_image_url( $headerRéalisation_img['id'], $bigsize );?>") no-repeat center fixed;
         background-size: cover;
@@ -46,7 +46,7 @@ get_header();
       <h3 aria-level="3" class="videolist__title">
         <?php _e('Liste des vidéo','b');?>
       </h3>
-      <a href="donate.html" title="Vers la page de don" class="videolist__button">
+      <a href="<?php echo the_permalink('69');?>" title="Vers la page de don" class="videolist__button">
         <?php echo the_field('label_button');?>
       </a>
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>

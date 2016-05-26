@@ -44,7 +44,7 @@
 <script src="<?php echo get_template_directory_uri().'/assets/scrollreveal.min.js';?>"></script>
 <script>
 window.sr = ScrollReveal();
-sr.reveal('#apparition', {delay:300,opacity:0,mobile:true});
+sr.reveal('.apparition', {delay:300,opacity:0,mobile:true});
 sr.reveal('#deplacement', { delay: 300,scale:1,mobile:false});
 </script>
 <?php wp_footer;?>

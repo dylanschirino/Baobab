@@ -1648,7 +1648,8 @@ input[type="checkbox"]:checked + label::before {
  * started at 02/05/2016
  */
 .aboutasbl__title {
-  font: 4.8em "Amatic", sans-serif; }
+  font: 4.8em "Amatic", sans-serif;
+  padding-top: 1em; }
 
 .description__title {
   font: 2.4em "Quicksand", Arial, sans-serif;

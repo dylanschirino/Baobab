@@ -36,7 +36,7 @@ get_header();
         <ul class="header__list">
           <li class="header__element header__element--date"><?php echo the_field('time');?></li>
           <li class="header__element header__element--file">
-            <?php the_tags('Tags : ','<a> ',' </a>') ?></li>
+            <?php the_tags('Tags :  ') ?></li>
             <li class="header__element header__element--author">auteur&nbsp;:&nbsp;<?php echo the_field('auteur');?></li>
           </ul>
         </div>
