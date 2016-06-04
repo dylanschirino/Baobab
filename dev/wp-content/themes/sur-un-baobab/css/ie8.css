@@ -2,7 +2,7 @@
 * Feuille de Style alternative pour ie8
 *
 */
-
+/************************    INDEX *******************/
 .mainimage,.whosbaobab{
   height:400px;
 }
@@ -15,4 +15,50 @@
     background:url('../img/logo.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.actu{
+  width:297px;
+  margin-left:50px;
+  margin-bottom: 30px;
+}
+.actu__info{
+  width: 258px;
+}
+
+/************ COURT METRAGES LIST ******/
+.imagecover__title{
+  text-align: center;
+  padding-right: 0;
+}
+/***********  TUTORIEL PAGE *******/
+.ministudio{
+  float: none;
+}
+/*********** NOTRE PROJET *******/
+.equipe__membre{
+  float: none;
+}
+/*********** DONATE *******/
+.bckg{
+  display: block;
+}
+.donate__input{
+  padding-top:20px;
+}
+.donate__image{
+  float: none;
+  margin-left: 140px;
+}
+/*********** ACTUALITY PAGE *******/
+.actuality__image--right{
+  float: none;
+}
+.form__input{
+  width: 230px;
+}
+/*********** PARTENAIRE *******/
+.diffusion{
+  background: none;
+  background: #D8D8D8;
 }

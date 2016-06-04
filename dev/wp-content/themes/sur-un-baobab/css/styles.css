@@ -35,7 +35,7 @@
   font-style: normal; }
 
 /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
-.visuallyhidden, h1, .subheader__label, .subheader__title, .mainmenu__title {
+.visuallyhidden, h1, .subheader__label, .subheader__title, .mainmenu__title, .videolist__title {
   border: 0;
   height: 1px;
   margin: -1px;
@@ -541,7 +541,8 @@ label {
 
 .form__input {
   width: 23em;
-  margin-right: 2em; }
+  margin-right: 2em;
+  margin-top: 2em; }
 
 .form__textarea {
   width: 98%;
@@ -650,14 +651,11 @@ label {
   background: url("../img/courtmetrage.jpg") no-repeat center center;
   background-size: cover;
   height: 60em;
-  position: relative;
-  top: -10px; }
+  position: relative; }
 
 .videolist {
   margin-top: -1em;
   margin-bottom: -10em; }
-  .videolist__title {
-    display: none; }
   .videolist__button {
     width: 17em;
     height: 4.111em;
@@ -1510,7 +1508,7 @@ input[type="checkbox"]:checked + label::before {
 
 .form__label {
   font-size: 1.6em;
-  padding: 1em 0;
+  padding: 1em 0.6em 1em 0;
   display: inline-block; }
 
 .form__textarea {
@@ -1902,13 +1900,6 @@ input[type="checkbox"]:checked + label::before {
 * started at 05/05/2016
 */
 .diffusion {
-  background: #c77d0c;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #c77d0c 1%, #954705 100%);
-  background: -webkit-linear-gradient(top, #c77d0c 1%, #954705 100%);
-  background: linear-gradient(to bottom, #c77d0c 1%, #954705 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77d0c', endColorstr='#954705',GradientType=0 );
-  /* IE6-9 */
   opacity: 0.8;
   background: url("../img/diffusion.jpg") no-repeat center;
   background-size: cover; }

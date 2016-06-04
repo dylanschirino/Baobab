@@ -14,15 +14,11 @@
   background-size: cover;
   height:60em;
   position:relative;
-  top:-10px;
 }
 
 .videolist{
   margin-top:-1em;
   margin-bottom: -10em;
-  &__title{
-    display: none;
-  }
   &__button{
     width:17em;
     height:4.111em;
