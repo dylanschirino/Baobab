@@ -3,8 +3,11 @@
 *
 */
 /************************    INDEX *******************/
-.mainimage,.whosbaobab{
+.mainimage{
   height:400px;
+}
+.whosbaobab{
+  height: 500px;
 }
 .footer{
   height: 200px;
@@ -62,5 +65,185 @@
   background: none;
   background: #D8D8D8;
 }
+/************  TOUTE LES ICONES ******/
+/********* ICONE DU MENU ******/
+.mainmenu__link:before,.follow__link:before{
+  content:"";
+  display: block;
+  background-repeat: no-repeat;
+  background-image:url('../img/sprite.png');
+  margin: auto;
+}
+.mainmenu__link--home:before{
+  background-position: -10px -142px;
+  width: 31px;
+  height: 27px;
+}
+.mainmenu__link--video:before{
+  background-position: -108px -142px;
+  width: 27px;
+  height: 24px;
+}
+.mainmenu__link--anime:before{
+  background-position: -234px -10px;
+  width: 31px;
+  height: 27px;
+}
+.mainmenu__link--project:before{
+  background-position: -364px -52px;
+  width: 31px;
+  height: 27px;
+}
+.mainmenu__link--contact:before{
+  background-position: -61px -142px;
+  width: 27px;
+  height: 22px;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImllOC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7OztFQUdFO0FBQ0YsdURBQXVEO0FBQ3ZEO0VBQ0UsYUFBYTtDQUNkO0FBQ0Q7RUFDRSxjQUFjO0NBQ2Y7O0FBRUQsNEJBQTRCO0FBQzVCO0lBQ0ksa0NBQWtDO0lBQ2xDLDZCQUE2QjtJQUM3Qiw0QkFBNEI7Q0FDL0I7O0FBRUQ7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLG9CQUFvQjtDQUNyQjtBQUNEO0VBQ0UsYUFBYTtDQUNkOztBQUVELHlDQUF5QztBQUN6QztFQUNFLG1CQUFtQjtFQUNuQixpQkFBaUI7Q0FDbEI7QUFDRCxvQ0FBb0M7QUFDcEM7RUFDRSxZQUFZO0NBQ2I7QUFDRCxrQ0FBa0M7QUFDbEM7RUFDRSxZQUFZO0NBQ2I7QUFDRCw0QkFBNEI7QUFDNUI7RUFDRSxlQUFlO0NBQ2hCO0FBQ0Q7RUFDRSxpQkFBaUI7Q0FDbEI7QUFDRDtFQUNFLFlBQVk7RUFDWixtQkFBbUI7Q0FDcEI7QUFDRCxvQ0FBb0M7QUFDcEM7RUFDRSxZQUFZO0NBQ2I7QUFDRDtFQUNFLGFBQWE7Q0FDZDtBQUNELGdDQUFnQztBQUNoQztFQUNFLGlCQUFpQjtFQUNqQixvQkFBb0I7Q0FDckIiLCJmaWxlIjoiaWU4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4qIEZldWlsbGUgZGUgU3R5bGUgYWx0ZXJuYXRpdmUgcG91ciBpZThcbipcbiovXG4vKioqKioqKioqKioqKioqKioqKioqKioqICAgIElOREVYICoqKioqKioqKioqKioqKioqKiovXG4ubWFpbmltYWdlLC53aG9zYmFvYmFie1xuICBoZWlnaHQ6NDAwcHg7XG59XG4uZm9vdGVye1xuICBoZWlnaHQ6IDIwMHB4O1xufVxuXG4vKiAgICAgIEZBTExCQUNLIFBORyAgICAgICovXG4ubWFpbm1lbnVfX2xvZ297XG4gICAgYmFja2dyb3VuZDp1cmwoJy4uL2ltZy9sb2dvLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xufVxuXG4uYWN0dXtcbiAgd2lkdGg6Mjk3cHg7XG4gIG1hcmdpbi1sZWZ0OjUwcHg7XG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XG59XG4uYWN0dV9faW5mb3tcbiAgd2lkdGg6IDI1OHB4O1xufVxuXG4vKioqKioqKioqKioqIENPVVJUIE1FVFJBR0VTIExJU1QgKioqKioqL1xuLmltYWdlY292ZXJfX3RpdGxle1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmctcmlnaHQ6IDA7XG59XG4vKioqKioqKioqKiogIFRVVE9SSUVMIFBBR0UgKioqKioqKi9cbi5taW5pc3R1ZGlve1xuICBmbG9hdDogbm9uZTtcbn1cbi8qKioqKioqKioqKiBOT1RSRSBQUk9KRVQgKioqKioqKi9cbi5lcXVpcGVfX21lbWJyZXtcbiAgZmxvYXQ6IG5vbmU7XG59XG4vKioqKioqKioqKiogRE9OQVRFICoqKioqKiovXG4uYmNrZ3tcbiAgZGlzcGxheTogYmxvY2s7XG59XG4uZG9uYXRlX19pbnB1dHtcbiAgcGFkZGluZy10b3A6MjBweDtcbn1cbi5kb25hdGVfX2ltYWdle1xuICBmbG9hdDogbm9uZTtcbiAgbWFyZ2luLWxlZnQ6IDE0MHB4O1xufVxuLyoqKioqKioqKioqIEFDVFVBTElUWSBQQUdFICoqKioqKiovXG4uYWN0dWFsaXR5X19pbWFnZS0tcmlnaHR7XG4gIGZsb2F0OiBub25lO1xufVxuLmZvcm1fX2lucHV0e1xuICB3aWR0aDogMjMwcHg7XG59XG4vKioqKioqKioqKiogUEFSVEVOQUlSRSAqKioqKioqL1xuLmRpZmZ1c2lvbntcbiAgYmFja2dyb3VuZDogbm9uZTtcbiAgYmFja2dyb3VuZDogI0Q4RDhEODtcbn1cbiJdfQ== */
+/********* ICONE De qui sommes nous ******/
+.container__title:after{
+  content:"";
+  display: block;
+  background-repeat: no-repeat;
+  background-image:url('../img/sprite.png');
+  margin:4px auto;
+  background-position: -302px -298px;
+  width: 126px;
+  height: 115px;
+}
+.container__title--red:after{
+  background-position: -153px -189px;
+  width: 129px;
+  height: 117px;
+}
+/********* ICONE Du footer ******/
+.follow__link:before{
+  padding-bottom: 1em;
+}
+.follow__link--facebook:before{
+  background-position: -98px -189px;
+  width: 35px;
+  height: 35px;
+}
+.follow__link--vimeo:before{
+  background-position: -10px -286px;
+  width: 33px;
+  height: 28px;
+}
+.follow__link--youtube:before{
+  background-position: -63px -286px;
+  width: 42px;
+  height: 29px;
+}
+.follow__link--instagram:before{
+  background-position: -364px -142px;
+  width: 44px;
+  height: 44px;
+}
+.follow__link--twitter:before{
+  background-position: -354px -246px;
+  width: 47px;
+  height: 32px;
+}
+/********* ICONE Du court metrages ******/
+.icon__element:before,.header__element:before{
+  content:"";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image:url('../img/sprite.png');
+  margin: auto;
+}
+.icon__element--lieu:before{
+  background-position: -493px -195px;
+  width: 31px;
+  height: 31px;
+}
+.icon__element--duree:before{
+  background-position: -52px -10px;
+  width: 32px;
+  height: 35px;
+}
+.icon__element--date:before{
+  background-position: -302px -195px;
+  width: 32px;
+  height: 33px;
+}
+.icon__element--theme:before{
+  background-position: -285px -10px;
+  width: 32px;
+  height: 26px;
+}
+.icon__element--langue:before{
+  background-position: -428px -142px;
+  width: 32px;
+  height: 28px;
+}
+.icon__element--soustitre:before{
+  background-position: -155px -142px;
+  width: 32px;
+  height: 27px;
+}
+.icon__element--participant:before{
+  background-position: -480px -142px;
+  width: 32px;
+  height: 33px;
+}
+/********* ICONE De viewpage ******/
+.header__element--file:before{
+  background-position: -337px -10px;
+  width: 22px;
+  height: 22px;
+  padding-left: 1em;
+}
+.header__element--author:before{
+  background-position: -10px -10px;
+  width: 22px;
+  height: 23px;
+  padding-left: 1em;
+}
+/********* ICONE de contact ******/
+.contactinfo__link:after{
+  content:"";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image:url('../img/sprite.png');
+  margin: 4px auto;
+}
+.contactinfo__link--mail:after{
+  background-position: -10px -189px;
+  width: 68px;
+  height: 72px;
+}
+.contactinfo__link--phone:after{
+  background-position: -428px -195px;
+  width: 45px;
+  height: 71px;
+}
+.contactinfo__link--whatsapp:after{
+  background-position: -448px -286px;
+  width: 71px;
+  height: 71px;
+}
+/********* ICONE de about ******/
+.description__title:after{
+  content:"";
+  display:block;
+  background-repeat: no-repeat;
+  background-image:url('../img/sprite.png');
+  margin:1em auto;
+}
+.description__title--groupe:after{
+  background-position: -405px -10px;
+  width: 110px;
+  height: 112px;
+}
+.description__title--resultat:after{
+  background-position: -104px -10px;
+  width: 110px;
+  height: 112px;
+}
+.description__title--developpement:after{
+  background-position: -234px -57px;
+  width: 110px;
+  height: 112px;
+}

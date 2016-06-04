@@ -1050,7 +1050,8 @@ label {
     margin: 2.24em 1em 0 0; }
   .contactinfo img {
     margin: 3em auto;
-    transform: rotate(20deg); }
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
 
 @media screen and (max-width: 991px) {
   .contactinfo {
@@ -1152,12 +1153,14 @@ label {
     font-family: "Quicksand", Arial, sans-serif;
     border: none;
     background-color: #E38039;
-    transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
     transition: .2s linear;
     -webkit-appearance: none; }
     .subheader__submit:hover {
       cursor: pointer;
-      transform: skewX(0deg); }
+      -webkit-transform: skewX(0deg);
+              transform: skewX(0deg); }
 
 /* BAOBAB Project
  *
@@ -1187,7 +1190,8 @@ label {
     transition: .1s linear; }
     .mainmenu__link:hover {
       border-bottom: 1px solid black;
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     .mainmenu__link--home {
       margin-left: 1.5em; }
       .mainmenu__link--home::before {
@@ -1216,11 +1220,13 @@ label {
       font-size: 1.8em;
       font-weight: bold;
       text-transform: uppercase;
-      transform: skewY(-5deg); }
+      -webkit-transform: skewY(-5deg);
+              transform: skewY(-5deg); }
       .mainmenu__link--donate:hover {
         background-color: #D36210;
         border: none;
-        transform: scale(1); }
+        -webkit-transform: scale(1);
+                transform: scale(1); }
 
 @media screen and (max-width: 1225px) {
   .mainmenu__link--donate {
@@ -1266,9 +1272,11 @@ label {
     .mainmenu__link--donate {
       display: block;
       margin-top: 1em;
-      transform: skewY(0deg); }
+      -webkit-transform: skewY(0deg);
+              transform: skewY(0deg); }
     .mainmenu__link:hover, .mainmenu__link:focus {
-      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
       border: none; }
   .hamburger {
     background: url("../img/burger.png") no-repeat center center;
@@ -1402,7 +1410,8 @@ label {
 .ariane {
   background-color: #0098FF;
   color: white;
-  transform: skewX(-15deg); }
+  -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg); }
   .ariane__element {
     font-size: 1.8em;
     line-height: 2.2em; }
@@ -1538,8 +1547,6 @@ input[type="checkbox"]:checked + label::before {
 */
 .doityourself {
   background: #d9a200;
-  background: -moz-linear-gradient(top, #d9a200 0%, #b26900 100%);
-  background: -webkit-linear-gradient(top, #d9a200 0%, #b26900 100%);
   background: linear-gradient(to bottom, #d9a200 0%, #b26900 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a200', endColorstr='#b26900',GradientType=0 ); }
   .doityourself__title {
@@ -1557,7 +1564,8 @@ input[type="checkbox"]:checked + label::before {
     letter-spacing: 3px; }
     .doityourself__link:hover, .doityourself__link:focus {
       opacity: 0.8;
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .doityourself img {
     display: block;
     text-align: center;
@@ -1817,13 +1825,15 @@ input[type="checkbox"]:checked + label::before {
     border: 3px solid white;
     border-bottom: none; }
     .video__link:hover {
-      transform: translateY(-10px); }
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px); }
     .video__link--diffusion {
       border: 3px solid #1F5274; }
       .video__link--diffusion:hover {
         background-color: white;
         color: black;
-        transform: none; }
+        -webkit-transform: none;
+                transform: none; }
 
 @media screen and (max-width: 473px) {
   .voirfilm__text {
@@ -1970,6 +1980,9 @@ input[type="checkbox"]:checked + label::before {
 
 .door__image {
   display: block; }
+
+.door__image img {
+  vertical-align: bottom; }
 
 /* BAOBAB Project
  *
@@ -2185,5 +2198,4 @@ input[type="checkbox"]:checked + label::before {
   color: white;
   font-weight: bold;
   letter-spacing: 1px; }
-
 /*# sourceMappingURL=styles.css.map */
