@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
   <meta charset="utf-8">
   <meta name="description" content="Sur un baobab workshop animation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title><?php bloginfo();?> - <?php the_title();?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/css/ie8.css';?>" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/2.9.10/ie8.js"></script>
+  <![endif]-->
 </head>
 <body <?php body_class();?>>
   <header>

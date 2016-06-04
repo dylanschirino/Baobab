@@ -34,17 +34,8 @@
   font-weight: normal;
   font-style: normal; }
 
-h1, .subheader__label {
-  display: none; }
-
-.subheader__title {
-  display: none; }
-
-.mainmenu__title {
-  display: none; }
-
 /* Technique préconisé par anysurfer pour que le texte soit visible par les navigateur vocaux mais pas sur la page */
-.visuallyhidden {
+.visuallyhidden, h1, .subheader__label, .subheader__title, .mainmenu__title {
   border: 0;
   height: 1px;
   margin: -1px;
@@ -1184,6 +1175,7 @@ label {
     display: none; }
   .mainmenu__logo {
     padding: 1.1em 0;
+    background: url("../img/logo.png");
     background: url("../img/logo.svg") no-repeat center;
     background-size: contain; }
   .mainmenu__element {
