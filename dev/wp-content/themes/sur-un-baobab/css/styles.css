@@ -2188,4 +2188,26 @@ input[type="checkbox"]:checked + label::before {
   font-weight: bold;
   letter-spacing: 1px; }
 
+/* BAOBAB Project
+ *
+ * /sass/components/404.scss - design of 404 stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 04/06/2016
+ */
+.error404__title {
+  font-size: 10em;
+  line-height: 1.5em;
+  text-align: center; }
+
+.error404__description {
+  font-size: 2em;
+  text-align: center;
+  line-height: 2.5em; }
+
+.error404__return {
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=styles.css.map */

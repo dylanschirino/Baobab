@@ -10,4 +10,4 @@ get_header();
             <p class="error404__return">Vous pouvez retourner à <a href="<?php echo home_url('/');?>" rel="home">la page d'accueil</a>.</p>
       </section>
 
-<?php
+<?php get_footer();?>

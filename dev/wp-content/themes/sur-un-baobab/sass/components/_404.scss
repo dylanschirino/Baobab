@@ -1,0 +1,24 @@
+/* BAOBAB Project
+ *
+ * /sass/components/404.scss - design of 404 stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 04/06/2016
+ */
+ .error404{
+   &__title{
+     font-size: 10em;
+     line-height:1.5em;
+     text-align: center;
+   }
+   &__description{
+     font-size: 2em;
+     text-align: center;
+     line-height: 2.5em;
+   }
+   &__return{
+     font-size: 3em;
+     text-align: center;
+     text-transform: uppercase;
+   }
+ }
