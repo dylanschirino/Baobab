@@ -40,7 +40,7 @@ get_header();
         <a href="#" data-tab-target="tab-one" class="video__link"><?php _e('Voir le film','b');?></a>
       </li>
       <li class="video__element">
-        <a href="#discover" data-tab-target="tab-two" class="video__link"><?php _e('Découvrir le projet','b');?></a>
+        <a href="#tab-two" data-tab-target="tab-two" class="video__link"><?php _e('Découvrir le projet','b');?></a>
       </li>
       <li class="video__element">
         <a href="#" data-tab-target="tab-three" class="video__link"> <?php _e('Making of','b');?></a>
@@ -49,7 +49,7 @@ get_header();
         <a href="#" data-tab-target="tab-four" class="video__link"><?php _e('Fiche technique','b');?></a>
       </li>
       <li class="video__elements">
-        <a href="diffusion.html" class="video__link video__link--diffusion"><?php _e('Diffuser ce film','b');?></a>
+        <a href="<?php echo the_permalink('69');?>" class="video__link video__link--diffusion"><?php _e('Diffuser ce film','b');?></a>
       </li>
     </ul>
 
@@ -175,5 +175,58 @@ get_header();
     <?php endwhile; endif;?>
   </section>
 </main>
+<?php $easy_options = get_option("easy_page_options");?>
+
+<footer class="footer">
+
+  <div class="footer__container">
+    <article class="follow">
+      <h3 class="follow__title" aria-level="3"><?php _e('Nous suivre','b');?></h3>
+      <ul class="follow__list">
+        <li class="follow__element">
+          <a class="follow__link follow__link--facebook" href="<?php echo $easy_options['facebook'];?>"><?php _e('Facebook','b');?></a>
+        </li>
+        <li class="follow__element">
+          <a class="follow__link follow__link--vimeo" href="<?php echo $easy_options['vimeo'];?>"><?php _e('Vimeo','b');?></a>
+        </li>
+        <li class="follow__element">
+          <a class="follow__link follow__link--youtube" href="<?php echo $easy_options['youtube'];?>"><?php _e('Youtube','b');?></a>
+        </li>
+        <li class="follow__element">
+          <a class="follow__link follow__link--instagram" href="<?php echo $easy_options['instagram'];?>"><?php _e('Instagram','b');?></a>
+        </li>
+        <li class="follow__element">
+          <a class="follow__link follow__link--twitter" href="<?php echo $easy_options['twitter'];?>"><?php _e('Twitter','b');?></a>
+        </li>
+      </ul>
+    </article>
+
+    <article class="contact">
+      <h3 class="contact__title" aria-level="3"><?php _e('Nous contacter','b');?></h3>
+      <ul class="contact__list">
+        <li class="contact__element"><?php _e('Email','b');?>&nbsp;:&nbsp;
+          <a class="contact__link" href="mailto:<?php echo $easy_options['mail'];?>"><?php echo $easy_options['mail'];?></a>
+        </li>
+        <li class="contact__element">Whatsapp&nbsp;:&nbsp;
+          <a class="contact__link" href="tel:<?php echo $easy_options['whatsapp'];?>"><?php echo $easy_options['whatsapp'];?></a>
+        </li>
+        <li class="contact__element"><?php _e('Téléphone','b');?>&nbsp;:&nbsp;
+          <a class="contact__link" href="tel:<?php echo $easy_options['telephone'];?>"><?php echo $easy_options['telephone'];?></a>
+        </li>
+      </ul>
+    </article>
+  </div>
+</footer>
+<noscript>
+<style>
+/* onglet afficher l'un en dessous des autres */
+.tab-pane{
+
+  margin-top:3em;
+  display:block;
+}
+</style>
+</noscript>
 <script src="<?php echo get_template_directory_uri().'/assets/scripts.js';?>"></script>
-<?php get_footer();?>
+</body>
+</html>
