@@ -100,7 +100,14 @@ get_header();
           <h3 aria-level="3" class="fichetechnique__title">
             <?php _e('Fiche Technique','b');?>
           </h3>
-          <img class="fichetechnique__affiche" src="img/affiche.jpg" width="300" height="400" alt="affiche du film">
+          <figure class="fichetechnique__affiche">
+
+            <?php
+            $imageaffiche=get_field('affiche_projet');
+            $affichesize='thumb-affiche';
+            echo wp_get_attachment_image($imageaffiche['id'],$affichesize);
+            ?>
+          </figure>
           <table class="fichetechnique__table">
             <caption class="table__caption">
               <?php _e('Information','b');?>
