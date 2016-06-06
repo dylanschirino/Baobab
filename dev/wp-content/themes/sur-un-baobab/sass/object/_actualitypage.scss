@@ -1,10 +1,10 @@
 /* BAOBAB Project
- *
- * /sass/object/actualitypage.scss - non design of actualitypage stylesheet
- *
- * coded by Dylan Schirino
- * started at 26/04/2016
- */
+*
+* /sass/object/actualitypage.scss - non design of actualitypage stylesheet
+*
+* coded by Dylan Schirino
+* started at 26/04/2016
+*/
 
 label{
   display: block;
@@ -26,8 +26,8 @@ label{
 }
 .actu{
   &--page{
-      margin-left: 3.4em;
-      margin-top: 10em;
+    margin-left: 3.4em;
+    margin-top: 10em;
   }
 }
 .header{
@@ -49,33 +49,50 @@ label{
     margin: auto;
   }
 }
+.pages{
+  font-size: 1.8em;
+}
+.wp-pagenavi{
+  display: inline-block;
+  margin:10em 5em 0 5em;
+}
+.nextpostslink,.previouspostslink{
+  font-size:2em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  color:black;
+  text-decoration: underline;
+  &:hover{
+    text-decoration:none;
+  }
+}
 @media screen and (max-width:999px) {
-    .header{
+  .header{
     &__title{
       font-size: 5em;
       display: block;
       position: static;
       margin-bottom: 1em;
     }
-    }
-    .actu{
-      &--page{
-        &:last-child{
-          margin:3.2em;
-          display: block;
-        }
+  }
+  .actu{
+    &--page{
+      &:last-child{
+        margin-left:3.2em;
+        display: block;
       }
     }
+  }
 }
 @media screen and (max-width:652px) {
-    .aside{
-      width:100%;
-      height:auto;
-    }
+  .aside{
+    width:100%;
+    height:auto;
+  }
 }
 @media screen and (max-width:479px) {
   .header{
-    & img{
+    &__image img{
       padding-top: 2em;
       max-width:100%;
       height: auto;
@@ -86,10 +103,10 @@ label{
   .ariane{
     width: 100%;
   }
-.actu{
-  margin-left:1em;
-  &:last-child{
-    margin-left: 1em;
+  .actu{
+    margin-left:1em;
+    &:last-child{
+      margin-left: 1em;
+    }
   }
-}
 }

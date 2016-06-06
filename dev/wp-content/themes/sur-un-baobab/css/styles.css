@@ -401,12 +401,12 @@ a {
       margin: auto; } }
 
 /* BAOBAB Project
- *
- * /sass/object/actualitypage.scss - non design of actualitypage stylesheet
- *
- * coded by Dylan Schirino
- * started at 26/04/2016
- */
+*
+* /sass/object/actualitypage.scss - non design of actualitypage stylesheet
+*
+* coded by Dylan Schirino
+* started at 26/04/2016
+*/
 label {
   display: block; }
 
@@ -444,6 +444,22 @@ label {
     width: 100%;
     margin: auto; }
 
+.pages {
+  font-size: 1.8em; }
+
+.wp-pagenavi {
+  display: inline-block;
+  margin: 10em 5em 0 5em; }
+
+.nextpostslink, .previouspostslink {
+  font-size: 2em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: underline; }
+  .nextpostslink:hover, .previouspostslink:hover {
+    text-decoration: none; }
+
 @media screen and (max-width: 999px) {
   .header__title {
     font-size: 5em;
@@ -451,7 +467,7 @@ label {
     position: static;
     margin-bottom: 1em; }
   .actu--page:last-child {
-    margin: 3.2em;
+    margin-left: 3.2em;
     display: block; } }
 
 @media screen and (max-width: 652px) {
@@ -460,7 +476,7 @@ label {
     height: auto; } }
 
 @media screen and (max-width: 479px) {
-  .header img {
+  .header__image img {
     padding-top: 2em;
     max-width: 100%;
     height: auto; } }
@@ -694,7 +710,7 @@ label {
 @media screen and (max-width: 472px) {
   .cards {
     margin-left: 3em; }
-    .cards__image {
+    .cards__image img {
       max-width: 100%;
       height: auto; }
   .icon__list--right {
@@ -921,7 +937,7 @@ label {
   text-align: center; }
   .ministudio__title {
     display: none; }
-  .ministudio__image {
+  .ministudio__image img {
     width: 52.7%;
     margin: auto;
     margin-bottom: 1em; }
@@ -953,9 +969,12 @@ label {
       margin-bottom: 1em; }
     .ministudio__explain {
       width: 90%; }
-    .ministudio__image {
+    .ministudio__image img {
       width: 90%;
-      height: auto; } }
+      height: auto; }
+  .door__image img {
+    width: 100%;
+    height: auto; } }
 
 /* BAOBAB Project
 *

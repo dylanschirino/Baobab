@@ -17,15 +17,40 @@ get_header();
   <?php
   if(is_page()){
     query_posts([
-      'posts_per_page' => 5,
+      'posts_per_page' => 2,
       'orderby' => 'date',
       'order' => 'DESC',
-      'post_type' => 'post'
+      'post_type' => 'post',
+      'paged' => get_query_var('paged')
     ]);
   }
   ?>
 
-
+  <aside class="aside">
+    <h3 class="aside__title" aria-level="3"><?php _e('Filtrer par','b');?></h3>
+    <form method="post">
+      <ul class="aside__list">
+        <?php $post=get_post();
+        $categorie=get_the_category($post->ID);?>
+        <li class="aside__element">
+          <input class="aside__element--checkbox" type="checkbox" name="croissant" id="croissant" value="<?php echo $categorie[0]->cat_name;?>">
+          <label for="croissant" class="aside__element--label">
+            <?php echo $categorie[0]->cat_name;?>
+          </label>
+        </li>
+        <li class="aside__element">
+          <input class="aside__element--checkbox" type="checkbox" name="decroissant" id="decroissant">
+          <label for="decroissant" class="aside__element--label"><?php echo $categorie[0]->cat_name;?>
+          </label>
+        </li>
+        <li class="aside__element">
+          <input class="aside__element--checkbox" type="checkbox" name="categorie" id="categorie">
+          <label for="categorie" class="aside__element--label">Catégorie
+          </label>
+        </li>
+      </ul>
+    </form>
+  </aside>
   <section class="actualite">
     <div class="actualite__header">
       <?php if( get_field('img_actu') ):
@@ -68,32 +93,9 @@ get_header();
       <?php endwhile; endif;?>
     </section>
 
-
-    <aside class="aside">
-      <h3 class="aside__title" aria-level="3"><?php _e('Filtrer par','b');?></h3>
-      <form method="post">
-        <ul class="aside__list">
-          <?php $post=get_post();
-          $categorie=get_the_category($post->ID);?>
-          <li class="aside__element">
-            <input class="aside__element--checkbox" type="checkbox" name="croissant" id="croissant" value="<?php echo $categorie[0]->cat_name;?>">
-            <label for="croissant" class="aside__element--label">
-              <?php echo $categorie[0]->cat_name;?>
-            </label>
-          </li>
-          <li class="aside__element">
-            <input class="aside__element--checkbox" type="checkbox" name="decroissant" id="decroissant">
-            <label for="decroissant" class="aside__element--label"><?php echo $categorie[0]->cat_name;?>
-            </label>
-          </li>
-          <li class="aside__element">
-            <input class="aside__element--checkbox" type="checkbox" name="categorie" id="categorie">
-            <label for="categorie" class="aside__element--label">Catégorie
-            </label>
-          </li>
-        </ul>
-      </form>
-    </aside>
+    <div class="page">
+      <?php wp_pagenavi();?>
+    </div>
   </main>
   <?php
   get_footer();

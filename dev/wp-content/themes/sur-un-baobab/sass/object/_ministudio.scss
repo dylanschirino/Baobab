@@ -22,7 +22,7 @@
    &__title{
      display: none;
    }
-   &__image{
+   &__image img{
      width: 52.7%;
      margin: auto;
      margin-bottom: 1em;
@@ -63,10 +63,14 @@
      &__explain{
        width: 90%;
      }
-     &__image{
+     &__image img{
        width: 90%;
        height: auto;
      }
+   }
+   .door__image img{
+     width:100%;
+     height: auto;
    }
 
  }
