@@ -10,8 +10,6 @@
   z-index: 111;
 }
 .imagecover{
-  background: url("../img/courtmetrage.jpg") no-repeat center center;
-  background-size: cover;
   height:60em;
   position:relative;
 }
@@ -69,14 +67,22 @@
       margin-bottom: 1em;
     }
   }
+  .icon{
+    &__list{
+      display:block;
+    }
+  }
 }
 
 @media screen and (max-width:472px) {
   .cards{
     margin-left:3em;
-    &__image img{
+    & img{
       max-width: 100%;
       height: auto;
+    }
+    &__icon{
+      display: block;
     }
   }
   .icon{

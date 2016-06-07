@@ -396,7 +396,7 @@ a {
     width: 90%;
     margin: 0;
     margin: auto; }
-    .actu__image {
+    .actu img {
       width: 100%;
       margin: auto; } }
 
@@ -663,8 +663,6 @@ label {
   z-index: 111; }
 
 .imagecover {
-  background: url("../img/courtmetrage.jpg") no-repeat center center;
-  background-size: cover;
   height: 60em;
   position: relative; }
 
@@ -705,14 +703,18 @@ label {
     width: 80%;
     margin: auto; }
     .cards__element {
-      margin-bottom: 1em; } }
+      margin-bottom: 1em; }
+  .icon__list {
+    display: block; } }
 
 @media screen and (max-width: 472px) {
   .cards {
     margin-left: 3em; }
-    .cards__image img {
+    .cards img {
       max-width: 100%;
       height: auto; }
+    .cards__icon {
+      display: block; }
   .icon__list--right {
     margin-left: 0; } }
 
@@ -836,7 +838,7 @@ label {
     width: 31.6%;
     margin: auto; }
   .diffusion input:not([type="submit"]) {
-    width: 100%;
+    width: 90%;
     height: 2.6em; }
   .diffusion textarea {
     width: 100%;
