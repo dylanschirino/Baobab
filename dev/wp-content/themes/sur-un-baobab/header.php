@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/css/ie8.css';?>" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/2.9.10/ie8.js"></script>
   <![endif]-->
+  
 </head>
 <body <?php body_class();?>>
   <header>

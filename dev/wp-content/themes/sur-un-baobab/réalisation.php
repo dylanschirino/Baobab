@@ -62,7 +62,7 @@ get_header();
               <a href="viewvideo.html" class="cards__link" title="Vers la Fiche Technique"><?php _e('Fiche technique','b');?></a>
             </li>
           </ul>
-          <h3 aria-level="3" class="cards__title"><?php echo the_title();?></h3>
+          <h4 aria-level="4" class="cards__title"><?php echo the_title();?></h4>
           <div class="cards__icon">
             <ul class="icon__list">
               <li class="icon__element icon__element--lieu">
