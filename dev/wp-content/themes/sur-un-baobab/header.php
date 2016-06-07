@@ -18,13 +18,13 @@
       <h2 aria-level="2" class="subheader__title"><?php _e('Menu Secondaire','b');?></h2>
       <ul class="subheader__menu">
         <li class="subheader__element">
-          <a href="#" class="subheader__link" title="Traduire le site en français">FR</a>
+          <a href="http://baobab.schirino.be/fr/" class="subheader__link" title="Traduire le site en français">FR</a>
         </li>
         <li class="subheader__element">
-          <a href="#" class="subheader__link" title="Traduire le site en Anglais">EN</a>
+          <a href="http://baobab.schirino.be/en/" class="subheader__link" title="Traduire le site en Anglais">EN</a>
         </li>
         <li class="subheader__element">
-          <a href="#" class="subheader__link" title="Traduire le site en Espagnol">ES</a>
+          <a href="http://baobab.schirino.be/es/" class="subheader__link" title="Traduire le site en Espagnol">ES</a>
         </li>
         <li class="subheader__element subheader__element--right">
           <a href="#" class="subheader__link"><?php _e('Presse','b');?></a>
